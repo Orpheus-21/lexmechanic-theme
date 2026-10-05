@@ -1,0 +1,57 @@
+/* Lexmechanic — fun/polish pass, separate from the core theme and from the
+   callout/table/tag snippet. Toggle off independently if any of these misbehave. */
+
+/* editor cursor + current line, in the accent red */
+.cm-content { caret-color: var(--text-accent); }
+.cm-cursor, .cm-cursor-primary { border-left-color: var(--text-accent); }
+.cm-activeLine {
+  background-color: color-mix(in srgb, var(--text-accent) 6%, transparent);
+}
+
+/* command palette / quick switcher in the brand sans */
+.prompt { font-family: var(--font-interface); }
+
+/* editorial divider: short red-ink dash instead of a full-width faint line */
+.markdown-rendered hr, .markdown-source-view hr {
+  border: none;
+  border-top: 3px solid var(--text-accent);
+  width: 3em;
+  margin: 2.5em auto;
+}
+
+/* editorial column: Obsidian's own width variable, so "Readable line length" still rules */
+body { --file-line-width: 700px; }
+
+/* blockquote pull-quote mark (reading view only) */
+.markdown-rendered blockquote {
+  position: relative;
+}
+.markdown-rendered blockquote::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.2em;
+  left: -0.15em;
+  font-family: var(--font-text);
+  font-size: 2.5em;
+  color: var(--text-accent);
+  opacity: 0.5;
+  line-height: 1;
+}
+
+/* code blocks join the same accent-border family as blockquotes/callouts */
+/* reading view: pre; Live Preview: the code-block lines */
+.markdown-rendered pre,
+.markdown-source-view .HyperMD-codeblock {
+  border-left: 4px solid var(--text-accent);
+}
+
+/* ==highlighted text==: red-tinted ground from the theme, ink text */
+mark, .cm-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal);
+}
+
+/* internal links read as dotted, external links stay solid-underlined */
+.internal-link {
+  text-decoration-style: dotted;
+}

@@ -1,0 +1,40 @@
+/* Lexmechanic — extras snippet, kept separate from theme.css on purpose.
+   fromjason.xyz has no callout/table/tag components of its own, so these are
+   built from the theme's existing tokens (red-ink accent, chiffan panel,
+   Volume Tc Sans) rather than lifted verbatim. Toggle off anytime without
+   touching the theme. */
+
+/* callouts: paper-card tint + brand font, type colors stay as Obsidian sets them */
+.callout {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-left: 4px solid rgb(var(--callout-color));
+}
+.callout-title {
+  font-family: var(--font-interface);
+  font-weight: 700;
+}
+
+/* tables: chiffan header row, sand rules */
+.markdown-rendered table {
+  border: 1px solid var(--background-modifier-border);
+}
+.markdown-rendered thead tr {
+  background-color: var(--background-primary-alt);
+}
+.markdown-rendered th {
+  font-family: var(--font-interface);
+  font-weight: 700;
+}
+.markdown-rendered td, .markdown-rendered th {
+  border-color: var(--background-modifier-border);
+}
+
+/* tags: the site's rounded accent-muted badge */
+.tag, a.tag {
+  background-color: var(--background-primary-alt);
+  color: var(--text-accent);
+  border: none;
+  border-radius: 2px;
+  font-family: var(--font-interface);
+}
