@@ -64,13 +64,15 @@ The theme has no settings of its own. These Obsidian settings change how it look
 
 ## How it works
 
+`theme.css` is built from the files in `src/`. Do not edit `theme.css` by hand. Edit a file in `src/`, run `./build.sh`, and commit both. Run `./build.sh --check` to test that `theme.css` is up to date. The command exits with 1 if it is not.
+
 `theme.css` has these parts, in this order:
 
-1. Three `@font-face` rules. Each rule holds a font as a base64 data URI.
-2. One block of variables for both modes. It sets the font variables `--font-text-theme`, `--font-interface-theme`, and `--font-monospace-theme`. It also sets the variables for block quotes, code borders, headings, list markers, scrollbars, selected items in the file list, the focus border, and form fields.
-3. One block of variables for `.theme-light`.
-4. One block of variables for `.theme-dark`.
-5. One rule for the font of block quotes.
+1. Three `@font-face` rules, in `src/10-fonts.css`. Each rule holds a font as a base64 data URI.
+2. One block of variables for both modes, in `src/20-shared.css`. It sets the font variables `--font-text-theme`, `--font-interface-theme`, and `--font-monospace-theme`. It also sets the variables for block quotes, code borders, headings, list markers, scrollbars, selected items in the file list, the focus border, and form fields.
+3. One block of variables for `.theme-light`, in `src/30-light.css`.
+4. One block of variables for `.theme-dark`, in `src/40-dark.css`.
+5. One rule for the canvas color and one rule for the font of block quotes, in `src/50-rules.css`.
 
 Each mode block starts with the palette: the `--lex-*` variables. Change a color there, and every other line follows. The rest of the block sets the Obsidian variables for backgrounds, text, links, code, the graph view, and the status colors. It also sets the accent with `--accent-h`, `--accent-s`, and `--accent-l`. It sets the eight base colors and the ten `--code-*` variables for syntax colors.
 
