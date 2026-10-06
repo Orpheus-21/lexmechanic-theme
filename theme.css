@@ -40,6 +40,18 @@
   --blockquote-background-color: transparent;
   --blockquote-font-style: normal;
   --code-border-width: 1px;
+  --h1-font: var(--font-text);
+  --h1-weight: 700;
+  --h2-font: var(--font-text);
+  --h2-weight: 700;
+  --h3-font: var(--font-text);
+  --h3-weight: 700;
+  --h4-font: var(--font-text);
+  --h4-weight: 700;
+  --h5-font: var(--font-text);
+  --h5-weight: 700;
+  --h6-font: var(--font-text);
+  --h6-weight: 700;
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--background-primary);
   --background-modifier-form-field-hover: var(--background-primary-alt);
@@ -283,15 +295,6 @@
   --color-purple-rgb: 185, 154, 208;
   --color-pink: #e08aa8;
   --color-pink-rgb: 224, 138, 168;
-}
-
-/* headings: bold serif, not italic — matches h1-h6 on the site */
-.markdown-source-view h1, .markdown-source-view h2, .markdown-source-view h3,
-.markdown-source-view h4, .markdown-source-view h5, .markdown-source-view h6,
-.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3,
-.markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
-  font-family: var(--font-text);
-  font-weight: 700;
 }
 
 /* blockquotes read in the sans brand font on the site, not the serif body font */
