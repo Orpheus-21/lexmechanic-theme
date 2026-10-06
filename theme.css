@@ -37,6 +37,8 @@
   --font-monospace-theme: ui-monospace, 'SF Mono', Consolas, monospace;
 
   --background-modifier-border-focus: var(--interactive-accent);
+  --background-modifier-form-field: var(--background-primary);
+  --background-modifier-form-field-hover: var(--background-primary-alt);
 }
 
 .theme-light {
