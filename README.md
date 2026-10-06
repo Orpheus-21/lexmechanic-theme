@@ -41,14 +41,13 @@ The theme has two snippets.
 
 `lexmechanic-extras` styles these parts:
 
-* Callouts get a panel color and a colored left border.
+* Callouts get a panel color and a 4 pixel left border in the color of the callout type.
 * Tables get a panel color on the header row.
-* Tags get a rounded badge in the accent color.
+* Tags get a rounded badge in the accent color. The snippet sets the tag variables of Obsidian.
 
 `lexmechanic-fun` styles these parts:
 
-* The cursor and the active line use the accent color.
-* The command palette and the quick switcher use the interface font.
+* The text caret, the cursor, and the active line use the accent color.
 * A horizontal rule shows as a short red dash.
 * The note column is 700 pixels wide.
 * A block quote in reading view gets a large quote mark.
@@ -68,14 +67,28 @@ The theme has no settings of its own. These Obsidian settings change how it look
 `theme.css` has these parts, in this order:
 
 1. Three `@font-face` rules. Each rule holds a font as a base64 data URI.
-2. The font variables `--font-text-theme`, `--font-interface-theme`, and `--font-monospace-theme`.
+2. One block of variables for both modes. It sets the font variables `--font-text-theme`, `--font-interface-theme`, and `--font-monospace-theme`. It also sets the variables for block quotes, code borders, headings, list markers, scrollbars, selected items in the file list, the focus border, and form fields.
 3. One block of variables for `.theme-light`.
 4. One block of variables for `.theme-dark`.
-5. A few rules for headings, block quotes, and text selection.
+5. One rule for the font of block quotes.
 
-Each variable block sets the Obsidian variables for backgrounds, text, links, headings, code, and the graph view. It also sets the accent variables and the ten `--code-*` variables for syntax colors.
+Each mode block starts with the palette: the `--lex-*` variables. Change a color there, and every other line follows. The rest of the block sets the Obsidian variables for backgrounds, text, links, code, the graph view, and the status colors. It also sets the accent with `--accent-h`, `--accent-s`, and `--accent-l`. It sets the eight base colors and the ten `--code-*` variables for syntax colors.
 
 The snippets use only these variables. They add no colors of their own.
+
+## Checks
+
+The script `scripts/check_contrast.py` checks the contrast of the text colors. Run this command in the repo folder:
+
+```
+python3 scripts/check_contrast.py
+```
+
+The script reads `theme.css` and compares each text color with the page, panel, and alt panel colors. It exits with 1 when a pair is below 4.5 to 1. It needs only Python 3.
+
+Three dark mode pairs are below 4.5 to 1: the accent, `--code-keyword`, and `--code-tag` on the alt panel color. The author keeps these pairs. The script lists them as known and does not fail for them.
+
+The file `docs/contrast.md` has the contrast of every text color.
 
 ## Fonts
 
