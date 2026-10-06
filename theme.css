@@ -62,6 +62,8 @@
   --background-modifier-error: #b83800;
   --background-modifier-error-hover: #9a3000;
   --background-modifier-error-rgb: 184, 56, 0;
+  --background-modifier-success: var(--text-success);
+  --background-modifier-message: color-mix(in srgb, #2c251d 92%, transparent);
 
   --interactive-accent: #901714;
   --interactive-accent-hover: #733331;
@@ -168,6 +170,8 @@
   --background-modifier-error: #ff7a45;
   --background-modifier-error-hover: #ff946a;
   --background-modifier-error-rgb: 255, 122, 69;
+  --background-modifier-success: var(--text-success);
+  --background-modifier-message: var(--background-secondary-alt);
 
   --interactive-accent: #e8483d;
   --interactive-accent-hover: #f2685d;
