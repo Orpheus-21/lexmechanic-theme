@@ -10,8 +10,10 @@ Two optional CSS snippets add more styles. You can turn each snippet on or off a
 
 ## Requirements
 
-* Obsidian for desktop.
-* An Obsidian version that has Chromium 111 or newer. The theme uses `color-mix()`, and Chromium 111 is the first version that supports it. I do not know the first Obsidian version that has it.
+* Obsidian for desktop, with installer version 1.4.13 or newer.
+* The theme uses `color-mix()`. This function needs Chromium 111 or newer.
+* Installer 1.4.13 has Electron 25.8.1. The installer is a different download from the app updates, and you must update it by hand. Get the newest installer from https://obsidian.md/download.
+* The theme is not tested with an older installer.
 
 ## Install
 
