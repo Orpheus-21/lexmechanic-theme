@@ -55,6 +55,9 @@
   --text-error: #b83800;
   --text-warning: #7a4e00;
   --text-success: #3a6329;
+  --background-modifier-error: #b83800;
+  --background-modifier-error-hover: #9a3000;
+  --background-modifier-error-rgb: 184, 56, 0;
 
   --interactive-accent: #901714;
   --interactive-accent-hover: #733331;
@@ -140,6 +143,9 @@
   --text-error: #ff7a45;
   --text-warning: #e0b04a;
   --text-success: #8fbf6f;
+  --background-modifier-error: #ff7a45;
+  --background-modifier-error-hover: #ff946a;
+  --background-modifier-error-rgb: 255, 122, 69;
 
   --interactive-accent: #e8483d;
   --interactive-accent-hover: #f2685d;
