@@ -30,11 +30,11 @@
   border-color: var(--background-modifier-border);
 }
 
-/* tags: the site's rounded accent-muted badge */
-.tag, a.tag {
-  background-color: var(--background-primary-alt);
-  color: var(--text-accent);
-  border: none;
-  border-radius: 2px;
-  font-family: var(--font-interface);
+/* tags: the site's rounded accent-muted badge, set with Obsidian's tag variables */
+.theme-light, .theme-dark {
+  --tag-background: var(--background-primary-alt);
+  --tag-color: var(--text-accent);
+  --tag-border-width: 0;
+  --tag-radius: 2px;
 }
+.tag, a.tag { font-family: var(--font-interface); }
