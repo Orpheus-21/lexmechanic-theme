@@ -10,6 +10,7 @@ Added:
 * Warm colors for scrollbars, indentation guides, the canvas, the tab drag ghost, and the toggle and slider thumbs.
 * Variables for block quotes, inline code borders, and the heading font and weight.
 * `scripts/check_contrast.py` and `docs/contrast.md`.
+* The `src/` folder and `build.sh`. `theme.css` is built from the files in `src/`.
 * A Credits section and a Checks section in the README.
 
 Changed:
