@@ -8,7 +8,7 @@
 .callout {
   background-color: var(--background-primary-alt);
   border: 1px solid var(--background-modifier-border);
-  border-left: 4px solid rgb(var(--callout-color));
+  border-left: 4px solid var(--callout-color);
 }
 .callout-title {
   font-family: var(--font-interface);
