@@ -100,6 +100,7 @@
   --background-modifier-error-rgb: 184, 56, 0;
   --background-modifier-success: var(--text-success);
   --background-modifier-message: color-mix(in srgb, var(--lex-ink) 92%, transparent);
+  --background-modifier-cover: color-mix(in srgb, var(--lex-sand) 35%, transparent);
 
   --interactive-accent: var(--lex-accent);
   --interactive-accent-hover: var(--lex-accent-hover);
@@ -222,6 +223,7 @@
   --background-modifier-error-rgb: 255, 122, 69;
   --background-modifier-success: var(--text-success);
   --background-modifier-message: var(--background-secondary-alt);
+  --background-modifier-cover: color-mix(in srgb, var(--lex-ground) 60%, transparent);
 
   --interactive-accent: var(--lex-accent);
   --interactive-accent-hover: var(--lex-accent-hover);
