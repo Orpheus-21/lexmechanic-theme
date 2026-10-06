@@ -53,6 +53,8 @@
   --h6-font: var(--font-text);
   --h6-weight: 700;
   --list-marker-color: var(--text-accent);
+  --nav-item-color-selected: var(--nav-item-color-active);
+  --nav-item-background-selected: var(--nav-item-background-active);
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: color-mix(in srgb, var(--text-faint) 40%, transparent);
   --scrollbar-active-thumb-bg: color-mix(in srgb, var(--text-faint) 65%, transparent);
