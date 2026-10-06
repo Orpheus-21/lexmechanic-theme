@@ -109,6 +109,8 @@
   --toggle-thumb-color: var(--lex-ground);
   --slider-thumb-background: var(--lex-ground);
   --slider-thumb-background-hover: var(--lex-panel);
+  --notice-color: var(--lex-ground);
+  --tooltip-color: var(--lex-ground);
 
   --interactive-accent: var(--lex-accent);
   --interactive-accent-hover: var(--lex-accent-hover);
@@ -235,6 +237,8 @@
   --toggle-thumb-color: var(--lex-ground);
   --slider-thumb-background: var(--lex-ground);
   --slider-thumb-background-hover: var(--lex-panel);
+  --notice-color: var(--lex-ink);
+  --tooltip-color: var(--lex-ink);
 
   --interactive-accent: var(--lex-accent);
   --interactive-accent-hover: var(--lex-accent-hover);
