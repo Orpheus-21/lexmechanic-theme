@@ -29,7 +29,7 @@ body { --file-line-width: 700px; }
   content: '\201C';
   position: absolute;
   top: -0.2em;
-  left: -0.15em;
+  left: 0;
   font-family: var(--font-text);
   font-size: 2.5em;
   color: var(--text-accent);
