@@ -63,7 +63,6 @@
   --background-modifier-form-field-hover: var(--background-primary-alt);
   --indentation-guide-color: color-mix(in srgb, var(--lex-sand) 30%, transparent);
   --indentation-guide-color-active: color-mix(in srgb, var(--lex-sand) 60%, transparent);
-  --canvas-color: var(--lex-sand);
   --canvas-dot-pattern: color-mix(in srgb, var(--lex-sand) 45%, var(--background-primary));
 }
 
@@ -308,6 +307,9 @@
   --color-pink: #e08aa8;
   --color-pink-rgb: 224, 138, 168;
 }
+
+/* Obsidian sets --canvas-color on body.theme-dark, which beats .theme-dark */
+body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
 
 /* blockquotes read in the sans brand font on the site, not the serif body font */
 .markdown-source-view blockquote, .markdown-preview-view blockquote,
