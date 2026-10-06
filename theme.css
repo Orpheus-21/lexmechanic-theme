@@ -53,6 +53,9 @@
   --h6-font: var(--font-text);
   --h6-weight: 700;
   --list-marker-color: var(--text-accent);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: color-mix(in srgb, var(--text-faint) 40%, transparent);
+  --scrollbar-active-thumb-bg: color-mix(in srgb, var(--text-faint) 65%, transparent);
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--background-primary);
   --background-modifier-form-field-hover: var(--background-primary-alt);
