@@ -1,0 +1,123 @@
+.theme-light {
+  /* palette: change a color here and every rule below follows */
+  --lex-ground: #faf9f5;
+  --lex-panel: #f3f1e8;
+  --lex-panel-alt: #efece0;
+  --lex-ink: #2c251d;
+  --lex-muted: #655d55;
+  --lex-faint: #6f675f;
+  --lex-sand: #968d85;
+  --lex-accent: #901714;
+  --lex-accent-hover: #733331;
+  --lex-error: #b83800;
+  --lex-success: #3a6329;
+  --lex-warning: #7a4e00;
+
+  --background-primary: var(--lex-ground);
+  --background-primary-alt: var(--lex-panel);
+  --background-secondary: var(--lex-panel);
+  --background-secondary-alt: var(--lex-panel-alt);
+  --background-modifier-border: color-mix(in srgb, var(--lex-sand) 25%, transparent);
+  --background-modifier-border-hover: var(--lex-sand);
+  --background-modifier-hover: color-mix(in srgb, var(--lex-sand) 12%, transparent);
+
+  --text-normal: var(--lex-ink);
+  --text-muted: var(--lex-muted);
+  --text-faint: var(--lex-faint);
+  --text-accent: var(--lex-accent);
+  --text-accent-hover: var(--lex-accent-hover);
+  --text-selection: color-mix(in srgb, var(--lex-accent) 22%, transparent);
+  --text-error: var(--lex-error);
+  --text-warning: var(--lex-warning);
+  --text-success: var(--lex-success);
+  --background-modifier-error: var(--lex-error);
+  --background-modifier-error-hover: #9a3000;
+  --background-modifier-error-rgb: 184, 56, 0;
+  --background-modifier-success: var(--text-success);
+  --background-modifier-message: color-mix(in srgb, var(--lex-ink) 92%, transparent);
+  --background-modifier-cover: color-mix(in srgb, var(--lex-sand) 35%, transparent);
+  --toggle-thumb-color: var(--lex-ground);
+  --slider-thumb-background: var(--lex-ground);
+  --slider-thumb-background-hover: var(--lex-panel);
+  --notice-color: var(--lex-ground);
+  --tooltip-color: var(--lex-ground);
+
+  --interactive-accent: var(--lex-accent);
+  --interactive-accent-hover: var(--lex-accent-hover);
+  --interactive-normal: var(--lex-panel);
+  --interactive-hover: color-mix(in srgb, var(--lex-sand) 15%, transparent);
+
+  /* site's own <a> is ink-colored + underlined, hover fades to sand — the red is
+     reserved for accents (blockquote rule, superscripts), not links themselves */
+  --link-color: var(--lex-ink);
+  --link-color-hover: var(--lex-muted);
+  --link-external-color: var(--lex-accent);
+  --link-external-color-hover: var(--lex-accent-hover);
+  --link-unresolved-color: var(--lex-faint);
+  --link-unresolved-opacity: 1;
+
+  --h1-color: var(--lex-ink);
+  --h2-color: var(--lex-ink);
+  --h3-color: var(--lex-ink);
+  --h4-color: var(--lex-ink);
+  --h5-color: var(--lex-ink);
+  --h6-color: var(--lex-ink);
+
+  --code-normal: #070504;
+  --code-background: var(--lex-panel);
+
+  --blockquote-border-color: var(--lex-accent);
+  --blockquote-color: var(--lex-ink);
+
+  --checkbox-color: var(--lex-accent);
+  --checkbox-color-hover: var(--lex-accent-hover);
+
+  --divider-color: color-mix(in srgb, var(--lex-sand) 20%, transparent);
+
+  --graph-line: color-mix(in srgb, var(--lex-sand) 45%, transparent);
+  --graph-node: var(--lex-muted);
+  --graph-node-unresolved: var(--lex-sand);
+  --graph-node-focused: var(--lex-accent);
+  --graph-node-tag: var(--lex-accent-hover);
+  --graph-node-attachment: var(--lex-sand);
+  --graph-text: var(--lex-ink);
+
+  --text-highlight-bg: color-mix(in srgb, var(--lex-accent) 20%, var(--lex-panel));
+  --text-highlight-bg-rgb: 144, 23, 20;
+  --nav-item-background-active: color-mix(in srgb, var(--lex-accent) 12%, transparent);
+  --nav-item-color-active: var(--lex-accent);
+
+  --accent-h: 1;
+  --accent-s: 76%;
+  --accent-l: 32%;
+  --text-on-accent: var(--lex-ground);
+
+  --code-comment: var(--lex-faint);
+  --code-function: var(--lex-warning);
+  --code-important: var(--lex-error);
+  --code-keyword: var(--lex-accent);
+  --code-operator: var(--lex-muted);
+  --code-property: #2f5d6e;
+  --code-punctuation: var(--lex-muted);
+  --code-string: var(--lex-success);
+  --code-tag: var(--lex-accent);
+  --code-value: #8a3b12;
+
+  --color-red: #a8231f;
+  --color-red-rgb: 168, 35, 31;
+  --color-orange: #b83800;
+  --color-orange-rgb: 184, 56, 0;
+  --color-yellow: #7f6000;
+  --color-yellow-rgb: 127, 96, 0;
+  --color-green: #3a6329;
+  --color-green-rgb: 58, 99, 41;
+  --color-cyan: #2f5d6e;
+  --color-cyan-rgb: 47, 93, 110;
+  --color-blue: #3b5a8a;
+  --color-blue-rgb: 59, 90, 138;
+  --color-purple: #6b4a7d;
+  --color-purple-rgb: 107, 74, 125;
+  --color-pink: #a04668;
+  --color-pink-rgb: 160, 70, 104;
+}
+

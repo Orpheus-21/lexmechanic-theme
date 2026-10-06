@@ -1,0 +1,39 @@
+/* the site itself is single-mode (light/paper); .theme-dark below is an invented
+   night sibling, same hues inverted, not lifted from the source. */
+.theme-dark, .theme-light {
+  --font-text-theme: 'Volume Tc', Georgia, 'Times New Roman', serif;
+  --font-interface-theme: 'Volume Tc Sans', Verdana, sans-serif;
+  --font-monospace-theme: ui-monospace, 'SF Mono', Consolas, monospace;
+
+  --blockquote-border-thickness: 4px;
+  --blockquote-background-color: transparent;
+  --blockquote-font-style: normal;
+  --code-border-width: 1px;
+  --h1-font: var(--font-text);
+  --h1-weight: 700;
+  --h2-font: var(--font-text);
+  --h2-weight: 700;
+  --h3-font: var(--font-text);
+  --h3-weight: 700;
+  --h4-font: var(--font-text);
+  --h4-weight: 700;
+  --h5-font: var(--font-text);
+  --h5-weight: 700;
+  --h6-font: var(--font-text);
+  --h6-weight: 700;
+  --list-marker-color: var(--text-accent);
+  --nav-item-color-selected: var(--nav-item-color-active);
+  --nav-item-background-selected: var(--nav-item-background-active);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: color-mix(in srgb, var(--text-faint) 40%, transparent);
+  --scrollbar-active-thumb-bg: color-mix(in srgb, var(--text-faint) 65%, transparent);
+  --background-modifier-border-focus: var(--interactive-accent);
+  --background-modifier-form-field: var(--background-primary);
+  --background-modifier-form-field-hover: var(--background-primary-alt);
+  --indentation-guide-color: color-mix(in srgb, var(--lex-sand) 30%, transparent);
+  --indentation-guide-color-active: color-mix(in srgb, var(--lex-sand) 60%, transparent);
+  --drag-ghost-background: color-mix(in srgb, var(--lex-ink) 88%, transparent);
+  --drag-ghost-text-color: var(--lex-ground);
+  --canvas-dot-pattern: color-mix(in srgb, var(--lex-sand) 45%, var(--background-primary));
+}
+

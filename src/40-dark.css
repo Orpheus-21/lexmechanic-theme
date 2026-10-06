@@ -1,0 +1,123 @@
+/* night sibling: same red-ink hue brightened for dark-bg contrast, warm-black ground
+   instead of true black to stay in the same "paper" family */
+.theme-dark {
+  /* palette: change a color here and every rule below follows */
+  --lex-ground: #14110d;
+  --lex-panel: #1c1811;
+  --lex-panel-alt: #221c14;
+  --lex-ink: #e8e0d0;
+  --lex-muted: #b5ac9b;
+  --lex-faint: #938a79;
+  --lex-sand: #a89f8e;
+  --lex-accent: #e8483d;
+  --lex-accent-hover: #f2685d;
+  --lex-error: #ff7a45;
+  --lex-success: #8fbf6f;
+  --lex-warning: #e0b04a;
+
+  --background-primary: var(--lex-ground);
+  --background-primary-alt: var(--lex-panel);
+  --background-secondary: var(--lex-panel);
+  --background-secondary-alt: var(--lex-panel-alt);
+  --background-modifier-border: color-mix(in srgb, var(--lex-sand) 15%, transparent);
+  --background-modifier-border-hover: var(--lex-sand);
+  --background-modifier-hover: color-mix(in srgb, var(--lex-sand) 10%, transparent);
+
+  --text-normal: var(--lex-ink);
+  --text-muted: var(--lex-muted);
+  --text-faint: var(--lex-faint);
+  --text-accent: var(--lex-accent);
+  --text-accent-hover: var(--lex-accent-hover);
+  --text-selection: color-mix(in srgb, var(--lex-accent) 25%, transparent);
+  --text-error: var(--lex-error);
+  --text-warning: var(--lex-warning);
+  --text-success: var(--lex-success);
+  --background-modifier-error: var(--lex-error);
+  --background-modifier-error-hover: #ff946a;
+  --background-modifier-error-rgb: 255, 122, 69;
+  --background-modifier-success: var(--text-success);
+  --background-modifier-message: var(--background-secondary-alt);
+  --background-modifier-cover: color-mix(in srgb, var(--lex-ground) 60%, transparent);
+  --toggle-thumb-color: var(--lex-ground);
+  --slider-thumb-background: var(--lex-ground);
+  --slider-thumb-background-hover: var(--lex-panel);
+  --notice-color: var(--lex-ink);
+  --tooltip-color: var(--lex-ink);
+
+  --interactive-accent: var(--lex-accent);
+  --interactive-accent-hover: var(--lex-accent-hover);
+  --interactive-normal: var(--lex-panel);
+  --interactive-hover: color-mix(in srgb, var(--lex-sand) 12%, transparent);
+
+  --link-color: var(--lex-ink);
+  --link-color-hover: var(--lex-muted);
+  --link-external-color: var(--lex-accent);
+  --link-external-color-hover: var(--lex-accent-hover);
+  --link-unresolved-color: var(--lex-faint);
+  --link-unresolved-opacity: 1;
+
+  --h1-color: var(--lex-ink);
+  --h2-color: var(--lex-ink);
+  --h3-color: var(--lex-ink);
+  --h4-color: var(--lex-ink);
+  --h5-color: var(--lex-ink);
+  --h6-color: var(--lex-ink);
+
+  --code-normal: var(--lex-ink);
+  --code-background: var(--lex-panel);
+
+  --blockquote-border-color: var(--lex-accent);
+  --blockquote-color: var(--lex-ink);
+
+  --checkbox-color: var(--lex-accent);
+  --checkbox-color-hover: var(--lex-accent-hover);
+
+  --divider-color: color-mix(in srgb, var(--lex-sand) 15%, transparent);
+
+  --graph-line: color-mix(in srgb, var(--lex-sand) 35%, transparent);
+  --graph-node: var(--lex-muted);
+  --graph-node-unresolved: #7d7464;
+  --graph-node-focused: var(--lex-accent);
+  --graph-node-tag: #c9635c;
+  --graph-node-attachment: #6b6355;
+  --graph-text: var(--lex-ink);
+
+  --text-highlight-bg: color-mix(in srgb, var(--lex-accent) 25%, var(--lex-panel));
+  --text-highlight-bg-rgb: 232, 72, 61;
+  --nav-item-background-active: color-mix(in srgb, var(--lex-accent) 15%, transparent);
+  --nav-item-color-active: var(--lex-accent);
+
+  --accent-h: 4;
+  --accent-s: 79%;
+  --accent-l: 57%;
+  --text-on-accent: var(--lex-ground);
+
+  --code-comment: var(--lex-faint);
+  --code-function: var(--lex-warning);
+  --code-important: var(--lex-error);
+  --code-keyword: var(--lex-accent);
+  --code-operator: var(--lex-muted);
+  --code-property: #7fb3c4;
+  --code-punctuation: var(--lex-muted);
+  --code-string: var(--lex-success);
+  --code-tag: var(--lex-accent);
+  --code-value: #d98b5f;
+
+  --color-red: #ff6b5e;
+  --color-red-rgb: 255, 107, 94;
+  --color-orange: #ff7a45;
+  --color-orange-rgb: 255, 122, 69;
+  --color-yellow: #e0b04a;
+  --color-yellow-rgb: 224, 176, 74;
+  --color-green: #8fbf6f;
+  --color-green-rgb: 143, 191, 111;
+  --color-cyan: #7fb3c4;
+  --color-cyan-rgb: 127, 179, 196;
+  --color-blue: #8aa6d6;
+  --color-blue-rgb: 138, 166, 214;
+  --color-purple: #b99ad0;
+  --color-purple-rgb: 185, 154, 208;
+  --color-pink: #e08aa8;
+  --color-pink-rgb: 224, 138, 168;
+}
+

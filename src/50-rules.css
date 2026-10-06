@@ -1,0 +1,9 @@
+/* Obsidian sets --canvas-color on body.theme-dark, which beats .theme-dark */
+body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
+
+/* blockquotes read in the sans brand font on the site, not the serif body font */
+.markdown-source-view blockquote, .markdown-preview-view blockquote,
+.markdown-source-view .HyperMD-quote {
+  font-family: var(--font-interface);
+}
+
