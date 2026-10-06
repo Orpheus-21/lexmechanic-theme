@@ -107,6 +107,7 @@
   --graph-text: #2c251d;
 
   --text-highlight-bg: color-mix(in srgb, #901714 20%, #f3f1e8);
+  --text-highlight-bg-rgb: 144, 23, 20;
   --nav-item-background-active: color-mix(in srgb, #901714 12%, transparent);
   --nav-item-color-active: #901714;
 
@@ -193,6 +194,7 @@
   --graph-text: #e8e0d0;
 
   --text-highlight-bg: color-mix(in srgb, #e8483d 25%, #1c1811);
+  --text-highlight-bg-rgb: 232, 72, 61;
   --nav-item-background-active: color-mix(in srgb, #e8483d 15%, transparent);
   --nav-item-color-active: #e8483d;
 
