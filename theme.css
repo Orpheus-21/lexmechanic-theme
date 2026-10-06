@@ -106,9 +106,9 @@
   --nav-item-background-active: color-mix(in srgb, #901714 12%, transparent);
   --nav-item-color-active: #901714;
 
-  --color-accent: #901714;
-  --color-accent-1: #901714;
-  --color-accent-2: #733331;
+  --accent-h: 1;
+  --accent-s: 76%;
+  --accent-l: 32%;
   --text-on-accent: #faf9f5;
 
   --code-comment: #6f675f;
@@ -192,9 +192,9 @@
   --nav-item-background-active: color-mix(in srgb, #e8483d 15%, transparent);
   --nav-item-color-active: #e8483d;
 
-  --color-accent: #e8483d;
-  --color-accent-1: #e8483d;
-  --color-accent-2: #f2685d;
+  --accent-h: 4;
+  --accent-s: 79%;
+  --accent-l: 57%;
   --text-on-accent: #14110d;
 
   --code-comment: #938a79;
