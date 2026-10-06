@@ -81,6 +81,11 @@ The snippets use only these variables. They add no colors of their own.
 
 The fonts Volume Tc and Volume Tc Sans belong to Tom Chalky. The font files say "Copyright (c) 2022 by Tom Chalky. All rights reserved." The license terms are at https://tomchalky.com/extended-licensing. The GPL does not cover these fonts.
 
+## Credits
+
+* The light mode colors come from the CSS of https://www.fromjason.xyz. The dark mode colors are new.
+* The fonts Volume Tc and Volume Tc Sans are by Tom Chalky: https://tomchalky.com.
+
 ## License
 
 The CSS and the manifest of this repo use the GNU General Public License, version 3 or any later version. The `LICENSE` file has the text. The license does not cover the embedded fonts. See the Fonts section.
