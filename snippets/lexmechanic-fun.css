@@ -9,9 +9,11 @@
 }
 
 /* editorial divider: short red-ink dash instead of a full-width faint line */
+.theme-light, .theme-dark {
+  --hr-color: var(--text-accent);
+  --hr-thickness: 3px;
+}
 .markdown-rendered hr, .markdown-source-view hr {
-  border: none;
-  border-top: 3px solid var(--text-accent);
   width: 3em;
   margin: 2.5em auto;
 }
