@@ -15,7 +15,7 @@ from pathlib import Path
 
 MIN = 4.5
 
-# Pairs below MIN that the author knows about. Each one has an open issue.
+# Pairs below MIN that the author decided to keep. Issue 74 has the decision.
 # The script reports them as known and does not fail for them.
 KNOWN = {
     ("dark", "--text-accent", "--background-secondary-alt"): "#74",
