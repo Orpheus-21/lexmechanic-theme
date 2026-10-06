@@ -12,6 +12,7 @@ Added:
 * `scripts/check_contrast.py` and `docs/contrast.md`.
 * The `src/` folder and `build.sh`. `theme.css` is built from the files in `src/`.
 * A Credits section and a Checks section in the README.
+* A screenshot of the theme in light mode and in dark mode.
 
 Changed:
 
@@ -33,7 +34,7 @@ Fixed:
 
 Removed:
 
-* The `::selection` rule, the prompt font rule, the heading rule, the `font-display` lines, and the `--text-highlight-bg-rgb` variable.
+* The `::selection` rule, the prompt font rule, the heading rule, the cursor rule, the `font-display` lines, and the `--text-highlight-bg-rgb` variable.
 
 ## 1.0.0 (2026-10-06)
 
