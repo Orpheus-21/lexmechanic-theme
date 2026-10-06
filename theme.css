@@ -296,4 +296,3 @@
   font-family: var(--font-interface);
 }
 
-::selection { background: var(--text-selection); }
