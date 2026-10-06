@@ -29,10 +29,11 @@ Fixed:
 
 * The 4 pixel left border of callouts did not show. The snippet used `rgb(var(--callout-color))`, which is not valid.
 * The dark mode canvas color stayed gray, because Obsidian sets it on `body.theme-dark`.
+* The pull quote mark sat on top of the quote border. It now sits to the right of the border.
 
 Removed:
 
-* The `::selection` rule, the prompt font rule, the heading rule, and the `font-display` lines.
+* The `::selection` rule, the prompt font rule, the heading rule, the `font-display` lines, and the `--text-highlight-bg-rgb` variable.
 
 ## 1.0.0 (2026-10-06)
 
