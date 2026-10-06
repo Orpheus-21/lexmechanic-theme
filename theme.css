@@ -133,9 +133,6 @@
   --code-normal: #070504;
   --code-background: var(--lex-panel);
 
-  --bold-color: var(--lex-ink);
-  --italic-color: var(--lex-ink);
-
   --blockquote-border-color: var(--lex-accent);
   --blockquote-color: var(--lex-ink);
 
@@ -258,9 +255,6 @@
 
   --code-normal: var(--lex-ink);
   --code-background: var(--lex-panel);
-
-  --bold-color: var(--lex-ink);
-  --italic-color: var(--lex-ink);
 
   --blockquote-border-color: var(--lex-accent);
   --blockquote-color: var(--lex-ink);
