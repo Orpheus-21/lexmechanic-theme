@@ -61,6 +61,8 @@
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--background-primary);
   --background-modifier-form-field-hover: var(--background-primary-alt);
+  --indentation-guide-color: color-mix(in srgb, var(--lex-sand) 30%, transparent);
+  --indentation-guide-color-active: color-mix(in srgb, var(--lex-sand) 60%, transparent);
 }
 
 .theme-light {
