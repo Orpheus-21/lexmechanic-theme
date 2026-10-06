@@ -2,6 +2,10 @@
 
 Lexmechanic is a theme for Obsidian. It uses a warm paper ground, dark brown text, and a red ink accent.
 
+![Lexmechanic in light mode and in dark mode](screenshot.png)
+
+The screenshot shows a note in reading view in Obsidian 1.14.4. Light mode is on the left. Dark mode is on the right.
+
 ## What it does
 
 The theme sets the colors, fonts, and link styles for the editor and the interface. It has a light mode and a dark mode. The light mode follows the colors of fromjason.xyz. The dark mode is a new version of the same colors.
