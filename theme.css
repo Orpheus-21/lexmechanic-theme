@@ -36,6 +36,9 @@
   --font-interface-theme: 'Volume Tc Sans', Verdana, sans-serif;
   --font-monospace-theme: ui-monospace, 'SF Mono', Consolas, monospace;
 
+  --blockquote-border-thickness: 4px;
+  --blockquote-background-color: transparent;
+  --blockquote-font-style: normal;
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--background-primary);
   --background-modifier-form-field-hover: var(--background-primary-alt);
