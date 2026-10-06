@@ -64,7 +64,7 @@
   /* site's own <a> is ink-colored + underlined, hover fades to sand — the red is
      reserved for accents (blockquote rule, superscripts), not links themselves */
   --link-color: #2c251d;
-  --link-color-hover: #736b63;
+  --link-color-hover: #655d55;
   --link-external-color: #901714;
   --link-external-color-hover: #733331;
   --link-unresolved-color: #6f675f;
@@ -92,7 +92,7 @@
   --divider-color: color-mix(in srgb, #968d85 20%, transparent);
 
   --graph-line: color-mix(in srgb, #968d85 45%, transparent);
-  --graph-node: #736b63;
+  --graph-node: #655d55;
   --graph-node-unresolved: #968d85;
   --graph-node-focused: #901714;
   --graph-node-tag: #733331;
@@ -147,7 +147,7 @@
   --interactive-hover: color-mix(in srgb, #a89f8e 12%, transparent);
 
   --link-color: #e8e0d0;
-  --link-color-hover: #a89f8e;
+  --link-color-hover: #b5ac9b;
   --link-external-color: #e8483d;
   --link-external-color-hover: #f2685d;
   --link-unresolved-color: #938a79;
@@ -175,7 +175,7 @@
   --divider-color: color-mix(in srgb, #a89f8e 15%, transparent);
 
   --graph-line: color-mix(in srgb, #a89f8e 35%, transparent);
-  --graph-node: #a89f8e;
+  --graph-node: #b5ac9b;
   --graph-node-unresolved: #7d7464;
   --graph-node-focused: #e8483d;
   --graph-node-tag: #c9635c;
