@@ -35,6 +35,8 @@
   --font-text-theme: 'Volume Tc', Georgia, 'Times New Roman', serif;
   --font-interface-theme: 'Volume Tc Sans', Verdana, sans-serif;
   --font-monospace-theme: ui-monospace, 'SF Mono', Consolas, monospace;
+
+  --background-modifier-border-focus: var(--interactive-accent);
 }
 
 .theme-light {
