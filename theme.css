@@ -39,6 +39,7 @@
   --blockquote-border-thickness: 4px;
   --blockquote-background-color: transparent;
   --blockquote-font-style: normal;
+  --code-border-width: 1px;
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-form-field: var(--background-primary);
   --background-modifier-form-field-hover: var(--background-primary-alt);
