@@ -150,7 +150,6 @@
   --graph-text: var(--lex-ink);
 
   --text-highlight-bg: color-mix(in srgb, var(--lex-accent) 20%, var(--lex-panel));
-  --text-highlight-bg-rgb: 144, 23, 20;
   --nav-item-background-active: color-mix(in srgb, var(--lex-accent) 12%, transparent);
   --nav-item-color-active: var(--lex-accent);
 
@@ -273,7 +272,6 @@
   --graph-text: var(--lex-ink);
 
   --text-highlight-bg: color-mix(in srgb, var(--lex-accent) 25%, var(--lex-panel));
-  --text-highlight-bg-rgb: 232, 72, 61;
   --nav-item-background-active: color-mix(in srgb, var(--lex-accent) 15%, transparent);
   --nav-item-color-active: var(--lex-accent);
 
