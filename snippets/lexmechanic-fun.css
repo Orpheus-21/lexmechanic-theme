@@ -3,7 +3,6 @@
 
 /* editor cursor + current line, in the accent red */
 .theme-light, .theme-dark { --caret-color: var(--text-accent); }
-.cm-cursor, .cm-cursor-primary { border-left-color: var(--text-accent); }
 .cm-activeLine {
   background-color: color-mix(in srgb, var(--text-accent) 6%, transparent);
 }
