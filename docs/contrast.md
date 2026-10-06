@@ -16,7 +16,7 @@ Backgrounds:
 * Panel: `--background-secondary`
 * Alt panel: `--background-secondary-alt`
 
-A note "known" means that the pair is below 4.5 to 1 and an issue is open for it.
+A note "known" means that the pair is below 4.5 to 1 and the author keeps it. Issue 74 has the decision.
 
 ## Light mode
 
