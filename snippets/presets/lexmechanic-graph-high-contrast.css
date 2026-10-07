@@ -1,0 +1,26 @@
+/* Lexmechanic high contrast graph preset: stronger nodes, lines, and arrows.
+   Resolved nodes use the ink color. Unresolved nodes and lines are fully opaque. Arrows are fully
+   opaque. The node types stay apart by lightness. Obsidian draws unresolved nodes at half opacity,
+   and this preset turns that off. */
+
+.theme-light {
+  --graph-node: var(--lex-ink);
+  --lex-graph-attachment: var(--lex-faint);
+  --lex-graph-unresolved: var(--lex-sand);
+  --graph-line: var(--lex-sand);
+}
+
+.theme-dark {
+  --graph-node: var(--lex-ink);
+  --lex-graph-attachment: var(--lex-muted);
+  --lex-graph-unresolved: var(--lex-faint);
+  --graph-line: var(--lex-faint);
+}
+
+.graph-view.color-fill-unresolved {
+  opacity: 1;
+}
+
+.graph-view.color-arrow {
+  opacity: 1;
+}
