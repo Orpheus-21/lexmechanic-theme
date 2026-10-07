@@ -16,10 +16,16 @@ Added:
 * `build.py`, a `Makefile`, a stylelint config, `.gitignore`, `.gitattributes`, and `.editorconfig`.
 * `obsidian_window.py` starts a temporary Obsidian window with its own profile for tests that need the real app. `check_graph_pixels.py` checks the node colors in the real graph.
 * CJK font faces (`Lex CJK Serif` and `Lex CJK Sans`), `text-wrap: balance` for headings, `text-wrap: pretty` for paragraphs, and a graph labels preset.
+* Sixteen more presets: task icons, extra callouts, drop cap, paper texture, typewriter, focus, justified text, heading numbers, four table options, quote citation, hide ribbon, slides, and a graph vignette.
+* A Style Settings block with options for the accent, the column width, the fonts, the heading sizes, and the graph colors and opacity, and four switches in the `lexmechanic-fun` snippet.
+* Rules for a darker tab line, controls with a 3 to 1 border, forced colors, print (light colors in dark mode, no page break after a heading, the address of an external link), reduced motion, RTL, and touch targets in the graph panel on a phone.
+* Variables for footnotes, Bases, modals, hotkeys, search results, the status bar, the title bar, and the ribbon.
+* `scripts/take_screenshots.py` and the images in `docs/images/`, a landing page in `docs/index.html`, `scripts/release.sh`, `scripts/release_notes.py`, a release workflow, and a pre-commit hook.
 * `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, issue templates, and a pull request template.
 
 Changed:
 
+* The graph lines reach 2 to 1 on the page, and the force settings of `examples/graph.json` are the compact set.
 * Every color of the mode files is in the `--lex-*` palette: the code colors, the base colors, the error hover color, the error RGB triple, and the graph colors.
 * `build.sh` stops on an error and never leaves a partial `theme.css`.
 * The README says that the note column is the default width of Obsidian.
