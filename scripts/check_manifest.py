@@ -23,7 +23,7 @@ VERSION = re.compile(r"\d+\.\d+\.\d+")
 
 def changelog_version(text):
     """Return the newest released version in a changelog, or None. 'Unreleased' is skipped."""
-    for m in re.finditer(r"^## (\S+)", text, re.M):
+    for m in re.finditer(r"^## \[?([^\]\s]+)\]?", text, re.M):
         if VERSION.fullmatch(m.group(1)):
             return m.group(1)
     return None
