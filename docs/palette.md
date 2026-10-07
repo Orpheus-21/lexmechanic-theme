@@ -34,6 +34,7 @@ The table comes from the source. Run `python3 scripts/make_docs.py --write` to m
 | `--lex-graph-tag` | `#277461` | `#69b6c6` | Tag nodes of the graph |
 | `--lex-graph-unresolved` | `var(--lex-sand)` | `#7d7464` | Unresolved nodes of the graph |
 | `--lex-graph-node` | `#473e34` | `#dcd6d0` | Resolved nodes of the graph |
+| `--lex-graph-highlight` | `var(--lex-ink)` | `var(--lex-ink)` | The hover highlight of the graph: the node under the pointer and its lines |
 | `--lex-graph-attachment` | `#aa5539` | `#cda47a` | Attachment nodes of the graph |
 
 ## Graph colors
@@ -83,6 +84,7 @@ A color group in `graph.json` stores its color as one integer: red times 65536, 
 | `pink` | `#a04668` | 10503784 | `#e08aa8` | 14715560 |
 | `error-hover` | `#9a3000` | 10104832 | `#ff946a` | 16749674 |
 | `graph-node` | `#473e34` | 4668980 | `#dcd6d0` | 14472912 |
+| `graph-highlight` | `#2c251d` | 2893085 | `#e8e0d0` | 15261904 |
 | `graph-tag` | `#277461` | 2585697 | `#69b6c6` | 6928070 |
 | `graph-unresolved` | `#968d85` | 9866629 | `#7d7464` | 8221796 |
 | `graph-attachment` | `#aa5539` | 11162937 | `#cda47a` | 13476986 |

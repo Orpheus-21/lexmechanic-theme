@@ -42,11 +42,7 @@ DISTINCT = [
 ]
 MIN_DL = 10.0
 # Results below the minimum that the author knows about. The value is the issue that will fix it.
-KNOWN = {
-    ("light", "fill-unresolved"): "#251", ("dark", "fill-unresolved"): "#251",
-    ("light", "fill-tag", "fill-focused"): "#252", ("dark", "fill-tag", "fill-focused"): "#252",
-    ("light", "fill-focused", "fill-highlight"): "#253", ("dark", "fill-focused", "fill-highlight"): "#253",
-}
+KNOWN = {}
 
 SCRIPT = """
 const hooks = %s;

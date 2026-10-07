@@ -56,9 +56,9 @@ The file `examples/graph.json` has every key that I found in the code. The displ
 
 ## Node types differ by color only
 
-A graph has five node types: resolved, unresolved, tag, attachment, and focused. CSS cannot change their shapes, so color is the only cue. The theme aims to keep the types apart by lightness and by hue. `scripts/check_graph.py` checks the lightness, and `scripts/check_colorblind.py --graph` simulates three kinds of color blindness. A reader can add a second cue with the node size setting.
+A graph has five node types: resolved, unresolved, tag, attachment, and focused. CSS cannot change their shapes, so color is the only cue. The theme keeps the types apart by lightness and by hue. `scripts/check_graph.py` checks that the types differ in lightness by 10 points of CIE lightness or more, and `scripts/check_colorblind.py --graph` simulates protanopia, deuteranopia, and tritanopia and checks that each pair is 10 or more apart (CIEDE2000). Both checks pass, with no known exception. A reader can add a second cue with the node size setting.
 
-The checks find some results that are not yet right. Each has an issue: the unresolved node is faint (issue 251), the tag node and the focused node look alike (issue 252), and the hover highlight equals the focus color (issue 253).
+The default colors are: dark brown (light mode) or pale warm gray (dark mode) for resolved nodes, teal for tags, rust or tan for attachments, the sand color for unresolved nodes, and the accent for the focused node. The hover highlight uses the ink color, so that it differs from the focus color. Obsidian draws unresolved nodes at half opacity, and the theme sets the opacity to 1.
 
 ## Tools
 

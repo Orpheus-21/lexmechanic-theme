@@ -47,6 +47,7 @@ USES = {
     "error-hover": "The hover color of the error background",
     "error-rgb": "The error color as a triple, for Obsidian variables that ask for RGB",
     "graph-node": "Resolved nodes of the graph",
+    "graph-highlight": "The hover highlight of the graph: the node under the pointer and its lines",
     "graph-tag": "Tag nodes of the graph",
     "graph-unresolved": "Unresolved nodes of the graph",
     "graph-attachment": "Attachment nodes of the graph",

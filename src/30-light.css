@@ -28,6 +28,7 @@
   --lex-graph-tag: #277461;
   --lex-graph-unresolved: var(--lex-sand);
   --lex-graph-node: #473e34;
+  --lex-graph-highlight: var(--lex-ink);
   --lex-graph-attachment: #aa5539;
 
   --background-primary: var(--lex-ground);

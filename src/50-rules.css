@@ -28,3 +28,10 @@ body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
 .graph-view.color-fill-unresolved {
   opacity: 1;
 }
+
+/* The node under the pointer and its lines. Obsidian uses --interactive-accent, which is also the color of
+   the focused node, so that the two looked the same. The palette has its own color for the highlight. */
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--lex-graph-highlight);
+}

@@ -118,6 +118,7 @@
   --lex-graph-tag: #277461;
   --lex-graph-unresolved: var(--lex-sand);
   --lex-graph-node: #473e34;
+  --lex-graph-highlight: var(--lex-ink);
   --lex-graph-attachment: #aa5539;
 
   --background-primary: var(--lex-ground);
@@ -259,6 +260,7 @@
   --lex-graph-tag: #69b6c6;
   --lex-graph-unresolved: #7d7464;
   --lex-graph-node: #dcd6d0;
+  --lex-graph-highlight: var(--lex-ink);
   --lex-graph-attachment: #cda47a;
 
   --background-primary: var(--lex-ground);
@@ -395,4 +397,11 @@ body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
    1.66 to 1 in light mode. The color of the palette is used as it is. */
 .graph-view.color-fill-unresolved {
   opacity: 1;
+}
+
+/* The node under the pointer and its lines. Obsidian uses --interactive-accent, which is also the color of
+   the focused node, so that the two looked the same. The palette has its own color for the highlight. */
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--lex-graph-highlight);
 }

@@ -117,53 +117,53 @@ Obsidian reads the graph colors from hidden `.graph-view.color-*` elements. The 
 
 | Hook | Draws | Color | Alpha | Needs | Ratio |
 |---|---|---|---|---|---|
-| `color-fill` | resolved node | `#655d55` | 1 | 3 to 1 | 6.13 to 1 |
+| `color-fill` | resolved node | `#473e34` | 1 | 3 to 1 | 9.93 to 1 |
 | `color-fill-focused` | focused node | `#901714` | 1 | 3 to 1 | 8.60 to 1 |
-| `color-fill-tag` | tag node | `#733331` | 1 | 3 to 1 | 8.87 to 1 |
-| `color-fill-attachment` | attachment node | `#968d85` | 1 | 3 to 1 | 3.09 to 1 |
-| `color-fill-unresolved` | unresolved node | `#968d85` | 0.5 | 3 to 1 | 1.66 to 1 (known, #251) |
+| `color-fill-tag` | tag node | `#277461` | 1 | 3 to 1 | 5.31 to 1 |
+| `color-fill-attachment` | attachment node | `#aa5539` | 1 | 3 to 1 | 4.90 to 1 |
+| `color-fill-unresolved` | unresolved node | `#968d85` | 1 | 3 to 1 | 3.09 to 1 |
 | `color-arrow` | arrow | `#2c251d` | 0.5 | 3 to 1 | 3.05 to 1 |
 | `color-circle` | focus ring | `#901714` | 1 | 3 to 1 | 8.60 to 1 |
 | `color-line` | line | `#978e85` | 0.451 | 1.5 to 1 | 1.57 to 1 |
 | `color-text` | label text | `#2c251d` | 1 | 4.5 to 1 | 14.35 to 1 |
-| `color-fill-highlight` | hover highlight of a node | `#901714` | 1 | 3 to 1 | 8.60 to 1 |
-| `color-line-highlight` | hover highlight of a line | `#901714` | 1 | 3 to 1 | 8.60 to 1 |
+| `color-fill-highlight` | hover highlight of a node | `#2c251d` | 1 | 3 to 1 | 14.35 to 1 |
+| `color-line-highlight` | hover highlight of a line | `#2c251d` | 1 | 3 to 1 | 14.35 to 1 |
 
 Node types must differ in lightness (CIE L*) by at least 10:
 
 | Pair | Difference |
 |---|---|
-| `fill` and `fill-unresolved` | 39.0 |
-| `fill` and `fill-attachment` | 19.2 |
-| `fill` and `fill-tag` | 10.0 |
-| `fill-tag` and `fill-focused` | 0.9 (known, #252) |
-| `fill-attachment` and `fill-unresolved` | 19.8 |
-| `fill-focused` and `fill-highlight` | 0.0 (known, #253) |
+| `fill` and `fill-unresolved` | 32.4 |
+| `fill` and `fill-attachment` | 19.3 |
+| `fill` and `fill-tag` | 17.1 |
+| `fill-tag` and `fill-focused` | 13.1 |
+| `fill-attachment` and `fill-unresolved` | 13.1 |
+| `fill-focused` and `fill-highlight` | 15.7 |
 
 ### Dark mode
 
 | Hook | Draws | Color | Alpha | Needs | Ratio |
 |---|---|---|---|---|---|
-| `color-fill` | resolved node | `#b5ac9b` | 1 | 3 to 1 | 8.37 to 1 |
+| `color-fill` | resolved node | `#dcd6d0` | 1 | 3 to 1 | 13.06 to 1 |
 | `color-fill-focused` | focused node | `#e8483d` | 1 | 3 to 1 | 4.86 to 1 |
-| `color-fill-tag` | tag node | `#c9635c` | 1 | 3 to 1 | 4.86 to 1 |
-| `color-fill-attachment` | attachment node | `#938a79` | 1 | 3 to 1 | 5.51 to 1 |
-| `color-fill-unresolved` | unresolved node | `#7d7464` | 0.5 | 3 to 1 | 1.89 to 1 (known, #251) |
+| `color-fill-tag` | tag node | `#69b6c6` | 1 | 3 to 1 | 8.16 to 1 |
+| `color-fill-attachment` | attachment node | `#cda47a` | 1 | 3 to 1 | 8.23 to 1 |
+| `color-fill-unresolved` | unresolved node | `#7d7464` | 1 | 3 to 1 | 4.08 to 1 |
 | `color-arrow` | arrow | `#e8e0d0` | 0.5 | 3 to 1 | 4.30 to 1 |
 | `color-circle` | focus ring | `#e8483d` | 1 | 3 to 1 | 4.86 to 1 |
 | `color-line` | line | `#a99e8f` | 0.349 | 1.5 to 1 | 1.90 to 1 |
 | `color-text` | label text | `#e8e0d0` | 1 | 4.5 to 1 | 14.34 to 1 |
-| `color-fill-highlight` | hover highlight of a node | `#e8483d` | 1 | 3 to 1 | 4.86 to 1 |
-| `color-line-highlight` | hover highlight of a line | `#e8483d` | 1 | 3 to 1 | 4.86 to 1 |
+| `color-fill-highlight` | hover highlight of a node | `#e8e0d0` | 1 | 3 to 1 | 14.34 to 1 |
+| `color-line-highlight` | hover highlight of a line | `#e8e0d0` | 1 | 3 to 1 | 14.34 to 1 |
 
 Node types must differ in lightness (CIE L*) by at least 10:
 
 | Pair | Difference |
 |---|---|
-| `fill` and `fill-unresolved` | 42.4 |
-| `fill` and `fill-attachment` | 12.9 |
-| `fill` and `fill-tag` | 16.5 |
-| `fill-tag` and `fill-focused` | 0.0 (known, #252) |
-| `fill-attachment` and `fill-unresolved` | 29.5 |
-| `fill-focused` and `fill-highlight` | 0.0 (known, #253) |
+| `fill` and `fill-unresolved` | 36.7 |
+| `fill` and `fill-attachment` | 15.8 |
+| `fill` and `fill-tag` | 16.1 |
+| `fill-tag` and `fill-focused` | 15.7 |
+| `fill-attachment` and `fill-unresolved` | 20.9 |
+| `fill-focused` and `fill-highlight` | 35.2 |
 <!-- graph:end -->

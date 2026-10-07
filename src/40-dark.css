@@ -30,6 +30,7 @@
   --lex-graph-tag: #69b6c6;
   --lex-graph-unresolved: #7d7464;
   --lex-graph-node: #dcd6d0;
+  --lex-graph-highlight: var(--lex-ink);
   --lex-graph-attachment: #cda47a;
 
   --background-primary: var(--lex-ground);

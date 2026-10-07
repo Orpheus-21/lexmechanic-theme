@@ -26,11 +26,7 @@ from check_contrast import ROOT, read_blocks, resolve, shared_block  # noqa: E40
 MIN_DE = 10.0
 BASE = ["red", "orange", "yellow", "green", "cyan", "blue", "purple", "pink"]
 # Graph pairs below MIN_DE that the author knows about. The value is the issue that owns it.
-KNOWN = {
-    ("graph node types", "light", "focused", "tag"): "#252",
-    ("graph node types", "dark", "focused", "tag"): "#252",
-    ("graph node types", "dark", "tag", "attachment"): "#259",
-}
+KNOWN = {}
 
 
 def distance(a, b):
