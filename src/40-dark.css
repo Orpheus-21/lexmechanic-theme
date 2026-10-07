@@ -29,7 +29,8 @@
   --lex-code-normal: var(--lex-ink);
   --lex-graph-tag: #c9635c;
   --lex-graph-unresolved: #7d7464;
-  --lex-graph-attachment: var(--lex-faint);
+  --lex-graph-node: #dcd6d0;
+  --lex-graph-attachment: #cda47a;
 
   --background-primary: var(--lex-ground);
   --background-primary-alt: var(--lex-panel);
@@ -91,7 +92,7 @@
   --divider-color: color-mix(in srgb, var(--lex-sand) 15%, transparent);
 
   --graph-line: color-mix(in srgb, var(--lex-sand) 35%, transparent);
-  --graph-node: var(--lex-muted);
+  --graph-node: var(--lex-graph-node);
   --graph-node-unresolved: var(--lex-graph-unresolved);
   --graph-node-focused: var(--lex-accent);
   --graph-node-tag: var(--lex-graph-tag);
