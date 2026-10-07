@@ -14,6 +14,8 @@ Added:
 * Unit tests in `tests/`, and a baseline of the computed styles.
 * A GitHub Actions workflow for the checks, and a weekly check of the newest Obsidian.
 * `build.py`, a `Makefile`, a stylelint config, `.gitignore`, `.gitattributes`, and `.editorconfig`.
+* `obsidian_window.py` starts a temporary Obsidian window with its own profile for tests that need the real app. `check_graph_pixels.py` checks the node colors in the real graph.
+* CJK font faces (`Lex CJK Serif` and `Lex CJK Sans`), `text-wrap: balance` for headings, `text-wrap: pretty` for paragraphs, and a graph labels preset.
 * `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, issue templates, and a pull request template.
 
 Changed:
@@ -24,6 +26,7 @@ Changed:
 
 Fixed:
 
+* Found in the real app: the code block border, the internal links, the active line, the horizontal rule, and the callout quote color in Live Preview. The graph now has its own colors for tag, attachment, unresolved, and highlighted nodes.
 * The dark mode attachment node of the graph used the old faint color. It now uses the faint color of the palette. Each graph color has a name in the palette.
 
 Removed:
