@@ -42,6 +42,8 @@ Two optional CSS snippets add more styles. You can turn each snippet on or off a
 
 ## Install
 
+The theme is in the community list: https://community.obsidian.md/themes/lexmechanic. In Obsidian, open Settings, Appearance, Themes, Manage, and search "Lexmechanic". Choose Install and use. The community install gives only the theme. The snippets and presets need one of the steps below.
+
 With the plugin BRAT, you can install only the theme: open the command palette, run `BRAT: Themes: Grab a beta theme for testing from a Github repository`, and enter `Orpheus-21/lexmechanic-theme`. BRAT downloads `theme.css` and `manifest.json` from the default branch. It does not install the snippets. I checked that both files can be downloaded from that address, and I did not run BRAT. Choose the theme in Settings, Appearance. For the snippets, use one of the steps below.
 
 1. Download this repo, or run `git clone https://github.com/Orpheus-21/lexmechanic-theme.git`.
