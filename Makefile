@@ -25,6 +25,7 @@ lint:
 contrast:
 	python3 scripts/check_contrast.py
 	python3 scripts/check_contrast.py --check-doc
+	python3 scripts/check_contrast.py --presets
 
 docs:
 	python3 scripts/make_docs.py --write
