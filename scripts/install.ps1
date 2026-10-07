@@ -1,15 +1,16 @@
 # Install the theme and the snippets into a vault. This is the PowerShell version of install.sh.
 #
-# Usage: .\scripts\install.ps1 -Vault C:\path\to\vault [-Link]
+# Usage: .\scripts\install.ps1 -Vault C:\path\to\vault [-Link] [-Presets]
 #
 # The vault is the folder that holds the hidden .obsidian folder. The script copies manifest.json
 # and theme.css to .obsidian\themes\Lexmechanic and the files of snippets\ to .obsidian\snippets.
-# With -Link it makes symbolic links in place of copies. A link needs developer mode or an
+# With -Presets it also copies the files of snippets\presets. With -Link it makes symbolic links in place of copies. A link needs developer mode or an
 # administrator on Windows. The script does not turn the theme on: choose it in
 # Settings, Appearance.
 param(
     [Parameter(Mandatory = $true)][string]$Vault,
-    [switch]$Link
+    [switch]$Link,
+    [switch]$Presets
 )
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $PSScriptRoot
@@ -34,6 +35,11 @@ function Install-One([string]$Source, [string]$Folder) {
 foreach ($name in 'manifest.json', 'theme.css') { Install-One (Join-Path $repo $name) $theme }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $repo 'snippets') -Filter '*.css') {
     Install-One $file.FullName $snippets
+}
+if ($Presets) {
+    foreach ($file in Get-ChildItem -LiteralPath (Join-Path $repo 'snippets\presets') -Filter '*.css') {
+        Install-One $file.FullName $snippets
+    }
 }
 $mode = if ($Link) { 'link' } else { 'copy' }
 Write-Host "installed into $obsidian ($mode)"
