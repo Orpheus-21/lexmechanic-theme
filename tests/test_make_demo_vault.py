@@ -48,5 +48,21 @@ class DemoVaultTest(unittest.TestCase):
             self.assertEqual(second, self.names)
 
 
+class ShowcaseTest(unittest.TestCase):
+    def test_the_showcase_note_has_every_part_that_the_theme_styles(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            m.build(Path(tmp) / "v", 30, "light", showcase=True)
+            text = (Path(tmp) / "v" / "Showcase.md").read_text()
+        for part in ("###### Heading 6", "==\U0001f534red==", "[[Unresolved note]]", "- [-] Cancelled", "- [>] Forwarded", "- [!] Important",
+                     "- [?] Question", "- [/] In progress", "> [!idea]", "> [!definition]", "[^1]:", "```js", "|---|---:|---:|", "![[diagram-1.png]]",
+                     "\u2014", "\u6211\u4eec", "\u0645\u0631\u062d\u0628\u0627", "\u041f\u0440\u0438\u0432\u0435\u0442", "Donaudampf"):
+            self.assertIn(part, text, part)
+
+    def test_without_the_option_there_is_no_showcase(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            m.build(Path(tmp) / "v", 30, "light")
+            self.assertFalse((Path(tmp) / "v" / "Showcase.md").exists())
+
+
 if __name__ == "__main__":
     unittest.main()
