@@ -1,0 +1,13 @@
+/* Lexmechanic drop cap preset: the first letter of the first paragraph of a note in reading view (after a title, if the note has an h1) is
+   three lines high, in the accent color. A note that starts with a list, a table, or an image has none. */
+
+.markdown-preview-sizer > .mod-header + div > p:first-child::first-letter,
+.markdown-preview-sizer > .mod-header + div:has(> h1:first-child) + div > p:first-child::first-letter {
+  float: inline-start;
+  margin: 0.05em 0.1em 0 0;
+  font-family: var(--font-text);
+  font-size: 3.6em;
+  line-height: 0.8;
+  font-weight: 700;
+  color: var(--text-accent);
+}

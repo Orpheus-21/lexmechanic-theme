@@ -1168,6 +1168,22 @@
      "79%",
      "rgba(0, 0, 0, 0)"
     ],
+    "--anim-duration-fast": [
+     "140ms",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--anim-duration-moderate": [
+     "300ms",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--anim-duration-slow": [
+     "560ms",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--anim-duration-superfast": [
+     "70ms",
+     "rgba(0, 0, 0, 0)"
+    ],
     "--background-modifier-border": [
      "color-mix(in srgb, #a89f8e 15%, transparent)",
      "color(srgb 0.658824 0.623529 0.556863 / 0.15)"
@@ -3032,6 +3048,22 @@
     ],
     "--accent-s": [
      "76%",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--anim-duration-fast": [
+     "140ms",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--anim-duration-moderate": [
+     "300ms",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--anim-duration-slow": [
+     "560ms",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--anim-duration-superfast": [
+     "70ms",
      "rgba(0, 0, 0, 0)"
     ],
     "--background-modifier-border": [

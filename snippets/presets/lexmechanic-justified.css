@@ -1,0 +1,8 @@
+/* Lexmechanic justified preset: paragraphs and list items in reading view have straight left and right
+   edges. Justified text needs hyphens to avoid wide gaps, so this preset also turns hyphens on.
+   Use the hyphens preset or this one, not both. */
+
+.markdown-preview-view :is(p, li) {
+  text-align: justify;
+  hyphens: auto;
+}

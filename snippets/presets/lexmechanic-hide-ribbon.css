@@ -1,0 +1,6 @@
+/* Lexmechanic hide ribbon preset: the left ribbon (the column of icons) is hidden. The commands of the
+   ribbon are in the command palette, and the sidebar toggle is in the title bar. */
+
+.workspace-ribbon.mod-primary {
+  display: none;
+}

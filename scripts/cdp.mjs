@@ -14,7 +14,10 @@ import fs from 'node:fs';
 
 const port = process.argv[3] || '9333';
 const list = await (await fetch(`http://127.0.0.1:${port}/json`)).json();
-const page = list.find(t => t.type === 'page');
+// The main window has the app:// address. A window that Obsidian opens for Settings has about:blank, and
+// CDP_TARGET (part of its title) chooses such a window.
+const pages = list.filter(t => t.type === 'page');
+const page = (process.env.CDP_TARGET && pages.find(t => t.title.includes(process.env.CDP_TARGET))) || pages.find(t => t.url.startsWith('app://')) || pages[0];
 if (!page) throw new Error('No page found on port ' + port);
 const ws = new WebSocket(page.webSocketDebuggerUrl);
 await new Promise(r => ws.addEventListener('open', r));

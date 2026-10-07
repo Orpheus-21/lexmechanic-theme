@@ -109,14 +109,27 @@ The folder `snippets/presets/` has optional snippets that you put on top of the 
 | `lexmechanic-high-contrast` | A white or black page. Every text color reaches 7 to 1. |
 | `lexmechanic-narrow`, `lexmechanic-wide` | The note column is 560 or 900 pixels wide. |
 | `lexmechanic-sans-body`, `lexmechanic-mono-body` | The text of notes uses the sans or the monospace font. |
-| `lexmechanic-hyphens` | Breaks long words in reading view. It needs a hyphenation dictionary, and I could not see it work. |
+| `lexmechanic-hyphens` | Breaks long words in reading view. It needs a hyphenation dictionary, and Chromium on a desktop may not have one for your language. |
 | `lexmechanic-graph-colorful` | A different color for each node type of the graph. |
 | `lexmechanic-graph-monochrome` | Node types that differ by lightness only. |
 | `lexmechanic-graph-high-contrast` | Stronger nodes, lines, and arrows in the graph. |
 | `lexmechanic-graph-dim` | A quieter graph in dark mode. |
+| `lexmechanic-tasks` | Icons and colors for the task states `[-]`, `[>]`, `[!]`, `[?]`, and `[/]`. |
+| `lexmechanic-callouts-extra` | Two more callout types, `[!idea]` and `[!definition]`. |
+| `lexmechanic-drop-cap` | A large first letter on the first paragraph of a note in reading view. |
+| `lexmechanic-paper-texture` | A fine paper grain over the page. |
+| `lexmechanic-typewriter` | Half a screen of space above and below the text of the editor. |
+| `lexmechanic-focus` | Dims every line of the editor except the line of the cursor. |
+| `lexmechanic-justified` | Justified paragraphs in reading view, with hyphens. |
+| `lexmechanic-heading-numbers` | Numbers h2 to h4 as 1, 1.1, and 1.1.1 in reading view. |
+| `lexmechanic-table-stripes`, `lexmechanic-table-hover`, `lexmechanic-table-numbers`, `lexmechanic-table-sticky` | Striped rows, a row tint on hover, digits of one width, and a header row that stays at the top. |
+| `lexmechanic-quote-citation` | The last paragraph of a quote with two or more paragraphs is a citation. |
+| `lexmechanic-hide-ribbon` | Hides the left ribbon. |
+| `lexmechanic-slides` | Colors and fonts of the theme in the Slides core plugin. |
+| `lexmechanic-graph-vignette` | A soft shade at the edges of the graph view. |
 | `lexmechanic-graph-labels` | The labels of the graph use Volume Tc Sans. The file is large, because it holds the font data again. |
 
-The scripts check the contrast and the graph colors of the presets. I did not look at the presets in Obsidian.
+The scripts check the contrast and the graph colors of the presets. I looked at the presets of this table, except the accent colors, in Obsidian 1.14.4 on Linux, in light mode.
 
 ## Configuration
 

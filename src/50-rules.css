@@ -94,3 +94,24 @@ select.dropdown,
     color: var(--text-muted);
   }
 }
+
+/* less motion: Obsidian times its transitions with the --anim-duration variables, and a reader who asks
+   for less motion gets none */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    --anim-duration-superfast: 0ms;
+    --anim-duration-fast: 0ms;
+    --anim-duration-moderate: 0ms;
+    --anim-duration-slow: 0ms;
+  }
+}
+
+/* the tab of a graph view has its icon in the accent color, as the node under the pointer has */
+.workspace-tab-header[data-type='graph'] .workspace-tab-header-inner-icon .svg-icon {
+  color: var(--text-accent);
+}
+
+/* the BASE and CANVAS badge of the file list was 9px, the only text of the interface below 12px */
+.nav-file-tag {
+  font-size: var(--font-ui-smaller);
+}

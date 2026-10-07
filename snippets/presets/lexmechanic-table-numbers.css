@@ -1,0 +1,12 @@
+/* Lexmechanic table numbers preset: the digits in the cells of a table have one width, so that numbers
+   line up in a column. CSS cannot tell a number from text, so it does not align the cells to the right.
+   Align a column with the colon in the divider row, for example |---:|. */
+
+.markdown-rendered td,
+.markdown-source-view.mod-cm6 table td {
+  font-variant-numeric: tabular-nums;
+}
+.markdown-rendered td[align='right'],
+.markdown-rendered th[align='right'] {
+  text-align: right;
+}

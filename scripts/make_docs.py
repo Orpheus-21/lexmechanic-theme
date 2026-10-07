@@ -110,7 +110,7 @@ AREAS = [
     ("Callouts", ("--callout-",), "The color of a callout type that Obsidian leaves as a gray. The other types use the base colors."),
     ("Block quotes", ("--blockquote-",), "A 4 pixel accent border, like the border of callouts and code blocks."),
     ("Lists, tasks, and guides", ("--list-", "--checkbox-", "--indentation-"), "Accent list markers and checkboxes, and warm indentation guides."),
-    ("Interface", ("--nav-", "--scrollbar-", "--drag-", "--toggle-", "--slider-", "--notice-", "--tooltip-", "--divider-", "--canvas-"), "Parts of the interface that use a gray or a white in Obsidian: the file list, scrollbars, the drag ghost, toggles, sliders, notices, tooltips, dividers, and the canvas."),
+    ("Interface", ("--anim-", "--nav-", "--scrollbar-", "--drag-", "--toggle-", "--slider-", "--notice-", "--tooltip-", "--divider-", "--canvas-"), "Parts of the interface that use a gray or a white in Obsidian: the file list, scrollbars, the drag ghost, toggles, sliders, notices, tooltips, dividers, and the canvas."),
     ("Footnotes and Bases", ("--footnote-", "--bases-"), "The footnote numbers and divider, and the tables, cards, and kanban boards of Bases. They use the panel colors and small 4 pixel corners."),
     ("Windows and bars", ("--hotkey-", "--modal-", "--search-", "--status-bar-", "--titlebar-", "--ribbon-"), "Modals, hotkey chips, search results, the status bar, the title bar, and the ribbon."),
     ("Graph", ("--graph-",), "The colors of the graph view. Obsidian reads them through hidden elements. See `docs/graph.md`."),
@@ -138,6 +138,9 @@ def variable_rows(root=ROOT):
     rules = (root / "src" / "50-rules.css").read_text()
     for name, value in re.findall(r"body\.theme-light, body\.theme-dark \{ (--[a-z0-9-]+): (.+?); \}", rules):
         rows[name] = (value, value, "theme")
+    motion = re.search(r"@media \(prefers-reduced-motion: reduce\) \{\n  body \{\n(.*?)\n  \}", rules, re.S)
+    for name, value in re.findall(r"(--[a-z0-9-]+): (.+?);", motion.group(1) if motion else ""):
+        rows[name] = (f"{value} (reduced motion)", f"{value} (reduced motion)", "theme")
     for snippet in sorted((root / "snippets").glob("*.css")):
         for name, value in snippet_block(snippet).items():
             rows[name] = (value, value, snippet.stem)

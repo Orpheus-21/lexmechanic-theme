@@ -1,0 +1,6 @@
+/* Lexmechanic striped tables preset: every second row of a table has the panel color. */
+
+.markdown-rendered tbody tr:nth-child(even),
+.markdown-source-view.mod-cm6 table tbody tr:nth-child(even) {
+  background-color: var(--background-primary-alt);
+}

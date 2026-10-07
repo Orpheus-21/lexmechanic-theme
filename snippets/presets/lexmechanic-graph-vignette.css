@@ -1,0 +1,6 @@
+/* Lexmechanic graph vignette preset: the graph view has a soft shade at its edges, so that the nodes at
+   the middle stand out. The shade is the sand color at 12% opacity. */
+
+.workspace-leaf-content[data-type='graph'] .view-content {
+  background-image: radial-gradient(ellipse at center, transparent 55%, color-mix(in srgb, var(--lex-sand) 12%, transparent) 100%);
+}

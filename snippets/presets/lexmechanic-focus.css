@@ -1,0 +1,15 @@
+/* Lexmechanic focus preset: in Live Preview and Source mode every line except the line of the cursor
+   is dimmed. Move the pointer over the text to see all of it. */
+
+.markdown-source-view.mod-cm6 .cm-line:not(.cm-active) {
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+.markdown-source-view.mod-cm6 .cm-content:hover .cm-line {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .markdown-source-view.mod-cm6 .cm-line:not(.cm-active) {
+    transition: none;
+  }
+}

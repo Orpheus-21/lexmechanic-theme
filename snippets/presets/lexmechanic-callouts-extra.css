@@ -1,0 +1,12 @@
+/* Lexmechanic extra callouts preset: two more callout types, [!idea] and [!definition].
+   An idea uses the yellow of the palette and a light bulb. A definition uses the blue and an open book. */
+
+.callout[data-callout='idea'] {
+  --callout-color: var(--color-yellow);
+  --callout-icon: lucide-lightbulb;
+}
+.callout[data-callout='definition'],
+.callout[data-callout='def'] {
+  --callout-color: var(--color-blue);
+  --callout-icon: lucide-book-open;
+}

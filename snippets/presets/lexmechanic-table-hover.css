@@ -1,0 +1,6 @@
+/* Lexmechanic table hover preset: the row under the pointer gets a light tint of the accent color. */
+
+.markdown-rendered tbody tr:hover,
+.markdown-source-view.mod-cm6 table tbody tr:hover {
+  background-color: var(--nav-item-background-active);
+}

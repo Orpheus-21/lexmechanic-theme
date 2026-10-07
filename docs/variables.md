@@ -163,6 +163,10 @@ Parts of the interface that use a gray or a white in Obsidian: the file list, sc
 
 | Variable | Light | Dark | Set in |
 |---|---|---|---|
+| `--anim-duration-fast` | `0ms (reduced motion)` | `0ms (reduced motion)` | theme |
+| `--anim-duration-moderate` | `0ms (reduced motion)` | `0ms (reduced motion)` | theme |
+| `--anim-duration-slow` | `0ms (reduced motion)` | `0ms (reduced motion)` | theme |
+| `--anim-duration-superfast` | `0ms (reduced motion)` | `0ms (reduced motion)` | theme |
 | `--canvas-color` | `var(--lex-sand)` | `var(--lex-sand)` | theme |
 | `--canvas-dot-pattern` | `color-mix(in srgb, var(--lex-sand) 45%, var(--background-primary))` | `color-mix(in srgb, var(--lex-sand) 45%, var(--background-primary))` | theme |
 | `--divider-color` | `color-mix(in srgb, var(--lex-sand) 20%, transparent)` | `color-mix(in srgb, var(--lex-sand) 15%, transparent)` | theme |

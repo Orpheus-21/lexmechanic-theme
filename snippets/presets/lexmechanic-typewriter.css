@@ -1,0 +1,8 @@
+/* Lexmechanic typewriter preset: the editor has half a screen of space above and below the text, so that
+   the line that you write can scroll to the middle of the window. CSS cannot move the cursor, so the
+   line stays at the middle only when Obsidian scrolls to it, as it does while you type at the end. */
+
+.markdown-source-view.mod-cm6 .cm-content {
+  padding-top: 40vh !important;
+  padding-bottom: 45vh !important;
+}

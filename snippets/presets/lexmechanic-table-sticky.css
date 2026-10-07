@@ -1,0 +1,14 @@
+/* Lexmechanic sticky table header preset: the header row of a table stays at the top of the window
+   while you scroll through a long table in reading view. Obsidian puts each table in a box that scrolls
+   sideways, and a sticky header cannot leave such a box. The preset lets the box show its overflow, so
+   a table that is wider than the note is cut at the edge instead of scrolling. Turn it off for wide tables. */
+
+.markdown-rendered .el-table {
+  overflow: visible !important;
+}
+.markdown-rendered thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--background-primary-alt);
+}

@@ -1,0 +1,27 @@
+/* Lexmechanic heading numbers preset: reading view numbers h2 to h4 as 1, 1.1, and 1.1.1. The title (h1)
+   is not numbered. Each block of a note is in its own element, so the counters restart with counter-set at each heading above. Obsidian draws only the parts of a long
+   note that are on the screen, and a note of that kind may show a wrong number after a jump. */
+
+.markdown-preview-sizer {
+  counter-reset: lex-h2 lex-h3 lex-h4;
+}
+.markdown-preview-view h2 {
+  counter-increment: lex-h2;
+  counter-set: lex-h3 0 lex-h4 0;
+}
+.markdown-preview-view h3 {
+  counter-increment: lex-h3;
+  counter-set: lex-h4 0;
+}
+.markdown-preview-view h4 {
+  counter-increment: lex-h4;
+}
+.markdown-preview-view h2::before {
+  content: counter(lex-h2) '. ';
+}
+.markdown-preview-view h3::before {
+  content: counter(lex-h2) '.' counter(lex-h3) ' ';
+}
+.markdown-preview-view h4::before {
+  content: counter(lex-h2) '.' counter(lex-h3) '.' counter(lex-h4) ' ';
+}

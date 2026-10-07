@@ -1,0 +1,12 @@
+/* Lexmechanic quote citation preset: the last paragraph of a quote that has more than one paragraph is
+   a citation. It is smaller, quiet, and starts with a dash. Write the quote, then a second paragraph
+   with the author:  > Text of the quote.  >  > Author, Source */
+
+.markdown-rendered blockquote > p:last-child:not(:first-child) {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  text-align: end;
+}
+.markdown-rendered blockquote > p:last-child:not(:first-child)::before {
+  content: '\2014\00a0';
+}

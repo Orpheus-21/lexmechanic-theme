@@ -1,0 +1,16 @@
+/* Lexmechanic slides preset: the Slides core plugin shows a note as slides. The slides use the page
+   color, the text color, the text font for the text, the interface font for the headings, the accent for
+   links, and headings in the case that you wrote them. The variables are the ones of reveal.js. */
+
+.slides-container {
+  --r-background-color: var(--background-primary);
+  --r-main-color: var(--text-normal);
+  --r-main-font: var(--font-text);
+  --r-heading-font: var(--font-interface);
+  --r-heading-color: var(--text-normal);
+  --r-heading-text-transform: none;
+  --r-link-color: var(--text-accent);
+  --r-link-color-hover: var(--text-accent-hover);
+  --r-selection-background-color: var(--text-selection);
+  --r-selection-color: var(--text-normal);
+}
