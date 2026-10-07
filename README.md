@@ -97,6 +97,26 @@ The theme has two snippets.
 * **The labels in the graph view use a system font.** Obsidian fixes the font of the graph labels in its code. A theme cannot change it `docs/graph.md` tells how the graph gets its colors.
 * **The theme looks wrong on a phone.** The theme is not tested on Android or iOS.
 
+## Presets
+
+The folder `snippets/presets/` has optional snippets that you put on top of the theme. Copy one into the folder `.obsidian/snippets` of the vault, or run `scripts/install.sh VAULT --presets` to copy all of them. Then turn it on in Settings, Appearance, CSS snippets. Turn on only one preset of each kind.
+
+| Preset | What it does |
+|---|---|
+| `lexmechanic-accent-blue`, `lexmechanic-accent-green`, `lexmechanic-accent-black` | Change the accent color in both modes. |
+| `lexmechanic-oled` | A true black page in dark mode. |
+| `lexmechanic-newsprint` | A lighter and cooler paper in light mode. |
+| `lexmechanic-high-contrast` | A white or black page. Every text color reaches 7 to 1. |
+| `lexmechanic-narrow`, `lexmechanic-wide` | The note column is 560 or 900 pixels wide. |
+| `lexmechanic-sans-body`, `lexmechanic-mono-body` | The text of notes uses the sans or the monospace font. |
+| `lexmechanic-hyphens` | Breaks long words in reading view. It needs a hyphenation dictionary, and I could not see it work. |
+| `lexmechanic-graph-colorful` | A different color for each node type of the graph. |
+| `lexmechanic-graph-monochrome` | Node types that differ by lightness only. |
+| `lexmechanic-graph-high-contrast` | Stronger nodes, lines, and arrows in the graph. |
+| `lexmechanic-graph-dim` | A quieter graph in dark mode. |
+
+The scripts check the contrast and the graph colors of the presets. I did not look at the presets in Obsidian.
+
 ## Configuration
 
 The theme has no settings of its own. These Obsidian settings change how it looks:
