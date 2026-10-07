@@ -30,7 +30,7 @@
   content: '\201C';
   position: absolute;
   top: -0.2em;
-  left: 0;
+  inset-inline-start: 0;
   font-family: var(--font-text);
   font-size: 2.5em;
   color: var(--text-accent);
@@ -42,7 +42,7 @@
    (reading view: pre; Live Preview: the lines of the code block) */
 .markdown-rendered pre,
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-  border-left: 4px solid var(--text-accent);
+  border-inline-start: 4px solid var(--text-accent);
 }
 
 /* internal links read as dotted, external links stay solid-underlined. In Live Preview the link
@@ -69,7 +69,7 @@ body.lex-solid-links .cm-hmd-internal-link .cm-underline {
 }
 body.lex-plain-code .markdown-rendered pre,
 body.lex-plain-code .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-  border-left: var(--code-border-width) solid var(--code-border-color);
+  border-inline-start: var(--code-border-width) solid var(--code-border-color);
 }
 
 /* @settings
@@ -95,6 +95,6 @@ settings:
   -
     id: lex-plain-code
     title: Plain code block border
-    description: Remove the 4px accent border at the left of a code block.
+    description: Remove the 4px accent border at the start of a code block.
     type: class-toggle
 */

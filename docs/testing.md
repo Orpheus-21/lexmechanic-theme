@@ -56,6 +56,6 @@ The method was tested with Obsidian 1.14.4 and Node 26. `scripts/cdp.mjs` needs 
 
 * `python3 scripts/obsidian_window.py start` does steps 1 to 4 for you. It makes the demo vault and a separate profile, and it starts the window. The commands `reload`, `theme`, `open`, `eval`, `shot`, and `run` control it. `stop --clean` stops only the process group that `start` made. It also tells you if your own Obsidian config or vault files changed.
 * `python3 scripts/check_graph_pixels.py` opens a graph in the window and compares the pixel of a free node of each type with the color that the theme sets. It needs a running window.
-* `python3 scripts/take_screenshots.py` makes the images of the README in `docs/images/`: the note in reading view in both modes, Live Preview, the graph in both modes, and the note on a phone in both modes. It needs a running window.
+* `python3 scripts/take_screenshots.py` makes the images of the README in `docs/images/`: the note in reading view in both modes, Live Preview, the graph in both modes, the note on a phone in both modes, and the Appearance page of Settings. It needs a running window.
 * The mobile emulation of Obsidian (`app.emulateMobile(true)` with `Emulation.setDeviceMetricsOverride` and `mobile: true`) shows the layout of a phone. It does not show safe areas, touch, or the WebView of a real phone.
 * A window that Obsidian opens for Settings has the address `about:blank`. Set `CDP_TARGET=Settings` to control it with `scripts/cdp.mjs`.

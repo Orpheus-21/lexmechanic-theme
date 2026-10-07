@@ -11,11 +11,11 @@
   --tag-radius: 2px;
 }
 
-/* callouts: panel color, interface font, and a 4px left border in the callout color */
+/* callouts: panel color, interface font, and a 4px border at the start in the callout color */
 .callout {
   background-color: var(--background-primary-alt);
   border: 1px solid var(--background-modifier-border);
-  border-left: 4px solid var(--callout-color);
+  border-inline-start: 4px solid var(--callout-color);
 }
 .callout-title {
   font-family: var(--font-interface);

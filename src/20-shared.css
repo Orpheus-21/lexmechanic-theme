@@ -39,7 +39,7 @@
   --bases-cards-radius: 4px;
   --bases-cards-background: var(--background-primary-alt);
   --bases-kanban-card-radius: 4px;
-  --bases-kanban-card-background: var(--background-primary-alt);
+  --bases-kanban-card-background: var(--background-primary);
   --bases-kanban-column-radius: 4px;
   --hotkey-radius: 2px;
   --hotkey-font: var(--font-interface);

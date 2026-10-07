@@ -192,7 +192,7 @@ The footnote numbers and divider, and the tables, cards, and kanban boards of Ba
 |---|---|---|---|
 | `--bases-cards-background` | `var(--background-primary-alt)` | `var(--background-primary-alt)` | theme |
 | `--bases-cards-radius` | `4px` | `4px` | theme |
-| `--bases-kanban-card-background` | `var(--background-primary-alt)` | `var(--background-primary-alt)` | theme |
+| `--bases-kanban-card-background` | `var(--background-primary)` | `var(--background-primary)` | theme |
 | `--bases-kanban-card-radius` | `4px` | `4px` | theme |
 | `--bases-kanban-column-radius` | `4px` | `4px` | theme |
 | `--bases-table-border-color` | `var(--background-modifier-border-hover)` | `var(--background-modifier-border-hover)` | theme |

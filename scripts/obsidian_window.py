@@ -89,11 +89,13 @@ def alive(state):
     return state["profile"] in args
 
 
-def js(directory, port, body):
-    """Run JavaScript body through scripts/cdp.mjs. The body has ev, shot, sleep, and send."""
+def js(directory, port, body, target=None):
+    """Run JavaScript body through scripts/cdp.mjs. The body has ev, shot, sleep, and send.
+    With target, the body runs in the window whose title has that text, such as Settings."""
     task = Path(directory) / "task.mjs"
     task.write_text("export default async ({ ev, shot, sleep, send }) => {\n" + body + "\n};\n")
-    result = subprocess.run(["node", str(ROOT / "scripts" / "cdp.mjs"), str(task), str(port)], capture_output=True, text=True, timeout=300)
+    env = {**os.environ, "CDP_TARGET": target} if target else None
+    result = subprocess.run(["node", str(ROOT / "scripts" / "cdp.mjs"), str(task), str(port)], capture_output=True, text=True, timeout=300, env=env)
     if result.returncode:
         sys.exit(result.stderr.strip() or "the script failed")
     return result.stdout

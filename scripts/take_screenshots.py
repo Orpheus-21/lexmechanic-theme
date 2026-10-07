@@ -6,9 +6,10 @@ Usage:
   python3 scripts/take_screenshots.py [--out DIR] [--dir WINDOWDIR]
   python3 scripts/obsidian_window.py stop --clean
 
-The script makes seven images in DIR (default docs/images): the Showcase note in reading view in light and
-dark mode, the note in Live Preview in light mode, the graph view in both modes, and the note on a phone
-(Obsidian's mobile emulation, 390 by 844 at twice the pixel density) in both modes. The window shows the
+The script makes eight images in DIR (default docs/images): the Showcase note in reading view in light and
+dark mode, the note in Live Preview in light mode, the graph view in both modes, the note on a phone
+(Obsidian's mobile emulation, 390 by 844 at twice the pixel density) in both modes, and the Appearance page of
+Settings in light mode. Obsidian opens Settings in its own window, and the script closes it again. The window shows the
 demo vault, so the images hold no personal data. A new run gives the same images up to the layout of the
 graph, which Obsidian draws from a random start. It needs Node 22 and a running window, and it uses only the
 Python standard library.
@@ -67,6 +68,9 @@ def main():
     state = w.need_state({"--dir": directory})
     out.mkdir(parents=True, exist_ok=True)
     w.js(directory, state["port"], SETUP % json.dumps(str(out.resolve())))
+    w.js(directory, state["port"], "await ev(`app.setting.open(); app.setting.openTabById('appearance'); 0`); await sleep(2500);")
+    w.js(directory, state["port"], f"await send('Emulation.setDeviceMetricsOverride', {{ width: 1000, height: 700, deviceScaleFactor: 1, mobile: false }});\nawait sleep(800);\nawait shot({json.dumps(str(out.resolve() / 'settings-light.png'))});", target="Settings")
+    w.js(directory, state["port"], "await ev(`app.setting.close(); 0`); await sleep(500);")
     for f in sorted(out.glob("*.png")):
         print(f"{f.relative_to(w.ROOT) if f.is_relative_to(w.ROOT) else f}  {f.stat().st_size // 1024} KB")
     return 0

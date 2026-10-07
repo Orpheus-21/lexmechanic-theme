@@ -12,9 +12,9 @@ More views, in Obsidian 1.14.4 on Linux with the demo vault. `python3 scripts/ta
 |---|---|---|
 | ![Live Preview in light mode](docs/images/live-preview-light.png) | ![The graph view in light mode](docs/images/graph-light.png) | ![The graph view in dark mode](docs/images/graph-dark.png) |
 
-| Phone, light | Phone, dark |
-|---|---|
-| ![A note on a phone in light mode](docs/images/mobile-light.png) | ![A note on a phone in dark mode](docs/images/mobile-dark.png) |
+| Phone, light | Phone, dark | Settings, light |
+|---|---|---|
+| ![A note on a phone in light mode](docs/images/mobile-light.png) | ![A note on a phone in dark mode](docs/images/mobile-dark.png) | ![The Appearance page of Settings in light mode](docs/images/settings-light.png) |
 
 The phone images come from the mobile emulation of Obsidian on a desktop, not from a phone.
 

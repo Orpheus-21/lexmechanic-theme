@@ -1257,8 +1257,8 @@
      "rgba(0, 0, 0, 0)"
     ],
     "--bases-kanban-card-background": [
-     "#1c1811",
-     "rgb(28, 24, 17)"
+     "#14110d",
+     "rgb(20, 17, 13)"
     ],
     "--bases-kanban-card-radius": [
      "4px",
@@ -3143,8 +3143,8 @@
      "rgba(0, 0, 0, 0)"
     ],
     "--bases-kanban-card-background": [
-     "#f3f1e8",
-     "rgb(243, 241, 232)"
+     "#faf9f5",
+     "rgb(250, 249, 245)"
     ],
     "--bases-kanban-card-radius": [
      "4px",
