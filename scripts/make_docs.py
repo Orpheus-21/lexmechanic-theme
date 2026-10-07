@@ -46,6 +46,7 @@ USES = {
     "pink": "Base color pink",
     "error-hover": "The hover color of the error background",
     "error-rgb": "The error color as a triple, for Obsidian variables that ask for RGB",
+    "graph-node": "Resolved nodes of the graph",
     "graph-tag": "Tag nodes of the graph",
     "graph-unresolved": "Unresolved nodes of the graph",
     "graph-attachment": "Attachment nodes of the graph",
