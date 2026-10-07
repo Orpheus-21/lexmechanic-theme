@@ -5,6 +5,7 @@ Usage:
   python3 scripts/check_colorblind.py            check the callout colors (the eight base colors)
   python3 scripts/check_colorblind.py --graph    also check the graph node types (needs Chromium)
   python3 scripts/check_colorblind.py --json     print the result as JSON
+  python3 scripts/check_colorblind.py --graph --preset FILE   check the graph with a preset on top
 
 For each pair the script computes the CIEDE2000 distance with normal vision and with a
 simulation of protanopia, deuteranopia, and tritanopia. A pair is too close when the
@@ -56,9 +57,9 @@ def callout_colors():
     return {mode: {n: resolve(f"--color-{n}", {**shared, **own}) for n in BASE} for mode, own in read_blocks(css).items()}
 
 
-def graph_colors():
+def graph_colors(preset=None):
     import check_graph
-    data = check_graph.collect()
+    data = check_graph.collect(preset)
     keep = {"fill": "resolved", "fill-unresolved": "unresolved", "fill-tag": "tag", "fill-attachment": "attachment", "fill-focused": "focused"}
     return {mode: {keep[r["hook"]]: r["effective"] for r in m["rows"] if r["hook"] in keep} for mode, m in data.items()}
 
@@ -66,7 +67,7 @@ def graph_colors():
 def main():
     sets = {"callout colors": callout_colors()}
     if "--graph" in sys.argv:
-        sets["graph node types"] = graph_colors()
+        sets["graph node types"] = graph_colors(sys.argv[sys.argv.index("--preset") + 1] if "--preset" in sys.argv else None)
     result, bad = {}, 0
     for title, modes in sets.items():
         for mode, named in modes.items():
