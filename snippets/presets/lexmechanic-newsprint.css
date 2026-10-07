@@ -1,0 +1,13 @@
+/* Lexmechanic newsprint preset: a lighter and cooler paper in light mode.
+   Turn it on together with the theme. The page is nearly white, the panels are light gray, and
+   the ink is a dark slate. The accent stays red. Dark mode does not change. */
+
+.theme-light {
+  --lex-ground: #fcfcfa;
+  --lex-panel: #f3f3ef;
+  --lex-panel-alt: #ebebe6;
+  --lex-ink: #23272b;
+  --lex-muted: #565c62;
+  --lex-faint: #5f656b;
+  --lex-sand: #8e9399;
+}
