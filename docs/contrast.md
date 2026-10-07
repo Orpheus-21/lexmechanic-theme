@@ -1,14 +1,14 @@
-# Contrast of the text colors
+# Contrast of the colors
 
-This file lists the contrast of each text color on each background color. The aim is 4.5 to 1 or more.
+This file lists the contrast of the text colors on the background colors, and of a few interface colors. Text needs 4.5 to 1 or more.
 
 The tables come from the script `scripts/check_contrast.py`. To make them again, run this command in the repo folder:
 
 ```
-python3 scripts/check_contrast.py --markdown
+python3 scripts/check_contrast.py --write
 ```
 
-Replace the two tables below with the output of the command.
+The command replaces the text between the two comment markers below. Run `python3 scripts/check_contrast.py --check-doc` to test that the file is up to date.
 
 Backgrounds:
 
@@ -16,8 +16,9 @@ Backgrounds:
 * Panel: `--background-secondary`
 * Alt panel: `--background-secondary-alt`
 
-A note "known" means that the pair is below 4.5 to 1 and the author keeps it. Issue 74 has the decision.
+Text colors need 4.5 to 1. Other pairs, such as the focus ring and the toggle thumb, need 3 to 1. A note "known" means that the pair is below its minimum and the author keeps it. The note names the issue that has the decision.
 
+<!-- contrast:start -->
 ## Light mode
 
 | Text color | Value | On page | On panel | On alt panel |
@@ -48,7 +49,19 @@ A note "known" means that the pair is below 4.5 to 1 and the author keeps it. Is
 | `--color-blue` | `#3b5a8a` | 6.61 to 1 | 6.15 to 1 | 5.88 to 1 |
 | `--color-purple` | `#6b4a7d` | 6.87 to 1 | 6.40 to 1 | 6.12 to 1 |
 | `--color-pink` | `#a04668` | 5.58 to 1 | 5.20 to 1 | 4.97 to 1 |
-| `--text-on-accent (on --interactive-accent)` | `#faf9f5` | 8.60 to 1 | | |
+
+Other pairs:
+
+| Pair | Needs | Ratio |
+|---|---|---|
+| `--text-on-accent on --interactive-accent` | 4.5 to 1 | 8.60 to 1 |
+| `--text-normal on the selection color` | 4.5 to 1 | 9.52 to 1 |
+| `--interactive-accent on the page` | 3 to 1 | 8.60 to 1 |
+| `--checkbox-color on the page` | 3 to 1 | 8.60 to 1 |
+| `--background-modifier-border-focus on the page` | 3 to 1 | 8.60 to 1 |
+| `--background-modifier-border-hover on the page` | 3 to 1 | 3.09 to 1 |
+| `--toggle-thumb-color on --interactive-accent` | 3 to 1 | 8.60 to 1 |
+| `--background-modifier-border on the page` | 3 to 1 | 1.27 to 1 (known, #314) |
 
 ## Dark mode
 
@@ -80,5 +93,17 @@ A note "known" means that the pair is below 4.5 to 1 and the author keeps it. Is
 | `--color-blue` | `#8aa6d6` | 7.62 to 1 | 7.16 to 1 | 6.84 to 1 |
 | `--color-purple` | `#b99ad0` | 7.70 to 1 | 7.23 to 1 | 6.91 to 1 |
 | `--color-pink` | `#e08aa8` | 7.50 to 1 | 7.04 to 1 | 6.73 to 1 |
-| `--text-on-accent (on --interactive-accent)` | `#14110d` | 4.86 to 1 | | |
 
+Other pairs:
+
+| Pair | Needs | Ratio |
+|---|---|---|
+| `--text-on-accent on --interactive-accent` | 4.5 to 1 | 4.86 to 1 |
+| `--text-normal on the selection color` | 4.5 to 1 | 10.72 to 1 |
+| `--interactive-accent on the page` | 3 to 1 | 4.86 to 1 |
+| `--checkbox-color on the page` | 3 to 1 | 4.86 to 1 |
+| `--background-modifier-border-focus on the page` | 3 to 1 | 4.86 to 1 |
+| `--background-modifier-border-hover on the page` | 3 to 1 | 7.18 to 1 |
+| `--toggle-thumb-color on --interactive-accent` | 3 to 1 | 4.86 to 1 |
+| `--background-modifier-border on the page` | 3 to 1 | 1.25 to 1 (known, #314) |
+<!-- contrast:end -->
