@@ -42,12 +42,6 @@
   border-left: 4px solid var(--text-accent);
 }
 
-/* ==highlighted text==: red-tinted ground from the theme, ink text */
-mark, .cm-highlight {
-  background-color: var(--text-highlight-bg);
-  color: var(--text-normal);
-}
-
 /* internal links read as dotted, external links stay solid-underlined */
 .internal-link {
   text-decoration-style: dotted;
