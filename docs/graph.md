@@ -22,7 +22,7 @@ The code reads its colors from hidden elements. It makes a `div` with the classe
 | `color-fill-highlight` | The node under the pointer | `--interactive-accent`, with no graph variable |
 | `color-line-highlight` | The lines of that node | `--interactive-accent`, with no graph variable |
 
-Obsidian also defines `color-fill-1` to `color-fill-6` as `--text-muted`. I did not find where the code reads them.
+Obsidian also defines `color-fill-1` to `color-fill-6` as `--text-muted` in its CSS. The code of Obsidian 1.14.4 does not read them: its list of hook names has the 11 hooks above, and the six names do not appear in the JavaScript. Setting them has no effect.
 
 The eight documented variables are `--graph-controls-width`, `--graph-text`, `--graph-line`, `--graph-node`, `--graph-node-unresolved`, `--graph-node-focused`, `--graph-node-tag`, and `--graph-node-attachment`. The theme sets the colors from the palette. `docs/palette.md` lists them, and `docs/contrast.md` gives the effective contrast of each hook on the page color, with the opacity counted.
 
