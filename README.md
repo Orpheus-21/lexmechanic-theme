@@ -19,6 +19,15 @@ Two optional CSS snippets add more styles. You can turn each snippet on or off a
 * Installer 1.4.13 has Electron 25.8.1. The installer is a different download from the app updates, and you must update it by hand. Get the newest installer from https://obsidian.md/download.
 * The theme is not tested with an older installer.
 
+## Compatibility
+
+| Obsidian app | Installer | System | Result |
+|---|---|---|---|
+| 1.14.4 | 1.13.7 | Linux | Tested: reading view and Live Preview in both modes, and the checks of `scripts/` |
+| Any | Older than 1.4.13 | Any | Not supported. The theme needs `color-mix()`. |
+| Any | 1.4.13 or newer | Windows, macOS | Not tested |
+| Any | Any | Android, iOS | Not tested |
+
 ## Install
 
 1. Download this repo, or run `git clone https://github.com/Orpheus-21/lexmechanic-theme.git`.
