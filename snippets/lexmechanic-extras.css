@@ -1,10 +1,9 @@
-/* Lexmechanic — extras snippet, kept separate from theme.css on purpose.
-   fromjason.xyz has no callout/table/tag components of its own, so these are
-   built from the theme's existing tokens (red-ink accent, chiffan panel,
-   Volume Tc Sans) rather than lifted verbatim. Toggle off anytime without
-   touching the theme. */
+/* Lexmechanic extras: styles for callouts, tables, and tags.
+   fromjason.xyz has no such parts, so the snippet builds them from the colors and
+   fonts of the theme. Turn it off in Settings, Appearance, CSS snippets. The theme
+   keeps working without it. */
 
-/* callouts: paper-card tint + brand font, type colors stay as Obsidian sets them */
+/* callouts: panel color, interface font, and a 4px left border in the callout color */
 .callout {
   background-color: var(--background-primary-alt);
   border: 1px solid var(--background-modifier-border);
@@ -15,7 +14,7 @@
   font-weight: 700;
 }
 
-/* tables: chiffan header row, sand rules */
+/* tables: panel color on the header row, sand rules */
 .markdown-rendered table {
   border: 1px solid var(--background-modifier-border);
 }
@@ -30,7 +29,7 @@
   border-color: var(--background-modifier-border);
 }
 
-/* tags: the site's rounded accent-muted badge, set with Obsidian's tag variables */
+/* tags: a small badge in the accent color, set with the tag variables of Obsidian */
 .theme-light, .theme-dark {
   --tag-background: var(--background-primary-alt);
   --tag-color: var(--text-accent);
