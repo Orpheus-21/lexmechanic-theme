@@ -1232,10 +1232,6 @@
      "#221c14",
      "rgb(34, 28, 20)"
     ],
-    "--blockquote-background-color": [
-     "transparent",
-     "rgba(0, 0, 0, 0)"
-    ],
     "--blockquote-border-color": [
      "#e8483d",
      "rgb(232, 72, 61)"
@@ -1247,10 +1243,6 @@
     "--blockquote-color": [
      "#e8e0d0",
      "rgb(232, 224, 208)"
-    ],
-    "--blockquote-font-style": [
-     "normal",
-     "rgba(0, 0, 0, 0)"
     ],
     "--canvas-color": [
      "#a89f8e",
@@ -1448,10 +1440,6 @@
      "'??', 'Volume Tc', Georgia, 'Times New Roman', serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
      "rgba(0, 0, 0, 0)"
     ],
-    "--h1-weight": [
-     "700",
-     "rgba(0, 0, 0, 0)"
-    ],
     "--h2-color": [
      "#e8e0d0",
      "rgb(232, 224, 208)"
@@ -1643,10 +1631,6 @@
     "--scrollbar-active-thumb-bg": [
      "color-mix(in srgb, #938a79 65%, transparent)",
      "color(srgb 0.576471 0.541177 0.47451 / 0.65)"
-    ],
-    "--scrollbar-bg": [
-     "transparent",
-     "rgba(0, 0, 0, 0)"
     ],
     "--scrollbar-thumb-bg": [
      "color-mix(in srgb, #938a79 40%, transparent)",
@@ -2962,10 +2946,6 @@
      "#efece0",
      "rgb(239, 236, 224)"
     ],
-    "--blockquote-background-color": [
-     "transparent",
-     "rgba(0, 0, 0, 0)"
-    ],
     "--blockquote-border-color": [
      "#901714",
      "rgb(144, 23, 20)"
@@ -2977,10 +2957,6 @@
     "--blockquote-color": [
      "#2c251d",
      "rgb(44, 37, 29)"
-    ],
-    "--blockquote-font-style": [
-     "normal",
-     "rgba(0, 0, 0, 0)"
     ],
     "--canvas-color": [
      "#968d85",
@@ -3178,10 +3154,6 @@
      "'??', 'Volume Tc', Georgia, 'Times New Roman', serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
      "rgba(0, 0, 0, 0)"
     ],
-    "--h1-weight": [
-     "700",
-     "rgba(0, 0, 0, 0)"
-    ],
     "--h2-color": [
      "#2c251d",
      "rgb(44, 37, 29)"
@@ -3373,10 +3345,6 @@
     "--scrollbar-active-thumb-bg": [
      "color-mix(in srgb, #6f675f 65%, transparent)",
      "color(srgb 0.435294 0.403922 0.372549 / 0.65)"
-    ],
-    "--scrollbar-bg": [
-     "transparent",
-     "rgba(0, 0, 0, 0)"
     ],
     "--scrollbar-thumb-bg": [
      "color-mix(in srgb, #6f675f 40%, transparent)",

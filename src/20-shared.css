@@ -6,11 +6,8 @@
   --font-monospace-theme: ui-monospace, 'SF Mono', Consolas, monospace;
 
   --blockquote-border-thickness: 4px;
-  --blockquote-background-color: transparent;
-  --blockquote-font-style: normal;
   --code-border-width: 1px;
   --h1-font: var(--font-text);
-  --h1-weight: 700;
   --h2-font: var(--font-text);
   --h2-weight: 700;
   --h3-font: var(--font-text);
@@ -24,7 +21,6 @@
   --list-marker-color: var(--text-accent);
   --nav-item-color-selected: var(--nav-item-color-active);
   --nav-item-background-selected: var(--nav-item-background-active);
-  --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: color-mix(in srgb, var(--text-faint) 40%, transparent);
   --scrollbar-active-thumb-bg: color-mix(in srgb, var(--text-faint) 65%, transparent);
   --background-modifier-border-focus: var(--interactive-accent);
