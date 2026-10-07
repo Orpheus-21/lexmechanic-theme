@@ -10,9 +10,9 @@ The text, interface, and monospace fonts. The names that end in `-theme` are the
 
 | Variable | Light | Dark | Set in |
 |---|---|---|---|
-| `--font-interface-theme` | `'Volume Tc Sans', Verdana, sans-serif` | `'Volume Tc Sans', Verdana, sans-serif` | theme |
+| `--font-interface-theme` | `'Volume Tc Sans', Verdana, 'Noto Sans', sans-serif` | `'Volume Tc Sans', Verdana, 'Noto Sans', sans-serif` | theme |
 | `--font-monospace-theme` | `ui-monospace, 'SF Mono', Consolas, monospace` | `ui-monospace, 'SF Mono', Consolas, monospace` | theme |
-| `--font-text-theme` | `'Volume Tc', Georgia, 'Times New Roman', serif` | `'Volume Tc', Georgia, 'Times New Roman', serif` | theme |
+| `--font-text-theme` | `'Volume Tc', Georgia, 'Times New Roman', 'Noto Serif', serif` | `'Volume Tc', Georgia, 'Times New Roman', 'Noto Serif', serif` | theme |
 
 ## Backgrounds and borders
 

@@ -1,6 +1,6 @@
 # Characters of the embedded fonts
 
-This file lists which characters the fonts Volume Tc and Volume Tc Sans have. A character that a font lacks is drawn with the next font of the font stack. The text stack ends with Georgia, Times New Roman, and a serif font. The interface stack ends with Verdana and a sans-serif font. A line of text can then have glyphs of two styles.
+This file lists which characters the fonts Volume Tc and Volume Tc Sans have. A character that a font lacks is drawn with the next font of the font stack. The text stack ends with Georgia, Times New Roman, Noto Serif, and a serif font. The interface stack ends with Verdana, Noto Sans, and a sans-serif font. The two Noto fonts cover Greek, Cyrillic, and more Latin letters, if they are installed. A line of text can then have glyphs of two styles.
 
 The tables come from `scripts/font_coverage.py`. Run `python3 scripts/font_coverage.py --write` to make them again.
 
