@@ -31,9 +31,14 @@ def obsidian_css(tmp):
     return path
 
 
-def theme_files(root=ROOT):
-    """Return the theme and the snippets, in load order."""
-    return [root / "theme.css"] + sorted((root / "snippets").glob("*.css"))
+def theme_files(root=ROOT, extra=()):
+    """Return the theme and the snippets, in load order. Extra files, such as a preset, come last."""
+    return [root / "theme.css"] + sorted((root / "snippets").glob("*.css")) + [Path(p) for p in extra]
+
+
+def presets(root=ROOT):
+    """Return the preset snippets. Each one is an alternative that you put on top of the theme."""
+    return sorted((root / "snippets" / "presets").glob("*.css"))
 
 
 def page(mode, stylesheets, body, script):

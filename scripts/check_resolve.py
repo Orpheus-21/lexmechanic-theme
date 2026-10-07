@@ -5,7 +5,7 @@ Usage:
   python3 scripts/check_resolve.py
 
 The script loads Obsidian's app.css, theme.css, and the snippets, in light mode and in
-dark mode. It reads each variable that the theme sets. A variable with an empty value
+dark mode, and once more with each preset of snippets/presets/ on top. It reads each variable that the theme sets. A variable with an empty value
 is not valid. A typo in a var() name makes it so. The script exits with 1 when it finds
 one. It needs Chromium and an installed Obsidian.
 """
@@ -31,14 +31,16 @@ def main():
     names = sorted(theme_variables())
     bad = 0
     with tempfile.TemporaryDirectory() as tmp:
-        sheets = [browser.obsidian_css(tmp)] + browser.theme_files()
-        for mode in ("light", "dark"):
-            values = browser.run(browser.page(mode, sheets, "", SCRIPT % json.dumps(names)))
-            empty = [n for n in names if values[n] == ""]
-            print(f"{mode}: {len(names)} variables, {len(empty)} empty")
-            for n in empty:
-                print(f"  {n}")
-            bad += len(empty)
+        css = browser.obsidian_css(tmp)
+        for preset in [None] + browser.presets():
+            sheets = [css] + browser.theme_files(extra=[preset] if preset else [])
+            for mode in ("light", "dark"):
+                values = browser.run(browser.page(mode, sheets, "", SCRIPT % json.dumps(names)))
+                empty = [n for n in names if values[n] == ""]
+                print(f"{preset.name if preset else 'theme'}, {mode}: {len(names)} variables, {len(empty)} empty")
+                for n in empty:
+                    print(f"  {n}")
+                bad += len(empty)
     return 1 if bad else 0
 
 

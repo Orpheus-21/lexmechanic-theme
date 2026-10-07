@@ -6,6 +6,7 @@ Usage:
   python3 scripts/check_graph.py --markdown   print the report as Markdown tables
   python3 scripts/check_graph.py --json       print the report as JSON
   python3 scripts/check_graph.py --write      write the tables into docs/contrast.md
+  python3 scripts/check_graph.py --preset FILE  check the theme with a preset snippet on top
 
 Obsidian draws the graph with PixiJS. It reads its colors from hidden elements,
 div.graph-view.color-fill and ten more, and takes `color` and `opacity` of each.
@@ -96,9 +97,9 @@ def read(mode, sheets):
     return {"page": page, "rows": rows, "pairs": pairs}
 
 
-def collect():
+def collect(preset=None):
     with tempfile.TemporaryDirectory() as tmp:
-        sheets = [browser.obsidian_css(tmp)] + browser.theme_files()
+        sheets = [browser.obsidian_css(tmp)] + browser.theme_files(extra=[preset] if preset else [])
         return {mode: read(mode, sheets) for mode in ("light", "dark")}
 
 
@@ -148,8 +149,8 @@ def write_doc(data):
 
 
 def main():
-    data = collect()
     args = sys.argv[1:]
+    data = collect(args[args.index("--preset") + 1] if "--preset" in args else None)
     if "--json" in args:
         print(json.dumps(data, indent=1))
     elif "--markdown" in args:
