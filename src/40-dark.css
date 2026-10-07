@@ -24,6 +24,7 @@
   --lex-blue: #8aa6d6;
   --lex-purple: #b99ad0;
   --lex-pink: #e08aa8;
+  --lex-error-hover: #ff946a;
 
   --background-primary: var(--lex-ground);
   --background-primary-alt: var(--lex-panel);
@@ -43,7 +44,7 @@
   --text-warning: var(--lex-warning);
   --text-success: var(--lex-success);
   --background-modifier-error: var(--lex-error);
-  --background-modifier-error-hover: #ff946a;
+  --background-modifier-error-hover: var(--lex-error-hover);
   --background-modifier-error-rgb: 255, 122, 69;
   --background-modifier-success: var(--text-success);
   --background-modifier-message: var(--background-secondary-alt);
