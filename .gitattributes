@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+theme.css linguist-generated
+src/10-fonts.css linguist-generated
+tests/baseline.json linguist-generated
