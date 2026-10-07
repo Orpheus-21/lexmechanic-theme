@@ -57,6 +57,11 @@ The first command links the files into the vault. The second builds and copies t
 * Add a line to `CHANGELOG.md` under Unreleased for a change that people can see.
 * Write a short subject in the imperative, such as `Set warm scrollbar colors`. Say in the body what changed and why.
 
+## Hook and release
+
+* To stop a commit with an out of date `theme.css`, install the hook: `ln -s ../../scripts/pre-commit .git/hooks/pre-commit`.
+* `scripts/release.sh VERSION` prepares the changelog and the manifest, runs `make all`, commits, and tags. It asks before it pushes. The tag starts `.github/workflows/release.yml`, which attaches `manifest.json` and `theme.css` to a GitHub release with the notes of the changelog.
+
 ## Pull requests
 
 Open the pull request against `main`. The template has a checklist. The CI workflow runs the checks that do not need Obsidian.
