@@ -34,5 +34,29 @@ class PaletteTest(unittest.TestCase):
             self.assertEqual(path.read_text(), text, str(path))
 
 
+class VariablesTest(unittest.TestCase):
+    rows = d.variable_rows()
+
+    def test_every_variable_of_the_theme_is_listed(self):
+        import check_variables as v
+        self.assertEqual(set(self.rows), v.theme_variables())
+
+    def test_every_variable_has_an_area(self):
+        self.assertEqual([n for n in self.rows if d.area_of(n) == "Other"], [])
+
+    def test_a_shared_variable_has_one_value_for_both_modes(self):
+        light, dark, where = self.rows["--font-text-theme"]
+        self.assertEqual(light, dark)
+        self.assertEqual(where, "theme")
+
+    def test_a_snippet_variable_names_the_snippet(self):
+        self.assertEqual(self.rows["--tag-radius"][2], "lexmechanic-extras")
+        self.assertEqual(self.rows["--hr-thickness"][2], "lexmechanic-fun")
+
+    def test_a_mode_variable_differs_between_the_modes(self):
+        light, dark, _ = self.rows["--accent-h"]
+        self.assertNotEqual(light, dark)
+
+
 if __name__ == "__main__":
     unittest.main()
