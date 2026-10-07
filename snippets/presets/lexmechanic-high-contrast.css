@@ -1,0 +1,44 @@
+/* Lexmechanic high contrast preset: stronger text and borders in both modes.
+   Turn it on together with the theme. Every text color reaches 7 to 1 on the page, the panel,
+   and the alt panel. The page is white or black, and the border of controls reaches 3 to 1. */
+
+.theme-light {
+  --lex-ground: #ffffff;
+  --lex-ink: #000000;
+  --lex-muted: #3a332c;
+  --lex-faint: #443d36;
+  --lex-sand: #5a524a;
+  --lex-accent: #7a0f0c;
+  --lex-accent-hover: #5c0b09;
+  --lex-error: #8f2c00;
+  --lex-error-hover: #6f2200;
+  --lex-error-rgb: 143, 44, 0;
+  --lex-success: #335624;
+  --lex-warning: #6d4600;
+  --lex-code-property: #2a5261;
+  --lex-code-value: #813711;
+  --lex-red: #971f1c;
+  --lex-orange: #8f2c00;
+  --lex-yellow: #604900;
+  --lex-green: #335624;
+  --lex-cyan: #2a5261;
+  --lex-blue: #334e78;
+  --lex-purple: #604270;
+  --lex-pink: #7d3651;
+  --background-modifier-border: var(--lex-sand);
+}
+
+.theme-dark {
+  --lex-ground: #000000;
+  --lex-panel: #0e0c09;
+  --lex-panel-alt: #151210;
+  --lex-ink: #ffffff;
+  --lex-muted: #e6dfd0;
+  --lex-faint: #d6cdba;
+  --lex-sand: #b5ab98;
+  --lex-accent: #ff7a6e;
+  --lex-accent-hover: #ff9a90;
+  --lex-code-value: #da8e63;
+  --lex-red: #ff7468;
+  --background-modifier-border: var(--lex-sand);
+}
