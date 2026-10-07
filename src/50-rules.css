@@ -22,3 +22,9 @@ body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
 .markdown-preview-view :is(p, li) {
   text-wrap: pretty;
 }
+
+/* Obsidian draws unresolved nodes at half opacity on top of their color, and the contrast fell to
+   1.66 to 1 in light mode. The color of the palette is used as it is. */
+.graph-view.color-fill-unresolved {
+  opacity: 1;
+}
