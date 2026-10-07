@@ -24,6 +24,8 @@
   --lex-pink: #a04668;
   --lex-error-hover: #9a3000;
   --lex-error-rgb: 184, 56, 0;
+  --lex-code-normal: #070504;
+  --lex-graph-tag: var(--lex-accent-hover);
 
   --background-primary: var(--lex-ground);
   --background-primary-alt: var(--lex-panel);
@@ -75,7 +77,7 @@
   --h5-color: var(--lex-ink);
   --h6-color: var(--lex-ink);
 
-  --code-normal: #070504;
+  --code-normal: var(--lex-code-normal);
   --code-background: var(--lex-panel);
 
   --blockquote-border-color: var(--lex-accent);
@@ -90,7 +92,7 @@
   --graph-node: var(--lex-muted);
   --graph-node-unresolved: var(--lex-sand);
   --graph-node-focused: var(--lex-accent);
-  --graph-node-tag: var(--lex-accent-hover);
+  --graph-node-tag: var(--lex-graph-tag);
   --graph-node-attachment: var(--lex-sand);
   --graph-text: var(--lex-ink);
 
