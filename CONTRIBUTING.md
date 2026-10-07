@@ -9,7 +9,7 @@ This file tells how to change the theme and how to check a change.
   * `20-shared.css` has the variables for both modes.
   * `30-light.css` and `40-dark.css` have the palette and the variables of each mode.
   * `50-rules.css` has the few rules that are not variables.
-* `snippets/` holds the two optional snippets.
+* `snippets/` holds the two optional snippets. `snippets/presets/` holds the presets, which are alternatives that go on top of the theme.
 * `theme.css` is built from `src/`. Do not edit it by hand. Commit it with the change in `src/`.
 * `scripts/` holds the checks and the tools. `tests/` holds the unit tests and the baseline. `docs/` holds the notes.
 
