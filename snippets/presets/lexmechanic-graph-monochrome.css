@@ -1,0 +1,33 @@
+/* Lexmechanic monochrome graph preset: node types differ by lightness only.
+   From dark to light in light mode: the focused node, resolved, attachment, tag, and unresolved
+   nodes. Dark mode is the reverse. There is no hue, so color blindness does not matter, but five
+   gray steps are closer than five colors: the smallest step is 11 points of CIE lightness, and the
+   smallest CIEDE2000 distance is about 8. The hover highlight uses the accent, the only color
+   of the graph. */
+
+.theme-light {
+  --lex-graph-node: #33302d;
+  --lex-graph-tag: #6d6761;
+  --lex-graph-attachment: #514d48;
+  --lex-graph-unresolved: #89837a;
+  --graph-node: var(--lex-graph-node);
+  --graph-node-focused: #141312;
+}
+
+.theme-dark {
+  --lex-graph-node: #d4d1ce;
+  --lex-graph-tag: #968f88;
+  --lex-graph-attachment: #b4b0aa;
+  --lex-graph-unresolved: #77716a;
+  --graph-node: var(--lex-graph-node);
+  --graph-node-focused: #f4f3f3;
+}
+
+.graph-view.color-fill-unresolved {
+  opacity: 1;
+}
+
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--text-accent);
+}
