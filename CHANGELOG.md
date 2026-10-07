@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [Unreleased]
 
 Added:
 
@@ -26,7 +26,7 @@ Removed:
 
 * The no-op rule for the line width, and four variables that equal the defaults of Obsidian.
 
-## 1.1.0 (2026-10-06)
+## [1.1.0] (2026-10-06)
 
 Added:
 
@@ -62,6 +62,10 @@ Removed:
 
 * The `::selection` rule, the prompt font rule, the heading rule, the cursor rule, the `font-display` lines, and the `--text-highlight-bg-rgb` variable.
 
-## 1.0.0 (2026-10-06)
+## [1.0.0] (2026-10-06)
 
 * The first version. It has the theme, the `lexmechanic-extras` snippet, and the `lexmechanic-fun` snippet.
+
+[Unreleased]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/Orpheus-21/lexmechanic-theme/compare/394b876...1.1.0
+[1.0.0]: https://github.com/Orpheus-21/lexmechanic-theme/commit/394b876
