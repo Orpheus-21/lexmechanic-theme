@@ -92,7 +92,7 @@
 
   --divider-color: color-mix(in srgb, var(--lex-sand) 15%, transparent);
 
-  --graph-line: color-mix(in srgb, var(--lex-sand) 35%, transparent);
+  --graph-line: color-mix(in srgb, var(--lex-sand) 45%, transparent);
   --graph-node: var(--lex-graph-node);
   --graph-node-unresolved: var(--lex-graph-unresolved);
   --graph-node-focused: var(--lex-accent);

@@ -36,5 +36,6 @@ jobs:
           python3 scripts/make_docs.py --check-doc
           python3 scripts/font_coverage.py --check-doc
           python3 scripts/make_label_preset.py --check-doc
+          python3 scripts/make_print.py --check-doc
       - name: Lint the CSS
         run: npx --yes stylelint@16 "src/*.css" "snippets/*.css" "snippets/presets/*.css"

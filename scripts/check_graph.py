@@ -32,7 +32,7 @@ START, END = "<!-- graph:start -->", "<!-- graph:end -->"
 HOOKS = [
     ("fill", "resolved node", 3.0), ("fill-focused", "focused node", 3.0), ("fill-tag", "tag node", 3.0),
     ("fill-attachment", "attachment node", 3.0), ("fill-unresolved", "unresolved node", 3.0),
-    ("arrow", "arrow", 3.0), ("circle", "focus ring", 3.0), ("line", "line", 1.5), ("text", "label text", 4.5),
+    ("arrow", "arrow", 3.0), ("circle", "focus ring", 3.0), ("line", "line", 2.0), ("text", "label text", 4.5),
     ("fill-highlight", "hover highlight of a node", 3.0), ("line-highlight", "hover highlight of a line", 3.0),
 ]
 # Pairs of hooks that must differ in lightness by at least MIN_DL (CIE L*).

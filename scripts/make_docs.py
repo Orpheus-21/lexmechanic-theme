@@ -111,6 +111,8 @@ AREAS = [
     ("Block quotes", ("--blockquote-",), "A 4 pixel accent border, like the border of callouts and code blocks."),
     ("Lists, tasks, and guides", ("--list-", "--checkbox-", "--indentation-"), "Accent list markers and checkboxes, and warm indentation guides."),
     ("Interface", ("--nav-", "--scrollbar-", "--drag-", "--toggle-", "--slider-", "--notice-", "--tooltip-", "--divider-", "--canvas-"), "Parts of the interface that use a gray or a white in Obsidian: the file list, scrollbars, the drag ghost, toggles, sliders, notices, tooltips, dividers, and the canvas."),
+    ("Footnotes and Bases", ("--footnote-", "--bases-"), "The footnote numbers and divider, and the tables, cards, and kanban boards of Bases. They use the panel colors and small 4 pixel corners."),
+    ("Windows and bars", ("--hotkey-", "--modal-", "--search-", "--status-bar-", "--titlebar-", "--ribbon-"), "Modals, hotkey chips, search results, the status bar, the title bar, and the ribbon."),
     ("Graph", ("--graph-",), "The colors of the graph view. Obsidian reads them through hidden elements. See `docs/graph.md`."),
     ("Base colors", ("--color-",), "The eight colors that Obsidian uses for callouts, the canvas, and highlights, from the palette."),
     ("Snippet variables", ("--tag-", "--hr-"), "Set by the snippets: the tag badge and the horizontal rule."),

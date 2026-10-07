@@ -48,7 +48,7 @@ The graph view reads these variables. Each one uses a palette color.
 | `--graph-node-tag` | `var(--lex-graph-tag)` | `var(--lex-graph-tag)` | Tag nodes |
 | `--graph-node-attachment` | `var(--lex-graph-attachment)` | `var(--lex-graph-attachment)` | Attachment nodes |
 | `--graph-node-unresolved` | `var(--lex-graph-unresolved)` | `var(--lex-graph-unresolved)` | Unresolved nodes (drawn at half opacity by Obsidian) |
-| `--graph-line` | `color-mix(in srgb, var(--lex-sand) 45%, transparent)` | `color-mix(in srgb, var(--lex-sand) 35%, transparent)` | Lines between nodes |
+| `--graph-line` | `color-mix(in srgb, var(--lex-sand) 70%, transparent)` | `color-mix(in srgb, var(--lex-sand) 45%, transparent)` | Lines between nodes |
 | `--graph-text` | `var(--lex-ink)` | `var(--lex-ink)` | Node labels |
 
 The contrast of each graph color is in `docs/contrast.md`.

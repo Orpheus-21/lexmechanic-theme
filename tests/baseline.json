@@ -1232,6 +1232,38 @@
      "#221c14",
      "rgb(34, 28, 20)"
     ],
+    "--bases-cards-background": [
+     "#1c1811",
+     "rgb(28, 24, 17)"
+    ],
+    "--bases-cards-radius": [
+     "4px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--bases-kanban-card-background": [
+     "#1c1811",
+     "rgb(28, 24, 17)"
+    ],
+    "--bases-kanban-card-radius": [
+     "4px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--bases-kanban-column-radius": [
+     "4px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--bases-table-border-color": [
+     "#a89f8e",
+     "rgb(168, 159, 142)"
+    ],
+    "--bases-table-header-background": [
+     "#1c1811",
+     "rgb(28, 24, 17)"
+    ],
+    "--bases-table-header-weight": [
+     "700",
+     "rgba(0, 0, 0, 0)"
+    ],
     "--blockquote-border-color": [
      "#e8483d",
      "rgb(232, 72, 61)"
@@ -1408,9 +1440,17 @@
      "'Volume Tc', 'Lex CJK Serif', Georgia, 'Times New Roman', 'Noto Serif', serif",
      "rgba(0, 0, 0, 0)"
     ],
+    "--footnote-divider-color": [
+     "#a89f8e",
+     "rgb(168, 159, 142)"
+    ],
+    "--footnote-id-color": [
+     "#e8483d",
+     "rgb(232, 72, 61)"
+    ],
     "--graph-line": [
-     "color-mix(in srgb, #a89f8e 35%, transparent)",
-     "color(srgb 0.658824 0.623529 0.556863 / 0.35)"
+     "color-mix(in srgb, #a89f8e 45%, transparent)",
+     "color(srgb 0.658824 0.623529 0.556863 / 0.45)"
     ],
     "--graph-node": [
      "#dcd6d0",
@@ -1502,6 +1542,14 @@
     ],
     "--h6-weight": [
      "700",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--hotkey-font": [
+     "'??', 'Volume Tc Sans', 'Lex CJK Sans', Verdana, 'Noto Sans', sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--hotkey-radius": [
+     "2px",
      "rgba(0, 0, 0, 0)"
     ],
     "--hr-color": [
@@ -1684,6 +1732,18 @@
      "#e8483d",
      "rgb(232, 72, 61)"
     ],
+    "--modal-border-color": [
+     "#a89f8e",
+     "rgb(168, 159, 142)"
+    ],
+    "--modal-border-width": [
+     "1px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--modal-radius": [
+     "6px",
+     "rgba(0, 0, 0, 0)"
+    ],
     "--nav-item-background-active": [
      "color-mix(in srgb, #e8483d 15%, transparent)",
      "color(srgb 0.909804 0.282353 0.239216 / 0.15)"
@@ -1704,6 +1764,10 @@
      "#e8e0d0",
      "rgb(232, 224, 208)"
     ],
+    "--ribbon-background": [
+     "#1c1811",
+     "rgb(28, 24, 17)"
+    ],
     "--scrollbar-active-thumb-bg": [
      "color-mix(in srgb, #938a79 65%, transparent)",
      "color(srgb 0.576471 0.541177 0.47451 / 0.65)"
@@ -1712,6 +1776,10 @@
      "color-mix(in srgb, #938a79 40%, transparent)",
      "color(srgb 0.576471 0.541176 0.47451 / 0.4)"
     ],
+    "--search-result-background": [
+     "#1c1811",
+     "rgb(28, 24, 17)"
+    ],
     "--slider-thumb-background": [
      "#14110d",
      "rgb(20, 17, 13)"
@@ -1719,6 +1787,10 @@
     "--slider-thumb-background-hover": [
      "#1c1811",
      "rgb(28, 24, 17)"
+    ],
+    "--status-bar-font-size": [
+     "12px",
+     "rgba(0, 0, 0, 0)"
     ],
     "--tag-background": [
      "#1c1811",
@@ -1779,6 +1851,10 @@
     "--text-warning": [
      "#e0b04a",
      "rgb(224, 176, 74)"
+    ],
+    "--titlebar-text-weight": [
+     "600",
+     "rgba(0, 0, 0, 0)"
     ],
     "--toggle-thumb-color": [
      "#14110d",
@@ -3022,6 +3098,38 @@
      "#efece0",
      "rgb(239, 236, 224)"
     ],
+    "--bases-cards-background": [
+     "#f3f1e8",
+     "rgb(243, 241, 232)"
+    ],
+    "--bases-cards-radius": [
+     "4px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--bases-kanban-card-background": [
+     "#f3f1e8",
+     "rgb(243, 241, 232)"
+    ],
+    "--bases-kanban-card-radius": [
+     "4px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--bases-kanban-column-radius": [
+     "4px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--bases-table-border-color": [
+     "#968d85",
+     "rgb(150, 141, 133)"
+    ],
+    "--bases-table-header-background": [
+     "#f3f1e8",
+     "rgb(243, 241, 232)"
+    ],
+    "--bases-table-header-weight": [
+     "700",
+     "rgba(0, 0, 0, 0)"
+    ],
     "--blockquote-border-color": [
      "#901714",
      "rgb(144, 23, 20)"
@@ -3198,9 +3306,17 @@
      "'Volume Tc', 'Lex CJK Serif', Georgia, 'Times New Roman', 'Noto Serif', serif",
      "rgba(0, 0, 0, 0)"
     ],
+    "--footnote-divider-color": [
+     "#968d85",
+     "rgb(150, 141, 133)"
+    ],
+    "--footnote-id-color": [
+     "#901714",
+     "rgb(144, 23, 20)"
+    ],
     "--graph-line": [
-     "color-mix(in srgb, #968d85 45%, transparent)",
-     "color(srgb 0.588235 0.552941 0.521569 / 0.45)"
+     "color-mix(in srgb, #968d85 70%, transparent)",
+     "color(srgb 0.588235 0.552941 0.521569 / 0.7)"
     ],
     "--graph-node": [
      "#473e34",
@@ -3292,6 +3408,14 @@
     ],
     "--h6-weight": [
      "700",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--hotkey-font": [
+     "'??', 'Volume Tc Sans', 'Lex CJK Sans', Verdana, 'Noto Sans', sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", \"Inter\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--hotkey-radius": [
+     "2px",
      "rgba(0, 0, 0, 0)"
     ],
     "--hr-color": [
@@ -3474,6 +3598,18 @@
      "#901714",
      "rgb(144, 23, 20)"
     ],
+    "--modal-border-color": [
+     "#968d85",
+     "rgb(150, 141, 133)"
+    ],
+    "--modal-border-width": [
+     "1px",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "--modal-radius": [
+     "6px",
+     "rgba(0, 0, 0, 0)"
+    ],
     "--nav-item-background-active": [
      "color-mix(in srgb, #901714 12%, transparent)",
      "color(srgb 0.564706 0.0901961 0.0784314 / 0.12)"
@@ -3494,6 +3630,10 @@
      "#faf9f5",
      "rgb(250, 249, 245)"
     ],
+    "--ribbon-background": [
+     "#f3f1e8",
+     "rgb(243, 241, 232)"
+    ],
     "--scrollbar-active-thumb-bg": [
      "color-mix(in srgb, #6f675f 65%, transparent)",
      "color(srgb 0.435294 0.403922 0.372549 / 0.65)"
@@ -3502,6 +3642,10 @@
      "color-mix(in srgb, #6f675f 40%, transparent)",
      "color(srgb 0.435294 0.403922 0.372549 / 0.4)"
     ],
+    "--search-result-background": [
+     "#f3f1e8",
+     "rgb(243, 241, 232)"
+    ],
     "--slider-thumb-background": [
      "#faf9f5",
      "rgb(250, 249, 245)"
@@ -3509,6 +3653,10 @@
     "--slider-thumb-background-hover": [
      "#f3f1e8",
      "rgb(243, 241, 232)"
+    ],
+    "--status-bar-font-size": [
+     "12px",
+     "rgba(0, 0, 0, 0)"
     ],
     "--tag-background": [
      "#f3f1e8",
@@ -3569,6 +3717,10 @@
     "--text-warning": [
      "#7a4e00",
      "rgb(122, 78, 0)"
+    ],
+    "--titlebar-text-weight": [
+     "600",
+     "rgba(0, 0, 0, 0)"
     ],
     "--toggle-thumb-color": [
      "#faf9f5",

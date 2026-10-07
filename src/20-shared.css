@@ -31,6 +31,25 @@
   --indentation-guide-color-active: color-mix(in srgb, var(--lex-sand) 60%, transparent);
   --drag-ghost-background: color-mix(in srgb, var(--lex-ink) 88%, transparent);
   --drag-ghost-text-color: var(--lex-ground);
+  --footnote-id-color: var(--text-accent);
+  --footnote-divider-color: var(--background-modifier-border-hover);
+  --bases-table-header-background: var(--background-primary-alt);
+  --bases-table-header-weight: 700;
+  --bases-table-border-color: var(--background-modifier-border-hover);
+  --bases-cards-radius: 4px;
+  --bases-cards-background: var(--background-primary-alt);
+  --bases-kanban-card-radius: 4px;
+  --bases-kanban-card-background: var(--background-primary-alt);
+  --bases-kanban-column-radius: 4px;
+  --hotkey-radius: 2px;
+  --hotkey-font: var(--font-interface);
+  --modal-radius: 6px;
+  --modal-border-width: 1px;
+  --modal-border-color: var(--background-modifier-border-hover);
+  --search-result-background: var(--background-primary-alt);
+  --status-bar-font-size: var(--font-ui-smaller);
+  --titlebar-text-weight: 600;
+  --ribbon-background: var(--background-secondary);
   --canvas-dot-pattern: color-mix(in srgb, var(--lex-sand) 45%, var(--background-primary));
 }
 

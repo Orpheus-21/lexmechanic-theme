@@ -180,13 +180,46 @@ Parts of the interface that use a gray or a white in Obsidian: the file list, sc
 | `--toggle-thumb-color` | `var(--lex-ground)` | `var(--lex-ground)` | theme |
 | `--tooltip-color` | `var(--lex-ground)` | `var(--lex-ink)` | theme |
 
+## Footnotes and Bases
+
+The footnote numbers and divider, and the tables, cards, and kanban boards of Bases. They use the panel colors and small 4 pixel corners.
+
+| Variable | Light | Dark | Set in |
+|---|---|---|---|
+| `--bases-cards-background` | `var(--background-primary-alt)` | `var(--background-primary-alt)` | theme |
+| `--bases-cards-radius` | `4px` | `4px` | theme |
+| `--bases-kanban-card-background` | `var(--background-primary-alt)` | `var(--background-primary-alt)` | theme |
+| `--bases-kanban-card-radius` | `4px` | `4px` | theme |
+| `--bases-kanban-column-radius` | `4px` | `4px` | theme |
+| `--bases-table-border-color` | `var(--background-modifier-border-hover)` | `var(--background-modifier-border-hover)` | theme |
+| `--bases-table-header-background` | `var(--background-primary-alt)` | `var(--background-primary-alt)` | theme |
+| `--bases-table-header-weight` | `700` | `700` | theme |
+| `--footnote-divider-color` | `var(--background-modifier-border-hover)` | `var(--background-modifier-border-hover)` | theme |
+| `--footnote-id-color` | `var(--text-accent)` | `var(--text-accent)` | theme |
+
+## Windows and bars
+
+Modals, hotkey chips, search results, the status bar, the title bar, and the ribbon.
+
+| Variable | Light | Dark | Set in |
+|---|---|---|---|
+| `--hotkey-font` | `var(--font-interface)` | `var(--font-interface)` | theme |
+| `--hotkey-radius` | `2px` | `2px` | theme |
+| `--modal-border-color` | `var(--background-modifier-border-hover)` | `var(--background-modifier-border-hover)` | theme |
+| `--modal-border-width` | `1px` | `1px` | theme |
+| `--modal-radius` | `6px` | `6px` | theme |
+| `--ribbon-background` | `var(--background-secondary)` | `var(--background-secondary)` | theme |
+| `--search-result-background` | `var(--background-primary-alt)` | `var(--background-primary-alt)` | theme |
+| `--status-bar-font-size` | `var(--font-ui-smaller)` | `var(--font-ui-smaller)` | theme |
+| `--titlebar-text-weight` | `600` | `600` | theme |
+
 ## Graph
 
 The colors of the graph view. Obsidian reads them through hidden elements. See `docs/graph.md`.
 
 | Variable | Light | Dark | Set in |
 |---|---|---|---|
-| `--graph-line` | `color-mix(in srgb, var(--lex-sand) 45%, transparent)` | `color-mix(in srgb, var(--lex-sand) 35%, transparent)` | theme |
+| `--graph-line` | `color-mix(in srgb, var(--lex-sand) 70%, transparent)` | `color-mix(in srgb, var(--lex-sand) 45%, transparent)` | theme |
 | `--graph-node` | `var(--lex-graph-node)` | `var(--lex-graph-node)` | theme |
 | `--graph-node-attachment` | `var(--lex-graph-attachment)` | `var(--lex-graph-attachment)` | theme |
 | `--graph-node-focused` | `var(--lex-accent)` | `var(--lex-accent)` | theme |

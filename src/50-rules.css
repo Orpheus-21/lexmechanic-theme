@@ -35,3 +35,62 @@ body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
 .graph-view.color-line-highlight {
   color: var(--lex-graph-highlight);
 }
+
+/* controls: the border of an input, a dropdown, and a search box reached 1.27 to 1 on the page. The
+   hover border color reaches 3 to 1 in both modes. Dividers and cards keep the quiet border. */
+textarea,
+.multi-select-container,
+input.metadata-input-text,
+input[type='date'],
+input[type='datetime-local'],
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+select.dropdown,
+.dropdown {
+  border-color: var(--background-modifier-border-hover);
+}
+
+/* the active tab of the main area gets a 2px line in the accent color under it */
+.mod-root .workspace-tab-header.is-active {
+  box-shadow: inset 0 -2px 0 var(--text-accent);
+}
+
+/* Windows high contrast mode replaces the colors. The borders that carry the meaning of a callout,
+   a quote, and a code block use the system text color, so that they stay visible. */
+@media (forced-colors: active) {
+  .callout,
+  .markdown-rendered blockquote,
+  .markdown-source-view blockquote,
+  .markdown-rendered pre,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    border-color: CanvasText;
+  }
+  .markdown-rendered hr {
+    background-color: CanvasText;
+  }
+}
+
+/* print: a heading stays with its text, a block does not break, and no background or shadow is printed */
+@media print {
+  .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+    break-after: avoid;
+  }
+  .markdown-rendered :is(pre, blockquote, .callout, table, img, figure) {
+    break-inside: avoid;
+  }
+  .markdown-rendered * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  .markdown-rendered :is(pre, .callout, thead tr, code) {
+    background: none !important;
+  }
+  .markdown-rendered a.external-link::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.85em;
+    color: var(--text-muted);
+  }
+}
