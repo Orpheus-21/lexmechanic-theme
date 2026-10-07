@@ -39,7 +39,7 @@
 /* code blocks: a 4px accent border like block quotes and callouts
    (reading view: pre; Live Preview: the lines of the code block) */
 .markdown-rendered pre,
-.markdown-source-view .HyperMD-codeblock {
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
   border-left: 4px solid var(--text-accent);
 }
 
