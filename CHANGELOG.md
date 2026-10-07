@@ -4,7 +4,11 @@
 
 Added:
 
-* Checks and tools in `scripts/`: `extract_obsidian_css.py`, `check_variables.py`, `check_resolve.py`, `check_baseline.py`, `check_graph.py`, `check_colorblind.py`, `check_manifest.py`, `check_duplicates.py`, `check_links.py`, `install.sh`, `install.ps1`, and `dev.sh`.
+* Fifteen preset snippets in `snippets/presets/`: accent colors (blue, green, black), a true black dark mode, a newsprint light mode, a high contrast mode, a narrow and a wide column, a sans and a monospace body font, a hyphens preset, and four graph presets (colorful, monochrome, high contrast, dim).
+* Checks and tools in `scripts/`: `extract_obsidian_css.py`, `check_variables.py`, `check_resolve.py`, `check_baseline.py`, `check_graph.py`, `check_colorblind.py`, `check_manifest.py`, `check_duplicates.py`, `check_links.py`, `diff_obsidian_variables.py`, `font_coverage.py`, `make_docs.py`, `graph_groups.py`, `make_demo_vault.py`, `cdp.mjs`, `install.sh`, `install.ps1`, and `dev.sh`.
+* The graph checks: the effective contrast of the 11 graph hooks with the opacity counted, the lightness of the node types, and a color blindness simulation. `check_variables.py` checks that the graph hooks and variables still exist.
+* An example `graph.json` in `examples/`, and a script that makes the color groups from the palette.
+* Documents in `docs/`: `palette.md`, `variables.md`, `characters.md`, `graph.md`, `testing.md`, `design.md`, and `obsidian-versions.md`.
 * Checks of the interface colors (3 to 1) and of the selected text in `check_contrast.py`, and the options `--json`, `--write`, and `--check-doc`.
 * The graph colors in `docs/contrast.md`.
 * Unit tests in `tests/`, and a baseline of the computed styles.
@@ -20,7 +24,7 @@ Changed:
 
 Fixed:
 
-* The dark mode attachment node of the graph used the old faint color. It now uses the faint color of the palette.
+* The dark mode attachment node of the graph used the old faint color. It now uses the faint color of the palette. Each graph color has a name in the palette.
 
 Removed:
 
