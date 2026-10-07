@@ -1,0 +1,17 @@
+/* Lexmechanic dim graph preset: a quieter graph in dark mode.
+   Nodes, lines, and labels are less bright, so that the graph does not shine at night. Nodes keep
+   a contrast of 3 to 1 or more on the page, and the labels stay readable. Light mode does not
+   change. */
+
+.theme-dark {
+  --graph-node: #a39a8a;
+  --lex-graph-attachment: #927c47;
+  --lex-graph-tag: #92544f;
+  --lex-graph-unresolved: #6a645a;
+  --graph-line: color-mix(in srgb, var(--lex-sand) 25%, transparent);
+  --graph-text: var(--lex-muted);
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+  opacity: 1;
+}
