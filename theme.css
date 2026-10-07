@@ -77,6 +77,14 @@
   --lex-warning: #7a4e00;
   --lex-code-property: #2f5d6e;
   --lex-code-value: #8a3b12;
+  --lex-red: #a8231f;
+  --lex-orange: #b83800;
+  --lex-yellow: #7f6000;
+  --lex-green: #3a6329;
+  --lex-cyan: #2f5d6e;
+  --lex-blue: #3b5a8a;
+  --lex-purple: #6b4a7d;
+  --lex-pink: #a04668;
 
   --background-primary: var(--lex-ground);
   --background-primary-alt: var(--lex-panel);
@@ -167,21 +175,21 @@
   --code-tag: var(--lex-accent);
   --code-value: var(--lex-code-value);
 
-  --color-red: #a8231f;
+  --color-red: var(--lex-red);
   --color-red-rgb: 168, 35, 31;
-  --color-orange: #b83800;
+  --color-orange: var(--lex-orange);
   --color-orange-rgb: 184, 56, 0;
-  --color-yellow: #7f6000;
+  --color-yellow: var(--lex-yellow);
   --color-yellow-rgb: 127, 96, 0;
-  --color-green: #3a6329;
+  --color-green: var(--lex-green);
   --color-green-rgb: 58, 99, 41;
-  --color-cyan: #2f5d6e;
+  --color-cyan: var(--lex-cyan);
   --color-cyan-rgb: 47, 93, 110;
-  --color-blue: #3b5a8a;
+  --color-blue: var(--lex-blue);
   --color-blue-rgb: 59, 90, 138;
-  --color-purple: #6b4a7d;
+  --color-purple: var(--lex-purple);
   --color-purple-rgb: 107, 74, 125;
-  --color-pink: #a04668;
+  --color-pink: var(--lex-pink);
   --color-pink-rgb: 160, 70, 104;
 }
 
@@ -203,6 +211,14 @@
   --lex-warning: #e0b04a;
   --lex-code-property: #7fb3c4;
   --lex-code-value: #d98b5f;
+  --lex-red: #ff6b5e;
+  --lex-orange: #ff7a45;
+  --lex-yellow: #e0b04a;
+  --lex-green: #8fbf6f;
+  --lex-cyan: #7fb3c4;
+  --lex-blue: #8aa6d6;
+  --lex-purple: #b99ad0;
+  --lex-pink: #e08aa8;
 
   --background-primary: var(--lex-ground);
   --background-primary-alt: var(--lex-panel);
@@ -291,21 +307,21 @@
   --code-tag: var(--lex-accent);
   --code-value: var(--lex-code-value);
 
-  --color-red: #ff6b5e;
+  --color-red: var(--lex-red);
   --color-red-rgb: 255, 107, 94;
-  --color-orange: #ff7a45;
+  --color-orange: var(--lex-orange);
   --color-orange-rgb: 255, 122, 69;
-  --color-yellow: #e0b04a;
+  --color-yellow: var(--lex-yellow);
   --color-yellow-rgb: 224, 176, 74;
-  --color-green: #8fbf6f;
+  --color-green: var(--lex-green);
   --color-green-rgb: 143, 191, 111;
-  --color-cyan: #7fb3c4;
+  --color-cyan: var(--lex-cyan);
   --color-cyan-rgb: 127, 179, 196;
-  --color-blue: #8aa6d6;
+  --color-blue: var(--lex-blue);
   --color-blue-rgb: 138, 166, 214;
-  --color-purple: #b99ad0;
+  --color-purple: var(--lex-purple);
   --color-purple-rgb: 185, 154, 208;
-  --color-pink: #e08aa8;
+  --color-pink: var(--lex-pink);
   --color-pink-rgb: 224, 138, 168;
 }
 
