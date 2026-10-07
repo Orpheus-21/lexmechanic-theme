@@ -1,0 +1,22 @@
+/* Lexmechanic accent preset: black ink.
+   Turn it on together with the theme. It changes the accent color in both modes: links outside
+   the notes, buttons, the focus ring, list markers, the selection tint, and the focused
+   node of the graph. Turn on only one accent preset. */
+
+.theme-light {
+  --lex-accent: #2c251d;
+  --lex-accent-hover: #4a3f33;
+  --lex-graph-tag: var(--lex-accent-hover);
+  --accent-h: 32;
+  --accent-s: 21%;
+  --accent-l: 14%;
+}
+
+.theme-dark {
+  --lex-accent: #e8e0d0;
+  --lex-accent-hover: #f8f2e6;
+  --lex-graph-tag: #b5ac9b;
+  --accent-h: 40;
+  --accent-s: 34%;
+  --accent-l: 86%;
+}
