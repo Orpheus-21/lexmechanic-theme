@@ -23,7 +23,7 @@ class DuplicatesTest(unittest.TestCase):
         self.assertEqual(d.duplicates(text), [])
 
     def test_the_project_has_no_duplicate(self):
-        for path in list((ROOT / "src").glob("*.css")) + list((ROOT / "snippets").glob("*.css")):
+        for path in list((ROOT / "src").glob("*.css")) + list((ROOT / "snippets").rglob("*.css")):
             self.assertEqual(d.duplicates(path.read_text()), [], str(path))
 
 

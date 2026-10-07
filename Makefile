@@ -20,7 +20,7 @@ test:
 	python3 -m unittest discover -s tests
 
 lint:
-	npx --yes stylelint@16 "src/*.css" "snippets/*.css"
+	npx --yes stylelint@16 "src/*.css" "snippets/*.css" "snippets/presets/*.css"
 
 contrast:
 	python3 scripts/check_contrast.py

@@ -2,7 +2,7 @@
 """Find a property that is set twice in one CSS block.
 
 Usage:
-  python3 scripts/check_duplicates.py              check src/*.css and snippets/*.css
+  python3 scripts/check_duplicates.py              check src/*.css and the snippets and presets
   python3 scripts/check_duplicates.py FILE ...     check the given files
 
 The second declaration hides the first one, and nothing warns about it. The script
@@ -34,7 +34,7 @@ def duplicates(text):
 
 
 def main():
-    paths = [Path(a) for a in sys.argv[1:]] or sorted((ROOT / "src").glob("*.css")) + sorted((ROOT / "snippets").glob("*.css"))
+    paths = [Path(a) for a in sys.argv[1:]] or sorted((ROOT / "src").glob("*.css")) + sorted((ROOT / "snippets").rglob("*.css"))
     total = 0
     for path in paths:
         for selector, name, count in duplicates(path.read_text()):
