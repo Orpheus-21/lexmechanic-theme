@@ -1,0 +1,57 @@
+name: Bug report
+description: Something in the theme looks wrong.
+labels: [bug]
+body:
+  - type: input
+    id: obsidian
+    attributes:
+      label: Obsidian version
+      description: The app version. Open Settings, then General.
+      placeholder: "1.14.4"
+    validations:
+      required: true
+  - type: input
+    id: installer
+    attributes:
+      label: Installer version
+      description: The installer is a different download from the app updates. It is in Settings, General, under the app version.
+      placeholder: "1.4.13"
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options: [Linux, macOS, Windows, Android, iOS]
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options: [Light, Dark, Both]
+    validations:
+      required: true
+  - type: checkboxes
+    id: snippets
+    attributes:
+      label: Snippets that are on
+      options:
+        - label: lexmechanic-extras
+        - label: lexmechanic-fun
+        - label: another snippet or a community plugin that changes the look
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: Say what you see and what you expected. Name the view, such as reading view, Live Preview, the graph, or Settings.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see it
+      description: One action for each step.
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Paste an image here.

@@ -1,0 +1,21 @@
+name: Feature request
+description: Ask for a new style or an option.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: wanted
+    attributes:
+      label: What do you want
+      description: Say which part of Obsidian it is about and how it must look.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Say what problem it solves.
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: A screenshot or a link to a theme that does it.
