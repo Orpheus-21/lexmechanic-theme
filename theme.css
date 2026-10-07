@@ -657,6 +657,18 @@ select.dropdown,
   font-size: var(--font-ui-smaller);
 }
 
+/* touch targets on a phone: the icons of the graph panel are 44px, and the toggles have an invisible
+   area around them. WCAG asks 24px, and the guides of Apple and Google ask 44px and 48px. */
+body.is-mobile .graph-controls .clickable-icon {
+  min-width: 44px;
+  min-height: 44px;
+}
+body.is-mobile .graph-controls .checkbox-container::after {
+  content: '';
+  position: absolute;
+  inset: -12px -6px;
+}
+
 /* @settings
 
 name: Lexmechanic

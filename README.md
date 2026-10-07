@@ -6,6 +6,18 @@ Lexmechanic is a theme for Obsidian. It uses a warm paper ground, dark brown tex
 
 The screenshot shows a note in reading view in Obsidian 1.14.4. Light mode is on the left. Dark mode is on the right.
 
+More views, in Obsidian 1.14.4 on Linux with the demo vault. `python3 scripts/take_screenshots.py` makes them again.
+
+| Live Preview, light | Graph view, light | Graph view, dark |
+|---|---|---|
+| ![Live Preview in light mode](docs/images/live-preview-light.png) | ![The graph view in light mode](docs/images/graph-light.png) | ![The graph view in dark mode](docs/images/graph-dark.png) |
+
+| Phone, light | Phone, dark |
+|---|---|
+| ![A note on a phone in light mode](docs/images/mobile-light.png) | ![A note on a phone in dark mode](docs/images/mobile-dark.png) |
+
+The phone images come from the mobile emulation of Obsidian on a desktop, not from a phone.
+
 ## What it does
 
 The theme sets the colors, fonts, and link styles for the editor and the interface. It has a light mode and a dark mode. The light mode follows the colors of fromjason.xyz. The dark mode is a new version of the same colors.
@@ -29,6 +41,8 @@ Two optional CSS snippets add more styles. You can turn each snippet on or off a
 | Any | Any | Android, iOS | Not tested |
 
 ## Install
+
+With the plugin BRAT, you can install only the theme: open the command palette, run `BRAT: Themes: Grab a beta theme for testing from a Github repository`, and enter `Orpheus-21/lexmechanic-theme`. BRAT downloads `theme.css` and `manifest.json` from the default branch. It does not install the snippets. I checked that both files can be downloaded from that address, and I did not run BRAT. Choose the theme in Settings, Appearance. For the snippets, use one of the steps below.
 
 1. Download this repo, or run `git clone https://github.com/Orpheus-21/lexmechanic-theme.git`.
 2. Find the folder of your vault. The vault has a hidden folder named `.obsidian`.
@@ -95,7 +109,7 @@ The theme has two snippets.
 * **The fonts differ from the screenshot.** Open Settings, then Appearance. If the font fields are not empty, they replace the fonts of the theme. Clear them.
 * **A dash, an ellipsis, or a symbol is in another style.** The fonts of the theme have about 175 characters. Other characters use a fallback font. The file `docs/characters.md` lists them.
 * **The labels in the graph view use a system font.** Obsidian fixes the font of the graph labels in its code. A theme cannot change it `docs/graph.md` tells how the graph gets its colors.
-* **The theme looks wrong on a phone.** The theme is not tested on Android or iOS.
+* **The theme looks wrong on a phone.** The theme is tested only in the mobile emulation of Obsidian on a desktop, not on Android or iOS.
 
 ## Presets
 
