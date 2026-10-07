@@ -52,7 +52,26 @@ A color of the light mode is not the same as the color of the dark mode. Use `--
 
 ## Settings in graph.json
 
-The file `examples/graph.json` has every key that I found in the code. The display and force values are the defaults of Obsidian 1.14.4. The center strength 0.5187 is what the slider stores at the position 0.1. I did not open the example in Obsidian. Copy the keys that you want into your own `graph.json` and keep a copy of the old file.
+The file `examples/graph.json` has every key that I found in the code. The display values are the defaults of Obsidian 1.14.4. The force values are the compact set below. I tested the sets in Obsidian 1.14.4 through the `dataEngine` of the graph, and I did not open the example file in Obsidian. Copy the keys that you want into your own `graph.json` and keep a copy of the old file.
+
+## Display and force settings
+
+I tried force sets on a demo vault with 49 nodes (30 notes with tags, attachments, and unresolved links) and on one with 319 nodes (the same plus 270 notes with 3 links each). Each number is the width of the settled layout in graph units. In every run the layout stopped moving within a few seconds, and no two nodes were closer than 14 pixels.
+
+| Set | Center | Repel | Link strength | Link distance | 49 nodes | 319 nodes |
+|---|---|---|---|---|---|---|
+| Obsidian default | 0.5187 | 10 | 1 | 250 | 1159 | 3090 |
+| Compact (the example) | 0.6 (slider at 0.15) | 8 | 1 | 150 | not measured | 2056 |
+| Tight | 0.5 | 8 | 1 | 120 | 1011 | not measured |
+| Balanced | 0.4 | 12 | 0.8 | 200 | not measured | 5071 |
+
+A calm layout stays in the window and does not pile nodes up. The compact set made the 319 node graph a third narrower than the default, and the tight set made the 49 node graph 13% narrower. The balanced set made the large graph wider. The measurements say nothing about taste, so try the sets on your own vault.
+
+For the display, I kept the defaults of Obsidian: node size 1, link thickness 1, text fade 0, and no arrows. At a text fade of 0 all 44 labels of the 45 node graph were visible. At -1 only 12 were. Values from -0.75 to -0.25 showed all of them. Arrows add clutter, and the theme keeps them off.
+
+## Group colors
+
+The color groups are yours, and a theme cannot change them. To use palette colors, run `scripts/graph_groups.py 'tag:#book=red' 'path:Projects=blue'` and put the list in the `colorGroups` key. `scripts/graph_groups.py --list` shows the names of the colors. Choose colors that differ from the node types: the teal of the tags, the rust of the attachments, and the dark brown of the notes.
 
 ## Node types differ by color only
 

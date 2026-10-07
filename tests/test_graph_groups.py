@@ -57,9 +57,9 @@ class ExampleTest(unittest.TestCase):
             self.assertEqual(entry["color"]["a"], 1)
             self.assertIn(entry["color"]["rgb"], ints)
 
-    def test_the_center_strength_default_is_the_default_of_obsidian(self):
+    def test_the_center_strength_is_what_the_slider_stores_at_0_15(self):
         import math
-        self.assertAlmostEqual(1 - math.log(0.1 * 0.99 + 0.01) / math.log(0.01), json.loads(self.path.read_text())["centerStrength"], places=12)
+        self.assertAlmostEqual(1 - math.log(0.15 * 0.99 + 0.01) / math.log(0.01), json.loads(self.path.read_text())["centerStrength"], places=12)
 
 
 if __name__ == "__main__":
