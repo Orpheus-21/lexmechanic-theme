@@ -134,6 +134,10 @@ Three dark mode pairs are below 4.5 to 1: the accent, `--code-keyword`, and `--c
 
 The file `docs/contrast.md` has the contrast of every text color.
 
+## Contributing
+
+The source is in `src/`. Run `./build.sh` after a change, and `make all` to check it. The file `CONTRIBUTING.md` has the details.
+
 ## Fonts
 
 The fonts Volume Tc and Volume Tc Sans belong to Tom Chalky. The font files say "Copyright (c) 2022 by Tom Chalky. All rights reserved." The license terms are at https://tomchalky.com/extended-licensing. The GPL does not cover these fonts.
