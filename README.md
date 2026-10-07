@@ -23,7 +23,10 @@ Two optional CSS snippets add more styles. You can turn each snippet on or off a
 
 1. Download this repo, or run `git clone https://github.com/Orpheus-21/lexmechanic-theme.git`.
 2. Find the folder of your vault. The vault has a hidden folder named `.obsidian`.
-3. Run these commands in the repo folder. Replace `VAULT` with the path of your vault.
+3. Copy the files into the vault. Choose one way:
+   * On Linux and macOS, run `scripts/install.sh VAULT` in the repo folder. Replace `VAULT` with the path of your vault.
+   * On Windows, run `.\scripts\install.ps1 -Vault "C:\path\to\vault"` in PowerShell. This script is not tested on Windows.
+   * In a terminal, run these commands in the repo folder:
 
 ```
 mkdir -p "VAULT/.obsidian/themes/Lexmechanic" "VAULT/.obsidian/snippets"
@@ -31,11 +34,14 @@ cp manifest.json theme.css "VAULT/.obsidian/themes/Lexmechanic/"
 cp snippets/*.css "VAULT/.obsidian/snippets/"
 ```
 
+   * In a file manager, make the folders `.obsidian/themes/Lexmechanic` and `.obsidian/snippets` in the vault if they do not exist. Copy `manifest.json` and `theme.css` into the first folder. Copy the files of `snippets/` into the second folder.
 4. Open Obsidian. Open Settings, then Appearance.
 5. Under Themes, choose `Lexmechanic`.
 6. Under CSS snippets, turn on `lexmechanic-extras` and `lexmechanic-fun`. This step is optional.
 
 The folder name `Lexmechanic` must match the `name` in `manifest.json`.
+
+A file manager can hide the `.obsidian` folder. In Finder on macOS, press Command, Shift, and the period key. In Explorer on Windows, open View, then Show, then Hidden items. Most file managers on Linux show hidden items with Ctrl and H.
 
 ## Usage
 
