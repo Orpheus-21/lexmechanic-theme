@@ -1,0 +1,7 @@
+/* Lexmechanic sans body preset: the text of notes uses the sans font.
+   The text, and the headings that follow the text font, use Volume Tc Sans. The interface does not
+   change. Turn on only one body font preset. */
+
+.theme-light, .theme-dark {
+  --font-text-theme: 'Volume Tc Sans', Verdana, sans-serif;
+}
