@@ -1,0 +1,8 @@
+/* Lexmechanic hyphens preset: break long words with a hyphen in reading view.
+   The browser needs a hyphenation dictionary for the language of the note. Chromium on a desktop
+   may not have one. If long words do not break, this preset has no effect on your system. */
+
+.markdown-preview-view p,
+.markdown-preview-view li {
+  hyphens: auto;
+}
