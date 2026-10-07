@@ -26,6 +26,8 @@
   --lex-error-rgb: 184, 56, 0;
   --lex-code-normal: #070504;
   --lex-graph-tag: var(--lex-accent-hover);
+  --lex-graph-unresolved: var(--lex-sand);
+  --lex-graph-attachment: var(--lex-sand);
 
   --background-primary: var(--lex-ground);
   --background-primary-alt: var(--lex-panel);
@@ -90,10 +92,10 @@
 
   --graph-line: color-mix(in srgb, var(--lex-sand) 45%, transparent);
   --graph-node: var(--lex-muted);
-  --graph-node-unresolved: var(--lex-sand);
+  --graph-node-unresolved: var(--lex-graph-unresolved);
   --graph-node-focused: var(--lex-accent);
   --graph-node-tag: var(--lex-graph-tag);
-  --graph-node-attachment: var(--lex-sand);
+  --graph-node-attachment: var(--lex-graph-attachment);
   --graph-text: var(--lex-ink);
 
   --text-highlight-bg: color-mix(in srgb, var(--lex-accent) 20%, var(--lex-panel));

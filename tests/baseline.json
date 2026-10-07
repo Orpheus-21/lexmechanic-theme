@@ -1576,9 +1576,17 @@
      "#938a79",
      "rgb(147, 138, 121)"
     ],
+    "--lex-graph-attachment": [
+     "#938a79",
+     "rgb(147, 138, 121)"
+    ],
     "--lex-graph-tag": [
      "#c9635c",
      "rgb(201, 99, 92)"
+    ],
+    "--lex-graph-unresolved": [
+     "#7d7464",
+     "rgb(125, 116, 100)"
     ],
     "--lex-green": [
      "#8fbf6f",
@@ -3346,9 +3354,17 @@
      "#6f675f",
      "rgb(111, 103, 95)"
     ],
+    "--lex-graph-attachment": [
+     "#968d85",
+     "rgb(150, 141, 133)"
+    ],
     "--lex-graph-tag": [
      "#733331",
      "rgb(115, 51, 49)"
+    ],
+    "--lex-graph-unresolved": [
+     "#968d85",
+     "rgb(150, 141, 133)"
     ],
     "--lex-green": [
      "#3a6329",
