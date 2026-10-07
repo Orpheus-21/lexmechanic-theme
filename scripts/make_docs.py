@@ -105,6 +105,7 @@ AREAS = [
     ("Links", ("--link-",), "Links are the ink color. External links use the accent. Unresolved links use the faint color at full opacity, because Obsidian lowers it to 0.7 by default."),
     ("Headings", ("--h1-", "--h2-", "--h3-", "--h4-", "--h5-", "--h6-", "--inline-title"), "Headings use the text font in bold and the ink color. The variables reach reading view and Live Preview."),
     ("Code", ("--code-",), "The colors of code and of the syntax tokens, all from the palette, and the 1 pixel border."),
+    ("Callouts", ("--callout-",), "The color of a callout type that Obsidian leaves as a gray. The other types use the base colors."),
     ("Block quotes", ("--blockquote-",), "A 4 pixel accent border, like the border of callouts and code blocks."),
     ("Lists, tasks, and guides", ("--list-", "--checkbox-", "--indentation-"), "Accent list markers and checkboxes, and warm indentation guides."),
     ("Interface", ("--nav-", "--scrollbar-", "--drag-", "--toggle-", "--slider-", "--notice-", "--tooltip-", "--divider-", "--canvas-"), "Parts of the interface that use a gray or a white in Obsidian: the file list, scrollbars, the drag ghost, toggles, sliders, notices, tooltips, dividers, and the canvas."),

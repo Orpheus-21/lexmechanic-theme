@@ -6,6 +6,7 @@
   --font-monospace-theme: ui-monospace, 'SF Mono', Consolas, monospace;
 
   --blockquote-border-thickness: 4px;
+  --callout-quote: var(--lex-faint);
   --code-border-width: 1px;
   --h1-font: var(--font-text);
   --h2-font: var(--font-text);

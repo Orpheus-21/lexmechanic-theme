@@ -127,6 +127,14 @@ The colors of code and of the syntax tokens, all from the palette, and the 1 pix
 | `--code-tag` | `var(--lex-accent)` | `var(--lex-accent)` | theme |
 | `--code-value` | `var(--lex-code-value)` | `var(--lex-code-value)` | theme |
 
+## Callouts
+
+The color of a callout type that Obsidian leaves as a gray. The other types use the base colors.
+
+| Variable | Light | Dark | Set in |
+|---|---|---|---|
+| `--callout-quote` | `var(--lex-faint)` | `var(--lex-faint)` | theme |
+
 ## Block quotes
 
 A 4 pixel accent border, like the border of callouts and code blocks.
