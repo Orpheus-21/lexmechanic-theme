@@ -14,6 +14,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from check_contrast import resolve  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 
 # Use of each palette variable. Each name in the palette must be here.
@@ -81,7 +84,15 @@ def palette_doc(root=ROOT):
             "| Variable | Light | Dark | Draws |", "|---|---|---|---|"]
     for name, use in GRAPH_USES.items():
         out.append(f"| `{name}` | `{light[name]}` | `{dark[name]}` | {use} |")
-    out += ["", "The contrast of each graph color is in `docs/contrast.md`.", ""]
+    out += ["", "The contrast of each graph color is in `docs/contrast.md`.", "",
+            "## Colors for graph.json", "",
+            "A color group in `graph.json` stores its color as one integer: red times 65536, plus green times 256, plus blue. The table gives each palette color that is a solid color as a hex value and as an integer. `scripts/graph_groups.py` makes the `colorGroups` list from these colors.", "",
+            "| Name | Light | Light integer | Dark | Dark integer |", "|---|---|---|---|---|"]
+    for key in USES:
+        a, b = resolve("--lex-" + key, light), resolve("--lex-" + key, dark)
+        if a and b:
+            out.append(f"| `{key}` | `{a}` | {int(a[1:], 16)} | `{b}` | {int(b[1:], 16)} |")
+    out.append("")
     return "\n".join(out)
 
 
