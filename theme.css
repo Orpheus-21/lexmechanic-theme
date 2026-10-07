@@ -264,7 +264,7 @@
   --graph-node-unresolved: #7d7464;
   --graph-node-focused: var(--lex-accent);
   --graph-node-tag: #c9635c;
-  --graph-node-attachment: #6b6355;
+  --graph-node-attachment: var(--lex-faint);
   --graph-text: var(--lex-ink);
 
   --text-highlight-bg: color-mix(in srgb, var(--lex-accent) 25%, var(--lex-panel));
