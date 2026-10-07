@@ -39,7 +39,7 @@ def read_fonts(css):
     """Return [(family, style, woff bytes)] for the @font-face rules with a woff data URI."""
     css = css.replace("\n", " ")
     fonts = []
-    for m in re.finditer(r"font-family: '([^']+)';\s*src: url\('data:font/woff;base64,([^']+)'\)[^}]*?font-style: (\w+)", css):
+    for m in re.finditer(r"font-family: '([^']+)';\s*src: (?:local\([^)]*\),\s*)*url\('data:font/woff;base64,([^']+)'\)[^}]*?font-style: (\w+)", css):
         fonts.append((m.group(1), m.group(3), base64.b64decode(m.group(2))))
     return fonts
 
