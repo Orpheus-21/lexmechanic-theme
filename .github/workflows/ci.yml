@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check that theme.css is up to date
+        run: ./build.sh --check
+      - name: Run the unit tests
+        run: python3 -m unittest discover -s tests
+      - name: Check the manifest and the version
+        run: python3 scripts/check_manifest.py
+      - name: Check for repeated properties
+        run: python3 scripts/check_duplicates.py
+      - name: Check the contrast
+        run: |
+          python3 scripts/check_contrast.py
+          python3 scripts/check_contrast.py --check-doc
+      - name: Lint the CSS
+        run: npx --yes stylelint@16 "src/*.css" "snippets/*.css"
