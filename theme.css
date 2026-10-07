@@ -381,3 +381,10 @@ body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
 .inline-title {
   text-wrap: balance;
 }
+
+/* paragraphs and list items in reading view: avoid a last line with one short word. Chromium 117 and
+   newer know text-wrap: pretty, and older versions ignore it. Live Preview does not use it,
+   because the lines would move while you type. */
+.markdown-preview-view :is(p, li) {
+  text-wrap: pretty;
+}
