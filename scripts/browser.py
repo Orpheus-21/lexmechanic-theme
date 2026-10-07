@@ -42,7 +42,7 @@ def presets(root=ROOT):
 
 
 def page(mode, stylesheets, body, script):
-    links = "".join(f'<link rel="stylesheet" href="{Path(p).as_uri()}">' for p in stylesheets)
+    links = "".join(f'<link rel="stylesheet" href="{Path(p).resolve().as_uri()}">' for p in stylesheets)
     return (f'<!doctype html><meta charset="utf-8">{links}<body class="theme-{mode}">{body}'
             f'<pre id="out"></pre><script>{script}</script>')
 
