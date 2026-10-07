@@ -3,6 +3,14 @@
    fonts of the theme. Turn it off in Settings, Appearance, CSS snippets. The theme
    keeps working without it. */
 
+/* variables of Obsidian that this snippet sets: the tag badge */
+.theme-light, .theme-dark {
+  --tag-background: var(--background-primary-alt);
+  --tag-color: var(--text-accent);
+  --tag-border-width: 0;
+  --tag-radius: 2px;
+}
+
 /* callouts: panel color, interface font, and a 4px left border in the callout color */
 .callout {
   background-color: var(--background-primary-alt);
@@ -29,11 +37,5 @@
   border-color: var(--background-modifier-border);
 }
 
-/* tags: a small badge in the accent color, set with the tag variables of Obsidian */
-.theme-light, .theme-dark {
-  --tag-background: var(--background-primary-alt);
-  --tag-color: var(--text-accent);
-  --tag-border-width: 0;
-  --tag-radius: 2px;
-}
+/* tags: a small badge in the accent color. The variables above set it. */
 .tag, a.tag { font-family: var(--font-interface); }

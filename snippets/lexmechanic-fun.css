@@ -1,17 +1,19 @@
 /* Lexmechanic — fun/polish pass, separate from the core theme and from the
    callout/table/tag snippet. Toggle off independently if any of these misbehave. */
 
-/* text caret and active line, in the accent color */
-.theme-light, .theme-dark { --caret-color: var(--text-accent); }
+/* variables of Obsidian that this snippet sets */
+.theme-light, .theme-dark {
+  --caret-color: var(--text-accent);
+  --hr-color: var(--text-accent);
+  --hr-thickness: 3px;
+}
+
+/* active line, tinted in the accent color */
 .cm-activeLine {
   background-color: color-mix(in srgb, var(--text-accent) 6%, transparent);
 }
 
 /* editorial divider: short red-ink dash instead of a full-width faint line */
-.theme-light, .theme-dark {
-  --hr-color: var(--text-accent);
-  --hr-thickness: 3px;
-}
 .markdown-rendered hr, .markdown-source-view hr {
   width: 3em;
   margin: 2.5em auto;
