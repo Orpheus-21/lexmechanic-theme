@@ -43,7 +43,12 @@
   border-left: 4px solid var(--text-accent);
 }
 
-/* internal links read as dotted, external links stay solid-underlined */
-.internal-link {
+/* internal links read as dotted, external links stay solid-underlined. In Live Preview the link
+   is a span with the class cm-underline, and an unresolved link has a span with is-unresolved around it. */
+.internal-link,
+.cm-hmd-internal-link .cm-underline {
   text-decoration-style: dotted;
+}
+.cm-hmd-internal-link .is-unresolved .cm-underline {
+  text-decoration-style: solid;
 }
