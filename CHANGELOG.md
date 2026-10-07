@@ -1,5 +1,31 @@
 # Changelog
 
+## Unreleased
+
+Added:
+
+* Checks and tools in `scripts/`: `extract_obsidian_css.py`, `check_variables.py`, `check_resolve.py`, `check_baseline.py`, `check_graph.py`, `check_colorblind.py`, `check_manifest.py`, `check_duplicates.py`, `check_links.py`, `install.sh`, `install.ps1`, and `dev.sh`.
+* Checks of the interface colors (3 to 1) and of the selected text in `check_contrast.py`, and the options `--json`, `--write`, and `--check-doc`.
+* The graph colors in `docs/contrast.md`.
+* Unit tests in `tests/`, and a baseline of the computed styles.
+* A GitHub Actions workflow for the checks, and a weekly check of the newest Obsidian.
+* `build.py`, a `Makefile`, a stylelint config, `.gitignore`, `.gitattributes`, and `.editorconfig`.
+* `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, issue templates, and a pull request template.
+
+Changed:
+
+* Every color of the mode files is in the `--lex-*` palette: the code colors, the base colors, the error hover color, the error RGB triple, and the graph colors.
+* `build.sh` stops on an error and never leaves a partial `theme.css`.
+* The README says that the note column is the default width of Obsidian.
+
+Fixed:
+
+* The dark mode attachment node of the graph used the old faint color. It now uses the faint color of the palette.
+
+Removed:
+
+* The no-op rule for the line width, and four variables that equal the defaults of Obsidian.
+
 ## 1.1.0 (2026-10-06)
 
 Added:
