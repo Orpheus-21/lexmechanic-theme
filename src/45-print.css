@@ -33,6 +33,7 @@
     --lex-graph-node: #473e34;
     --lex-graph-highlight: var(--lex-ink);
     --lex-graph-attachment: #aa5539;
+    --lex-graph-line: var(--lex-sand);
 
     --background-primary: var(--lex-ground);
     --background-primary-alt: var(--lex-panel);
@@ -95,7 +96,7 @@
 
     --divider-color: color-mix(in srgb, var(--lex-sand) 20%, transparent);
 
-    --graph-line: color-mix(in srgb, var(--lex-sand) 70%, transparent);
+    --graph-line: color-mix(in srgb, var(--lex-graph-line) 70%, transparent);
     --graph-node: var(--lex-graph-node);
     --graph-node-unresolved: var(--lex-graph-unresolved);
     --graph-node-focused: var(--lex-accent);

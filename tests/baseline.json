@@ -1652,6 +1652,10 @@
      "#e8e0d0",
      "rgb(232, 224, 208)"
     ],
+    "--lex-graph-line": [
+     "#a89f8e",
+     "rgb(168, 159, 142)"
+    ],
     "--lex-graph-node": [
      "#dcd6d0",
      "rgb(220, 214, 208)"
@@ -3533,6 +3537,10 @@
     "--lex-graph-highlight": [
      "#2c251d",
      "rgb(44, 37, 29)"
+    ],
+    "--lex-graph-line": [
+     "#968d85",
+     "rgb(150, 141, 133)"
     ],
     "--lex-graph-node": [
      "#473e34",

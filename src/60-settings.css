@@ -1,0 +1,171 @@
+
+/* @settings
+
+name: Lexmechanic
+id: lexmechanic
+settings:
+  -
+    id: lex-colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: lex-accent
+    title: Accent color
+    description: Links, quotes, buttons, the selection, and the focused node of the graph.
+    type: variable-themed-color
+    format: hex
+    default-light: '#901714'
+    default-dark: '#e8483d'
+  -
+    id: lex-accent-hover
+    title: Accent hover color
+    type: variable-themed-color
+    format: hex
+    default-light: '#733331'
+    default-dark: '#f2685d'
+  -
+    id: lex-layout
+    title: Layout
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: file-line-width
+    title: Width of the note column
+    description: Applies when Readable line length is on.
+    type: variable-number
+    default: 700
+    format: px
+  -
+    id: lex-fonts
+    title: Fonts
+    description: Each field takes a CSS font list. The font settings of Obsidian replace these.
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-text-theme
+    title: Text font
+    type: variable-text
+    default: "'Volume Tc', 'Lex CJK Serif', Georgia, 'Times New Roman', 'Noto Serif', serif"
+  -
+    id: font-interface-theme
+    title: Interface font
+    type: variable-text
+    default: "'Volume Tc Sans', 'Lex CJK Sans', Verdana, 'Noto Sans', sans-serif"
+  -
+    id: font-monospace-theme
+    title: Monospace font
+    type: variable-text
+    default: "ui-monospace, 'SF Mono', Consolas, monospace"
+  -
+    id: lex-headings
+    title: Heading sizes
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: h1-size
+    title: H1 size
+    type: variable-number
+    default: 1.618
+    format: em
+  -
+    id: h2-size
+    title: H2 size
+    type: variable-number
+    default: 1.462
+    format: em
+  -
+    id: h3-size
+    title: H3 size
+    type: variable-number
+    default: 1.318
+    format: em
+  -
+    id: h4-size
+    title: H4 size
+    type: variable-number
+    default: 1.188
+    format: em
+  -
+    id: h5-size
+    title: H5 size
+    type: variable-number
+    default: 1.076
+    format: em
+  -
+    id: h6-size
+    title: H6 size
+    type: variable-number
+    default: 1
+    format: em
+  -
+    id: lex-graph
+    title: Graph view
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: lex-graph-node
+    title: Node color
+    type: variable-themed-color
+    format: hex
+    default-light: '#473e34'
+    default-dark: '#dcd6d0'
+  -
+    id: lex-graph-tag
+    title: Tag node color
+    type: variable-themed-color
+    format: hex
+    default-light: '#277461'
+    default-dark: '#69b6c6'
+  -
+    id: lex-graph-attachment
+    title: Attachment node color
+    type: variable-themed-color
+    format: hex
+    default-light: '#aa5539'
+    default-dark: '#cda47a'
+  -
+    id: lex-graph-unresolved
+    title: Unresolved node color
+    type: variable-themed-color
+    format: hex
+    default-light: '#968d85'
+    default-dark: '#7d7464'
+  -
+    id: lex-graph-line
+    title: Line color
+    type: variable-themed-color
+    format: hex
+    default-light: '#968d85'
+    default-dark: '#a89f8e'
+  -
+    id: lex-graph-highlight
+    title: Highlight color
+    description: The node under the pointer and its lines.
+    type: variable-themed-color
+    format: hex
+    default-light: '#2c251d'
+    default-dark: '#e8e0d0'
+  -
+    id: lex-graph-unresolved-opacity
+    title: Opacity of unresolved nodes
+    type: variable-number-slider
+    default: 1
+    min: 0.2
+    max: 1
+    step: 0.05
+  -
+    id: lex-graph-line-opacity
+    title: Opacity of lines
+    description: A factor that multiplies the opacity of the line color.
+    type: variable-number-slider
+    default: 1
+    min: 0.2
+    max: 1
+    step: 0.05
+*/

@@ -24,9 +24,15 @@ body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
 }
 
 /* Obsidian draws unresolved nodes at half opacity on top of their color, and the contrast fell to
-   1.66 to 1 in light mode. The color of the palette is used as it is. */
+   1.66 to 1 in light mode. The color of the palette is used as it is. The Style Settings option
+   of the opacity sets the variable. */
 .graph-view.color-fill-unresolved {
-  opacity: 1;
+  opacity: var(--lex-graph-unresolved-opacity, 1);
+}
+
+/* the opacity of the lines is the alpha of --graph-line times this number, which the Style Settings option sets */
+.graph-view.color-line {
+  opacity: var(--lex-graph-line-opacity, 1);
 }
 
 /* The node under the pointer and its lines. Obsidian uses --interactive-accent, which is also the color of

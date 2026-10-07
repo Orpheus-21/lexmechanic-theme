@@ -58,13 +58,15 @@ let before = JSON.parse(await ev(snap));
 for (let i = 0; i < 60; i++) {
   await sleep(1000);
   const now = JSON.parse(await ev(snap));
-  const still = now.nodes.length === before.nodes.length && now.nodes.every((n, k) => Math.abs(n.x - before.nodes[k].x) < 0.3 && Math.abs(n.y - before.nodes[k].y) < 0.3 && Math.abs(n.alpha - before.nodes[k].alpha) < 0.005);
+  const old = Object.fromEntries(before.nodes.map(n => [n.id, n]));
+  const still = now.nodes.length > 0 && now.nodes.length === before.nodes.length && now.nodes.every(n => old[n.id] && Math.abs(n.x - old[n.id].x) < 0.3 && Math.abs(n.y - old[n.id].y) < 0.3 && Math.abs(n.alpha - old[n.id].alpha) < 0.005);
   before = now;
   if (still && i > 4) break;
 }
 await shot(%s);
 const after = JSON.parse(await ev(snap));
-after.nodes = after.nodes.filter((n, k) => Math.abs(n.x - before.nodes[k].x) < 0.5 && Math.abs(n.y - before.nodes[k].y) < 0.5 && Math.abs(n.alpha - before.nodes[k].alpha) < 0.005);
+const was = Object.fromEntries(before.nodes.map(n => [n.id, n]));
+after.nodes = after.nodes.filter(n => was[n.id] && Math.abs(n.x - was[n.id].x) < 0.5 && Math.abs(n.y - was[n.id].y) < 0.5 && Math.abs(n.alpha - was[n.id].alpha) < 0.005);
 console.log(JSON.stringify(after));
 """
 

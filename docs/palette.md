@@ -36,6 +36,7 @@ The table comes from the source. Run `python3 scripts/make_docs.py --write` to m
 | `--lex-graph-node` | `#473e34` | `#dcd6d0` | Resolved nodes of the graph |
 | `--lex-graph-highlight` | `var(--lex-ink)` | `var(--lex-ink)` | The hover highlight of the graph: the node under the pointer and its lines |
 | `--lex-graph-attachment` | `#aa5539` | `#cda47a` | Attachment nodes of the graph |
+| `--lex-graph-line` | `var(--lex-sand)` | `var(--lex-sand)` | Lines between the nodes of the graph |
 
 ## Graph colors
 
@@ -48,7 +49,7 @@ The graph view reads these variables. Each one uses a palette color.
 | `--graph-node-tag` | `var(--lex-graph-tag)` | `var(--lex-graph-tag)` | Tag nodes |
 | `--graph-node-attachment` | `var(--lex-graph-attachment)` | `var(--lex-graph-attachment)` | Attachment nodes |
 | `--graph-node-unresolved` | `var(--lex-graph-unresolved)` | `var(--lex-graph-unresolved)` | Unresolved nodes (drawn at half opacity by Obsidian) |
-| `--graph-line` | `color-mix(in srgb, var(--lex-sand) 70%, transparent)` | `color-mix(in srgb, var(--lex-sand) 45%, transparent)` | Lines between nodes |
+| `--graph-line` | `color-mix(in srgb, var(--lex-graph-line) 70%, transparent)` | `color-mix(in srgb, var(--lex-graph-line) 45%, transparent)` | Lines between nodes |
 | `--graph-text` | `var(--lex-ink)` | `var(--lex-ink)` | Node labels |
 
 The contrast of each graph color is in `docs/contrast.md`.
@@ -88,3 +89,4 @@ A color group in `graph.json` stores its color as one integer: red times 65536, 
 | `graph-tag` | `#277461` | 2585697 | `#69b6c6` | 6928070 |
 | `graph-unresolved` | `#968d85` | 9866629 | `#7d7464` | 8221796 |
 | `graph-attachment` | `#aa5539` | 11162937 | `#cda47a` | 13476986 |
+| `graph-line` | `#968d85` | 9866629 | `#a89f8e` | 11050894 |

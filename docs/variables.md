@@ -223,7 +223,7 @@ The colors of the graph view. Obsidian reads them through hidden elements. See `
 
 | Variable | Light | Dark | Set in |
 |---|---|---|---|
-| `--graph-line` | `color-mix(in srgb, var(--lex-sand) 70%, transparent)` | `color-mix(in srgb, var(--lex-sand) 45%, transparent)` | theme |
+| `--graph-line` | `color-mix(in srgb, var(--lex-graph-line) 70%, transparent)` | `color-mix(in srgb, var(--lex-graph-line) 45%, transparent)` | theme |
 | `--graph-node` | `var(--lex-graph-node)` | `var(--lex-graph-node)` | theme |
 | `--graph-node-attachment` | `var(--lex-graph-attachment)` | `var(--lex-graph-attachment)` | theme |
 | `--graph-node-focused` | `var(--lex-accent)` | `var(--lex-accent)` | theme |

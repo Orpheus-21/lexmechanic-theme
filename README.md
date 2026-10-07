@@ -133,7 +133,9 @@ The scripts check the contrast and the graph colors of the presets. I looked at 
 
 ## Configuration
 
-The theme has no settings of its own. These Obsidian settings change how it looks:
+The plugin Style Settings shows the options of the theme in Settings, Style Settings, Lexmechanic. The options are the accent color and its hover color, the width of the note column, the three fonts, the six heading sizes, and the colors and opacity of the graph. The snippet `lexmechanic-fun` adds four switches: a plain horizontal rule, no pull quote mark, solid underlines for internal links, and a plain code block border. The theme works without the plugin. A color option changes the palette color only. The Obsidian variables `--accent-h`, `--accent-s`, and `--accent-l` keep their values. I tested the options in Style Settings 1.0.9 and Obsidian 1.14.4 by setting values through the plugin. I did not click through its window.
+
+These Obsidian settings also change how the theme looks:
 
 * Appearance, Text font, Interface font, and Monospace font replace the fonts of the theme.
 * Editor, Readable line length turns the note column on or off. The column is 700 pixels wide. This is the default of Obsidian, and the theme does not change it.
@@ -148,7 +150,9 @@ The theme has no settings of its own. These Obsidian settings change how it look
 2. One block of variables for both modes, in `src/20-shared.css`. It sets the font variables `--font-text-theme`, `--font-interface-theme`, and `--font-monospace-theme`. It also sets the variables for block quotes, code borders, headings, and list markers. It sets the variables for scrollbars, selected items in the file list, the focus border, and form fields.
 3. One block of variables for `.theme-light`, in `src/30-light.css`.
 4. One block of variables for `.theme-dark`, in `src/40-dark.css`.
-5. One rule for the canvas color and one rule for the font of block quotes, in `src/50-rules.css`.
+5. A rule that prints the light colors in dark mode, in `src/45-print.css`. `scripts/make_print.py` writes the file from `src/30-light.css`.
+6. The rules that need a selector, in `src/50-rules.css`: the canvas color, the font of block quotes, the border of controls, the active tab, forced colors, print, reduced motion, and the graph.
+7. The block of options for the Style Settings plugin, in `src/60-settings.css`.
 
 Each mode block starts with the palette: the `--lex-*` variables. Change a color there, and every other line follows. The rest of the block sets the Obsidian variables for backgrounds, text, links, code, the graph view, and the status colors. It also sets the accent with `--accent-h`, `--accent-s`, and `--accent-l`. It sets the eight base colors and the ten `--code-*` variables for syntax colors.
 

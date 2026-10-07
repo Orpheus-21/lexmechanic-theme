@@ -54,3 +54,47 @@
 .cm-hmd-internal-link .is-unresolved .cm-underline {
   text-decoration-style: solid;
 }
+
+/* switches for the Style Settings plugin. Each class turns one feature off, so that the snippet looks
+   the same without the plugin. The block below is the list of options that the plugin reads. */
+body.lex-plain-hr {
+  --hr-color: var(--background-modifier-border-hover);
+}
+body.lex-hide-pull-quote .markdown-rendered blockquote::before {
+  display: none;
+}
+body.lex-solid-links .internal-link,
+body.lex-solid-links .cm-hmd-internal-link .cm-underline {
+  text-decoration-style: solid;
+}
+body.lex-plain-code .markdown-rendered pre,
+body.lex-plain-code .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  border-left: var(--code-border-width) solid var(--code-border-color);
+}
+
+/* @settings
+
+name: Lexmechanic fun snippet
+id: lexmechanic-fun
+settings:
+  -
+    id: lex-plain-hr
+    title: Plain horizontal rule
+    description: Use the border color for the horizontal rule, not the accent.
+    type: class-toggle
+  -
+    id: lex-hide-pull-quote
+    title: Hide the pull quote mark
+    description: Remove the large quote mark before a block quote in reading view.
+    type: class-toggle
+  -
+    id: lex-solid-links
+    title: Solid underline for internal links
+    description: Internal links have a dotted underline by default.
+    type: class-toggle
+  -
+    id: lex-plain-code
+    title: Plain code block border
+    description: Remove the 4px accent border at the left of a code block.
+    type: class-toggle
+*/

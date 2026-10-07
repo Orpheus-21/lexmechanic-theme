@@ -51,6 +51,7 @@ USES = {
     "graph-tag": "Tag nodes of the graph",
     "graph-unresolved": "Unresolved nodes of the graph",
     "graph-attachment": "Attachment nodes of the graph",
+    "graph-line": "Lines between the nodes of the graph",
 }
 
 GRAPH_USES = {
