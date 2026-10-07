@@ -1,0 +1,7 @@
+/* Lexmechanic monospace body preset: the text of notes uses the monospace font.
+   The text, and the headings that follow the text font, use the monospace font of the theme.
+   The interface does not change. Turn on only one body font preset. */
+
+.theme-light, .theme-dark {
+  --font-text-theme: ui-monospace, 'SF Mono', Consolas, monospace;
+}
