@@ -29,12 +29,13 @@ Run `./build.sh --check` to test that `theme.css` is up to date. The three comma
 
 Run `make all`. It builds nothing. It checks that `theme.css` is up to date, runs the unit tests, runs stylelint (it needs `npx`), and checks the contrast and the contrast doc.
 
-Four more checks need Chromium and an installed Obsidian. Run them before you open a pull request that changes a color or a variable:
+Five more checks need Chromium and an installed Obsidian. Run them before you open a pull request that changes a color or a variable:
 
 * `python3 scripts/check_variables.py` lists the variables that the theme sets and Obsidian does not use. It also checks the graph hooks.
 * `python3 scripts/check_resolve.py` finds a variable with an empty value, such as a `var()` with a typo.
 * `python3 scripts/check_baseline.py` compares the computed styles with `tests/baseline.json`. A change that only moves a rule must show no difference. If the change is meant to alter the look, run it with `--update` and commit the new baseline.
 * `python3 scripts/check_graph.py` checks the effective colors of the graph.
+* `python3 scripts/check_screenshots.py` compares screenshots of the sample page with the images in `tests/screenshots/`. Run it with `--update` when a change is meant to alter the look.
 
 The scripts read `app.css` from the installed Obsidian. The repo does not hold that file. `python3 scripts/extract_obsidian_css.py -o app.css` copies it, and it does not start Obsidian.
 

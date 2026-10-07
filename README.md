@@ -148,7 +148,7 @@ The script `scripts/check_contrast.py` checks the contrast of the colors. Text c
 
 Some pairs are below their minimum, and the author keeps them: three dark mode pairs of the accent on the alt panel color, and the border of controls. The script lists them as known and does not fail for them.
 
-The file `docs/contrast.md` has the contrast of every color pair, and of the graph colors. Four more checks need Chromium and an installed Obsidian: `check_variables.py`, `check_resolve.py`, `check_baseline.py`, and `check_graph.py`. The file `CONTRIBUTING.md` describes them.
+The file `docs/contrast.md` has the contrast of every color pair, and of the graph colors. Five more checks need Chromium and an installed Obsidian: `check_variables.py`, `check_resolve.py`, `check_baseline.py`, `check_graph.py`, and `check_screenshots.py`. The file `CONTRIBUTING.md` describes them.
 
 ## Contributing
 

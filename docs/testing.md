@@ -16,6 +16,7 @@ These scripts load Obsidian's own `app.css` and the theme in headless Chromium, 
 * `scripts/check_resolve.py` finds a variable with an empty value, such as a `var()` with a typo.
 * `scripts/check_baseline.py` records the resolved color of every variable and the computed style of a sample reading view page. It compares them with `tests/baseline.json`.
 * `scripts/check_graph.py` reads the 11 graph hooks and checks the effective contrast.
+* `scripts/check_screenshots.py` takes a screenshot of the sample page in both modes and compares it with `tests/screenshots/`. It finds a change of the look that no computed property shows. The images belong to one machine, because the Chromium version and the system fonts change them.
 
 `scripts/extract_obsidian_css.py` copies `app.css` out of an asar file. The repo does not hold that file, because it belongs to Obsidian.
 
