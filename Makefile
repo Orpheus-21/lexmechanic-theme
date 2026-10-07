@@ -30,7 +30,9 @@ contrast:
 docs:
 	python3 scripts/make_docs.py --write
 	python3 scripts/font_coverage.py --write
+	python3 scripts/make_label_preset.py --write
 
 all: check test lint contrast
 	python3 scripts/make_docs.py --check-doc
 	python3 scripts/font_coverage.py --check-doc
+	python3 scripts/make_label_preset.py --check-doc

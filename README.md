@@ -114,6 +114,7 @@ The folder `snippets/presets/` has optional snippets that you put on top of the 
 | `lexmechanic-graph-monochrome` | Node types that differ by lightness only. |
 | `lexmechanic-graph-high-contrast` | Stronger nodes, lines, and arrows in the graph. |
 | `lexmechanic-graph-dim` | A quieter graph in dark mode. |
+| `lexmechanic-graph-labels` | The labels of the graph use Volume Tc Sans. The file is large, because it holds the font data again. |
 
 The scripts check the contrast and the graph colors of the presets. I did not look at the presets in Obsidian.
 

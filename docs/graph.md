@@ -28,7 +28,7 @@ The eight documented variables are `--graph-controls-width`, `--graph-text`, `--
 
 ## What a theme cannot change
 
-* **The label font.** The code fixes the font of the labels: `ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", ...`. `system-ui` always matches, so the fonts after it are never used. The labels do not use Volume Tc Sans.
+* **The label font.** The code fixes the font of the labels: `ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter", ...`. The theme cannot change the stack. By default the labels use the system font. The first name, `ui-sans-serif`, is not a generic family in Chromium, and so a font face with that name is used first. A test in the real Obsidian 1.14.4 shows that one face named `ui-sans-serif` with the data of Volume Tc Sans is enough to draw the labels in Volume Tc Sans. The optional preset `lexmechanic-graph-labels` does this. It is not part of the theme, because it holds the font data a second time (54 KB). If a later Chromium knows `ui-sans-serif` as a generic family, the preset stops working, and the labels use the system font again.
 * **The label size.** It is `14 + node size / 4` in the code.
 * **The shape of a node.** Every node is a circle.
 * **The display and force settings.** The node size, the link thickness, the text fade, the arrows, and the four forces are settings of the vault. They are in `.obsidian/graph.json`.
