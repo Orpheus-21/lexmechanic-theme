@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# editors and systems
+*.swp
+*~
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# output of the tests and of the screenshot script
+tests/output/
