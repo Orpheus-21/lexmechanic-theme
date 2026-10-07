@@ -104,6 +104,7 @@ The theme has two snippets.
 ## Troubleshooting
 
 * **The theme is not in the list.** The vault must have the files `.obsidian/themes/Lexmechanic/manifest.json` and `.obsidian/themes/Lexmechanic/theme.css`. The folder name must be `Lexmechanic`. Restart Obsidian.
+* **The fonts fall back to a sans font.** Open Settings, Appearance, and look at Text font and Interface font. Obsidian uses a font that you set there before the font of the theme. Clear both fields and restart Obsidian. Obsidian Sync can copy these fields from another device, so check the phone too.
 * **The snippets are not in the list.** The files must be in `.obsidian/snippets`, and their names must end in `.css`. Restart Obsidian.
 * **Colors or borders look wrong.** The theme needs installer version 1.4.13 or newer. Look at the installer version in Settings, then General. The installer is a different download from the app updates.
 * **The fonts differ from the screenshot.** Open Settings, then Appearance. If the font fields are not empty, they replace the fonts of the theme. Clear them.
