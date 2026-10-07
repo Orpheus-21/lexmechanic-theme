@@ -43,6 +43,20 @@ The folder name `Lexmechanic` must match the `name` in `manifest.json`.
 
 A file manager can hide the `.obsidian` folder. In Finder on macOS, press Command, Shift, and the period key. In Explorer on Windows, open View, then Show, then Hidden items. Most file managers on Linux show hidden items with Ctrl and H.
 
+## Update
+
+1. Get the new version: run `git pull` in the clone, or download the repo again.
+2. Copy the files into the vault again, in the same way as the install. The new files replace the old ones.
+3. Restart Obsidian.
+
+The file `CHANGELOG.md` lists the changes of each version.
+
+## Uninstall
+
+1. Open Settings, then Appearance. Under Themes, choose another theme. Under CSS snippets, turn off `lexmechanic-extras` and `lexmechanic-fun`.
+2. Delete the folder `.obsidian/themes/Lexmechanic` in the vault.
+3. Delete the files `lexmechanic-extras.css` and `lexmechanic-fun.css` in the folder `.obsidian/snippets`.
+
 ## Usage
 
 The theme works after you choose it. It follows the light or dark setting of Obsidian.
