@@ -1,0 +1,9 @@
+/* Lexmechanic OLED preset: a true black page in dark mode.
+   Turn it on together with the theme. The page is pure black, and the panels are a very dark
+   brown. Light mode does not change. */
+
+.theme-dark {
+  --lex-ground: #000000;
+  --lex-panel: #0c0a07;
+  --lex-panel-alt: #14110d;
+}
