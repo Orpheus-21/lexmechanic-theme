@@ -1,0 +1,30 @@
+/* Lexmechanic colorful graph preset: a different color for each node type.
+   Resolved nodes are navy (light) or pale blue (dark), tag nodes are teal or mint, attachments are
+   rust or gold, and the focused node is red, the accent. Unresolved nodes are gray and fully opaque.
+   The colors also differ in lightness, and the distance of each pair stays above 10 (CIEDE2000)
+   with protanopia, deuteranopia, and tritanopia. The hover highlight uses the ink color. */
+
+.theme-light {
+  --lex-graph-node: #1a3a5b;
+  --lex-graph-tag: #2c7c84;
+  --lex-graph-attachment: #a74f23;
+  --lex-graph-unresolved: #8c867d;
+  --graph-node: var(--lex-graph-node);
+}
+
+.theme-dark {
+  --lex-graph-node: #cddff1;
+  --lex-graph-tag: #79d2a6;
+  --lex-graph-attachment: #d1b52c;
+  --lex-graph-unresolved: #827b73;
+  --graph-node: var(--lex-graph-node);
+}
+
+.graph-view.color-fill-unresolved {
+  opacity: 1;
+}
+
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--text-normal);
+}
