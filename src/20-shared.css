@@ -1,8 +1,8 @@
 /* Variables for both modes: the fonts, and the values that use the palette of the
    active mode. The palette itself is at the top of src/30-light.css and src/40-dark.css. */
 .theme-dark, .theme-light {
-  --font-text-theme: 'Volume Tc', Georgia, 'Times New Roman', 'Noto Serif', serif;
-  --font-interface-theme: 'Volume Tc Sans', Verdana, 'Noto Sans', sans-serif;
+  --font-text-theme: 'Volume Tc', 'Lex CJK Serif', Georgia, 'Times New Roman', 'Noto Serif', serif;
+  --font-interface-theme: 'Volume Tc Sans', 'Lex CJK Sans', Verdana, 'Noto Sans', sans-serif;
   --font-monospace-theme: ui-monospace, 'SF Mono', Consolas, monospace;
 
   --blockquote-border-thickness: 4px;

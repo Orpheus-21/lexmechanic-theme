@@ -1,0 +1,24 @@
+/* Chinese, Japanese, and Korean text. Volume Tc has no such characters, and a browser picks a sans
+   font for them, which looks wrong in serif text. These two faces map the CJK ranges to a serif
+   or a sans font that is installed on the system, and they use no data. Each src lists the names of
+   common fonts: Noto and Source Han (Linux and others), Songti, PingFang, and Hiragino (macOS), and
+   SimSun, MS Mincho, Microsoft YaHei, and Yu Gothic (Windows). If none is installed, the face is
+   ignored. The first name that exists wins, so move your language first for the glyph forms you
+   prefer (Simplified, Traditional, or Japanese). */
+
+@font-face {
+  font-family: 'Lex CJK Serif';
+  src: local('Noto Serif CJK SC'), local('NotoSerifCJKsc-Regular'), local('Noto Serif CJK TC'), local('NotoSerifCJKtc-Regular'),
+    local('Noto Serif CJK JP'), local('NotoSerifCJKjp-Regular'), local('Source Han Serif SC'), local('SourceHanSerifSC-Regular'),
+    local('Songti SC'), local('STSongti-SC-Regular'), local('SimSun'), local('MS Mincho'), local('Yu Mincho');
+  unicode-range: U+1100-11FF, U+2E80-2FDF, U+3000-30FF, U+3100-33FF, U+3400-4DBF, U+4E00-9FFF, U+AC00-D7AF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: 'Lex CJK Sans';
+  src: local('Noto Sans CJK SC'), local('NotoSansCJKsc-Regular'), local('Noto Sans CJK TC'), local('NotoSansCJKtc-Regular'),
+    local('Noto Sans CJK JP'), local('NotoSansCJKjp-Regular'), local('Source Han Sans SC'), local('SourceHanSansSC-Regular'),
+    local('PingFang SC'), local('Hiragino Sans'), local('Microsoft YaHei'), local('Yu Gothic');
+  unicode-range: U+1100-11FF, U+2E80-2FDF, U+3000-30FF, U+3100-33FF, U+3400-4DBF, U+4E00-9FFF, U+AC00-D7AF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF;
+}
+
