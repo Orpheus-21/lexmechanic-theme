@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.1.1] (2026-10-07)
+
 Added:
 
 * Fifteen preset snippets in `snippets/presets/`: accent colors (blue, green, black), a true black dark mode, a newsprint light mode, a high contrast mode, a narrow and a wide column, a sans and a monospace body font, a hyphens preset, and four graph presets (colorful, monochrome, high contrast, dim).
@@ -79,6 +81,7 @@ Removed:
 
 * The first version. It has the theme, the `lexmechanic-extras` snippet, and the `lexmechanic-fun` snippet.
 
-[Unreleased]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.1...HEAD
+[1.1.1]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/Orpheus-21/lexmechanic-theme/compare/394b876...1.1.0
 [1.0.0]: https://github.com/Orpheus-21/lexmechanic-theme/commit/394b876
