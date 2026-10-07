@@ -26,8 +26,8 @@
   font-style: normal;
 }
 
-/* the site itself is single-mode (light/paper); .theme-dark below is an invented
-   night sibling, same hues inverted, not lifted from the source. */
+/* Variables for both modes: the fonts, and the values that use the palette of the
+   active mode. The palette itself is at the top of src/30-light.css and src/40-dark.css. */
 .theme-dark, .theme-light {
   --font-text-theme: 'Volume Tc', Georgia, 'Times New Roman', serif;
   --font-interface-theme: 'Volume Tc Sans', Verdana, sans-serif;
