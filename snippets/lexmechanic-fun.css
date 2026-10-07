@@ -15,8 +15,10 @@
 }
 
 /* editorial divider: short red-ink dash instead of a full-width faint line */
-.markdown-rendered hr, .markdown-source-view hr {
+.markdown-rendered hr,
+.markdown-source-view.mod-cm6 .cm-line hr {
   width: 3em;
+  flex: none;
   margin: 2.5em auto;
 }
 
