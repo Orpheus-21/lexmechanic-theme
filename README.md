@@ -78,6 +78,16 @@ The theme has two snippets.
 * Highlighted text (`==text==`) gets a red tint.
 * Internal links have a dotted underline.
 
+## Troubleshooting
+
+* **The theme is not in the list.** The vault must have the files `.obsidian/themes/Lexmechanic/manifest.json` and `.obsidian/themes/Lexmechanic/theme.css`. The folder name must be `Lexmechanic`. Restart Obsidian.
+* **The snippets are not in the list.** The files must be in `.obsidian/snippets`, and their names must end in `.css`. Restart Obsidian.
+* **Colors or borders look wrong.** The theme needs installer version 1.4.13 or newer. Look at the installer version in Settings, then General. The installer is a different download from the app updates.
+* **The fonts differ from the screenshot.** Open Settings, then Appearance. If the font fields are not empty, they replace the fonts of the theme. Clear them.
+* **A dash, an ellipsis, or a symbol is in another style.** The fonts of the theme have about 175 characters. Other characters use a fallback font. The file `docs/characters.md` lists them.
+* **The labels in the graph view use a system font.** Obsidian fixes the font of the graph labels in its code, and a theme cannot change it.
+* **The theme looks wrong on a phone.** The theme is not tested on Android or iOS.
+
 ## Configuration
 
 The theme has no settings of its own. These Obsidian settings change how it looks:
