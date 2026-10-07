@@ -7,3 +7,11 @@ body.theme-light, body.theme-dark { --canvas-color: var(--lex-sand); }
   font-family: var(--font-interface);
 }
 
+
+/* headings: balance the lines of a long heading, so that the last line is not a short word.
+   Chromium 114 and newer know text-wrap: balance, and older versions ignore it. */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view .cm-line.HyperMD-header,
+.inline-title {
+  text-wrap: balance;
+}
