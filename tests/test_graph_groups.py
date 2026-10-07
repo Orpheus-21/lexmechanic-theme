@@ -41,5 +41,26 @@ class GroupTest(unittest.TestCase):
         self.assertIsInstance(json.loads(json.dumps([g.group("a=ink", self.colors)])), list)
 
 
+class ExampleTest(unittest.TestCase):
+    path = Path(__file__).resolve().parent.parent / "examples" / "graph.json"
+
+    def test_the_example_is_valid_json_with_the_display_and_force_keys(self):
+        data = json.loads(self.path.read_text())
+        for key in ("colorGroups", "showArrow", "textFadeMultiplier", "nodeSizeMultiplier", "lineSizeMultiplier",
+                    "centerStrength", "repelStrength", "linkStrength", "linkDistance"):
+            self.assertIn(key, data)
+
+    def test_the_colors_of_the_example_are_palette_colors_of_light_mode(self):
+        colors = g.palette("light")
+        ints = {g.to_int(v) for v in colors.values()}
+        for entry in json.loads(self.path.read_text())["colorGroups"]:
+            self.assertEqual(entry["color"]["a"], 1)
+            self.assertIn(entry["color"]["rgb"], ints)
+
+    def test_the_center_strength_default_is_the_default_of_obsidian(self):
+        import math
+        self.assertAlmostEqual(1 - math.log(0.1 * 0.99 + 0.01) / math.log(0.01), json.loads(self.path.read_text())["centerStrength"], places=12)
+
+
 if __name__ == "__main__":
     unittest.main()
