@@ -1400,10 +1400,6 @@
      "#14110d",
      "rgb(20, 17, 13)"
     ],
-    "--file-line-width": [
-     "700px",
-     "rgba(0, 0, 0, 0)"
-    ],
     "--font-interface-theme": [
      "'Volume Tc Sans', Verdana, sans-serif",
      "rgba(0, 0, 0, 0)"
@@ -3133,10 +3129,6 @@
     "--drag-ghost-text-color": [
      "#faf9f5",
      "rgb(250, 249, 245)"
-    ],
-    "--file-line-width": [
-     "700px",
-     "rgba(0, 0, 0, 0)"
     ],
     "--font-interface-theme": [
      "'Volume Tc Sans', Verdana, sans-serif",

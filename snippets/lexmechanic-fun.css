@@ -17,9 +17,6 @@
   margin: 2.5em auto;
 }
 
-/* editorial column: Obsidian's own width variable, so "Readable line length" still rules */
-body { --file-line-width: 700px; }
-
 /* blockquote pull-quote mark (reading view only) */
 .markdown-rendered blockquote {
   position: relative;
