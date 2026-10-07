@@ -1,0 +1,27 @@
+name: Obsidian versions
+
+# Each week, check the variables of the newest Obsidian against the theme.
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  variables:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the newest Obsidian asar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download --repo obsidianmd/obsidian-releases --pattern 'obsidian-*.asar.gz' --dir .
+          gunzip obsidian-*.asar.gz
+          ls -l obsidian-*.asar
+      - name: Check the variables and the graph hooks
+        run: |
+          python3 scripts/extract_obsidian_css.py --asar obsidian-*.asar -o app.css
+          python3 scripts/check_variables.py --css app.css
