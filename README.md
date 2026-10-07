@@ -53,7 +53,6 @@ The theme has two snippets.
 
 * The text caret, the cursor, and the active line use the accent color.
 * A horizontal rule shows as a short red dash.
-* The note column is 700 pixels wide.
 * A block quote in reading view gets a large quote mark.
 * A code block gets a red left border.
 * Highlighted text (`==text==`) gets a red tint.
@@ -64,7 +63,7 @@ The theme has two snippets.
 The theme has no settings of its own. These Obsidian settings change how it looks:
 
 * Appearance, Text font, Interface font, and Monospace font replace the fonts of the theme.
-* Editor, Readable line length turns the 700 pixel column on or off. The `lexmechanic-fun` snippet sets the width in the variable `--file-line-width`.
+* Editor, Readable line length turns the note column on or off. The column is 700 pixels wide. This is the default of Obsidian, and the theme does not change it.
 
 ## How it works
 
