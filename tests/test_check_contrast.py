@@ -58,6 +58,26 @@ class BlocksTest(unittest.TestCase):
         self.assertGreater(dark, 0.5)
 
 
+class PresetTest(unittest.TestCase):
+    def test_a_snippet_block_is_read_per_mode(self):
+        css = ".theme-light { --a: #111111; } .theme-dark { --a: #eeeeee; } /* .theme-dark { --a: #000000; } */"
+        self.assertEqual(c.read_snippet(css), {"light": {"--a": "#111111"}, "dark": {"--a": "#eeeeee"}})
+
+    def test_a_block_for_both_modes_sets_both(self):
+        found = c.read_snippet(".theme-light, .theme-dark { --b: 1px; }")
+        self.assertEqual(found["light"], {"--b": "1px"})
+        self.assertEqual(found["dark"], {"--b": "1px"})
+
+    def test_a_body_rule_is_not_a_mode_block(self):
+        self.assertEqual(c.read_snippet("body.theme-dark { --c: red; }"), {"light": {}, "dark": {}})
+
+    def test_a_preset_changes_the_result(self):
+        plain = c.compute()
+        low = c.compute(preset=".theme-light { --lex-ink: #faf9f4; }")
+        self.assertEqual(c.failures(plain), 0)
+        self.assertGreater(c.failures(low), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
 

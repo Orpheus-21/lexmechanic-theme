@@ -7,6 +7,8 @@ Usage:
   python3 scripts/check_contrast.py --json       print the report as JSON
   python3 scripts/check_contrast.py --write      write the tables into docs/contrast.md
   python3 scripts/check_contrast.py --check-doc  exit 1 if docs/contrast.md is out of date
+  python3 scripts/check_contrast.py --preset FILE  check the theme with a preset snippet on top
+  python3 scripts/check_contrast.py --presets    check the theme with each file of snippets/presets/
 
 The script reads the .theme-light and .theme-dark blocks, resolves var() references,
 and compares colors. Text colors must reach 4.5 to 1 on the page, panel, and alt panel
@@ -66,6 +68,18 @@ def read_blocks(css):
     return blocks
 
 
+def read_snippet(css):
+    """Return {"light": {...}, "dark": {...}}: the variables that a snippet sets on .theme-light and .theme-dark."""
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    found = {"light": {}, "dark": {}}
+    for m in re.finditer(r"([^{}]+)\{([^{}]*)\}", css):
+        values = dict(re.findall(r"(--[a-z0-9-]+):\s*([^;]+?)\s*;", m.group(2)))
+        for mode in found:
+            if re.search(r"(?<!body)\.theme-%s\b" % mode, m.group(1)):
+                found[mode].update(values)
+    return found
+
+
 def shared_block(css):
     """Return the variables of the block that holds both modes."""
     css = re.sub(r"url\('data:[^']*'\)", "", css)
@@ -115,13 +129,15 @@ def ratio(a, b):
     return (hi + 0.05) / (lo + 0.05)
 
 
-def compute(root=ROOT):
-    """Return {mode: {"text": [...], "pairs": [...]}} for theme.css. Each row has a list of failures."""
+def compute(root=ROOT, preset=None):
+    """Return {mode: {"text": [...], "pairs": [...]}} for theme.css. Each row has a list of failures.
+    A preset (the text of a snippet) is laid over the theme."""
     css = (root / "theme.css").read_text()
     shared = shared_block(css)
+    over = read_snippet(preset) if preset else {"light": {}, "dark": {}}
     result = {}
     for mode, own in read_blocks(css).items():
-        values = {**shared, **own}
+        values = {**shared, **own, **over[mode]}
         backgrounds = {b: resolve(b, values) for b in BACKGROUNDS}
         page = backgrounds["--background-primary"]
         text = []
@@ -200,9 +216,21 @@ def document(data):
     return f"{head}{START}\n{markdown(data).rstrip()}\n{END}{tail}"
 
 
+def preset_files(root=ROOT):
+    return sorted((root / "snippets" / "presets").glob("*.css"))
+
+
 def main():
-    data = compute()
     args = sys.argv[1:]
+    if "--presets" in args or "--preset" in args:
+        files = preset_files() if "--presets" in args else [Path(args[args.index("--preset") + 1])]
+        bad = 0
+        for path in files:
+            n = failures(compute(preset=path.read_text()))
+            print(f"{path.name}: {n} new pair(s) below the minimum")
+            bad += n
+        return 1 if bad else 0
+    data = compute()
     if "--json" in args:
         print(json.dumps(data, indent=1))
     elif "--markdown" in args:
