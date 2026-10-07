@@ -1,7 +1,7 @@
 /* Lexmechanic — fun/polish pass, separate from the core theme and from the
    callout/table/tag snippet. Toggle off independently if any of these misbehave. */
 
-/* editor cursor + current line, in the accent red */
+/* text caret and active line, in the accent color */
 .theme-light, .theme-dark { --caret-color: var(--text-accent); }
 .cm-activeLine {
   background-color: color-mix(in srgb, var(--text-accent) 6%, transparent);
