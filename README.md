@@ -94,7 +94,7 @@ The theme has two snippets.
 * **Colors or borders look wrong.** The theme needs installer version 1.4.13 or newer. Look at the installer version in Settings, then General. The installer is a different download from the app updates.
 * **The fonts differ from the screenshot.** Open Settings, then Appearance. If the font fields are not empty, they replace the fonts of the theme. Clear them.
 * **A dash, an ellipsis, or a symbol is in another style.** The fonts of the theme have about 175 characters. Other characters use a fallback font. The file `docs/characters.md` lists them.
-* **The labels in the graph view use a system font.** Obsidian fixes the font of the graph labels in its code, and a theme cannot change it.
+* **The labels in the graph view use a system font.** Obsidian fixes the font of the graph labels in its code. A theme cannot change it.
 * **The theme looks wrong on a phone.** The theme is not tested on Android or iOS.
 
 ## Configuration
@@ -111,7 +111,7 @@ The theme has no settings of its own. These Obsidian settings change how it look
 `theme.css` has these parts, in this order:
 
 1. Three `@font-face` rules, in `src/10-fonts.css`. Each rule holds a font as a base64 data URI.
-2. One block of variables for both modes, in `src/20-shared.css`. It sets the font variables `--font-text-theme`, `--font-interface-theme`, and `--font-monospace-theme`. It also sets the variables for block quotes, code borders, headings, list markers, scrollbars, selected items in the file list, the focus border, and form fields.
+2. One block of variables for both modes, in `src/20-shared.css`. It sets the font variables `--font-text-theme`, `--font-interface-theme`, and `--font-monospace-theme`. It also sets the variables for block quotes, code borders, headings, and list markers. It sets the variables for scrollbars, selected items in the file list, the focus border, and form fields.
 3. One block of variables for `.theme-light`, in `src/30-light.css`.
 4. One block of variables for `.theme-dark`, in `src/40-dark.css`.
 5. One rule for the canvas color and one rule for the font of block quotes, in `src/50-rules.css`.
