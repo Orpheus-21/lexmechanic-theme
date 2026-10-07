@@ -12,6 +12,8 @@
   --lex-error: #b83800;
   --lex-success: #3a6329;
   --lex-warning: #7a4e00;
+  --lex-code-property: #2f5d6e;
+  --lex-code-value: #8a3b12;
 
   --background-primary: var(--lex-ground);
   --background-primary-alt: var(--lex-panel);
@@ -96,11 +98,11 @@
   --code-important: var(--lex-error);
   --code-keyword: var(--lex-accent);
   --code-operator: var(--lex-muted);
-  --code-property: #2f5d6e;
+  --code-property: var(--lex-code-property);
   --code-punctuation: var(--lex-muted);
   --code-string: var(--lex-success);
   --code-tag: var(--lex-accent);
-  --code-value: #8a3b12;
+  --code-value: var(--lex-code-value);
 
   --color-red: #a8231f;
   --color-red-rgb: 168, 35, 31;

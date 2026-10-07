@@ -1540,6 +1540,14 @@
      "#f2685d",
      "rgb(242, 104, 93)"
     ],
+    "--lex-code-property": [
+     "#7fb3c4",
+     "rgb(127, 179, 196)"
+    ],
+    "--lex-code-value": [
+     "#d98b5f",
+     "rgb(217, 139, 95)"
+    ],
     "--lex-error": [
      "#ff7a45",
      "rgb(255, 122, 69)"
@@ -3253,6 +3261,14 @@
     "--lex-accent-hover": [
      "#733331",
      "rgb(115, 51, 49)"
+    ],
+    "--lex-code-property": [
+     "#2f5d6e",
+     "rgb(47, 93, 110)"
+    ],
+    "--lex-code-value": [
+     "#8a3b12",
+     "rgb(138, 59, 18)"
     ],
     "--lex-error": [
      "#b83800",
