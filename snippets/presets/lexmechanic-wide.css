@@ -1,0 +1,6 @@
+/* Lexmechanic wide column preset: the note column is 900 pixels wide.
+   Obsidian uses 700 pixels. The width applies when Readable line length is on, in Settings, Editor. */
+
+body {
+  --file-line-width: 900px;
+}
