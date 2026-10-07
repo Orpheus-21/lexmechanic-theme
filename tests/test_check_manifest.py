@@ -35,10 +35,8 @@ class ProblemsTest(unittest.TestCase):
         self.assertTrue(m.problems(GOOD, LOG, tag="v1.2.3"))
 
     def test_a_version_in_square_brackets_is_found(self):
-        self.assertEqual(m.changelog_version("## [Unreleased]
-
-## [1.4.0] (2026-01-01)
-"), "1.4.0")
+        text = "## [Unreleased]\n\n## [1.4.0] (2026-01-01)\n"
+        self.assertEqual(m.changelog_version(text), "1.4.0")
 
     def test_unreleased_is_skipped(self):
         self.assertEqual(m.changelog_version(LOG), "1.2.3")
