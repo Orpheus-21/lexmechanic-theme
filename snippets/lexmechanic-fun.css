@@ -8,9 +8,10 @@
   --hr-thickness: 3px;
 }
 
-/* active line, tinted in the accent color */
-.cm-activeLine {
-  background-color: color-mix(in srgb, var(--text-accent) 6%, transparent);
+/* active line in Live Preview and Source mode, tinted in the accent color. The tint is an image, so
+   that it lies over the own background of a code line. Obsidian marks the line with .cm-active. */
+.markdown-source-view .cm-line.cm-active {
+  background-image: linear-gradient(color-mix(in srgb, var(--text-accent) 6%, transparent), color-mix(in srgb, var(--text-accent) 6%, transparent));
 }
 
 /* editorial divider: short red-ink dash instead of a full-width faint line */
