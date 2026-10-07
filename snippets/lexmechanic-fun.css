@@ -33,8 +33,8 @@
   line-height: 1;
 }
 
-/* code blocks join the same accent-border family as blockquotes/callouts */
-/* reading view: pre; Live Preview: the code-block lines */
+/* code blocks: a 4px accent border like block quotes and callouts
+   (reading view: pre; Live Preview: the lines of the code block) */
 .markdown-rendered pre,
 .markdown-source-view .HyperMD-codeblock {
   border-left: 4px solid var(--text-accent);
