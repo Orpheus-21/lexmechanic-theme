@@ -122,17 +122,13 @@ The snippets use only these variables. They add no colors of their own.
 
 ## Checks
 
-The script `scripts/check_contrast.py` checks the contrast of the text colors. Run this command in the repo folder:
+Run `make all` in the repo folder. It checks that `theme.css` is up to date, runs the unit tests, runs stylelint, and checks the contrast. It needs Python 3 and `npx`.
 
-```
-python3 scripts/check_contrast.py
-```
+The script `scripts/check_contrast.py` checks the contrast of the colors. Text colors must reach 4.5 to 1 on the page, panel, and alt panel colors. Interface colors, such as the focus ring, must reach 3 to 1. The script exits with 1 when a pair is too low.
 
-The script reads `theme.css` and compares each text color with the page, panel, and alt panel colors. It exits with 1 when a pair is below 4.5 to 1. It needs only Python 3.
+Some pairs are below their minimum, and the author keeps them: three dark mode pairs of the accent on the alt panel color, and the border of controls. The script lists them as known and does not fail for them.
 
-Three dark mode pairs are below 4.5 to 1: the accent, `--code-keyword`, and `--code-tag` on the alt panel color. The author keeps these pairs. The script lists them as known and does not fail for them.
-
-The file `docs/contrast.md` has the contrast of every text color.
+The file `docs/contrast.md` has the contrast of every color pair, and of the graph colors. Four more checks need Chromium and an installed Obsidian: `check_variables.py`, `check_resolve.py`, `check_baseline.py`, and `check_graph.py`. The file `CONTRIBUTING.md` describes them.
 
 ## Contributing
 
