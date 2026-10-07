@@ -94,7 +94,7 @@ The theme has two snippets.
 * **Colors or borders look wrong.** The theme needs installer version 1.4.13 or newer. Look at the installer version in Settings, then General. The installer is a different download from the app updates.
 * **The fonts differ from the screenshot.** Open Settings, then Appearance. If the font fields are not empty, they replace the fonts of the theme. Clear them.
 * **A dash, an ellipsis, or a symbol is in another style.** The fonts of the theme have about 175 characters. Other characters use a fallback font. The file `docs/characters.md` lists them.
-* **The labels in the graph view use a system font.** Obsidian fixes the font of the graph labels in its code. A theme cannot change it.
+* **The labels in the graph view use a system font.** Obsidian fixes the font of the graph labels in its code. A theme cannot change it `docs/graph.md` tells how the graph gets its colors.
 * **The theme looks wrong on a phone.** The theme is not tested on Android or iOS.
 
 ## Configuration
