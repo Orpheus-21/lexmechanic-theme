@@ -25,7 +25,7 @@
   --lex-error-hover: #9a3000;
   --lex-error-rgb: 184, 56, 0;
   --lex-code-normal: #070504;
-  --lex-graph-tag: var(--lex-accent-hover);
+  --lex-graph-tag: #277461;
   --lex-graph-unresolved: var(--lex-sand);
   --lex-graph-node: #473e34;
   --lex-graph-attachment: #aa5539;

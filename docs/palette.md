@@ -31,7 +31,7 @@ The table comes from the source. Run `python3 scripts/make_docs.py --write` to m
 | `--lex-error-hover` | `#9a3000` | `#ff946a` | The hover color of the error background |
 | `--lex-error-rgb` | `184, 56, 0` | `255, 122, 69` | The error color as a triple, for Obsidian variables that ask for RGB |
 | `--lex-code-normal` | `#070504` | `var(--lex-ink)` | Plain code text |
-| `--lex-graph-tag` | `var(--lex-accent-hover)` | `#c9635c` | Tag nodes of the graph |
+| `--lex-graph-tag` | `#277461` | `#69b6c6` | Tag nodes of the graph |
 | `--lex-graph-unresolved` | `var(--lex-sand)` | `#7d7464` | Unresolved nodes of the graph |
 | `--lex-graph-node` | `#473e34` | `#dcd6d0` | Resolved nodes of the graph |
 | `--lex-graph-attachment` | `#aa5539` | `#cda47a` | Attachment nodes of the graph |
@@ -83,6 +83,6 @@ A color group in `graph.json` stores its color as one integer: red times 65536, 
 | `pink` | `#a04668` | 10503784 | `#e08aa8` | 14715560 |
 | `error-hover` | `#9a3000` | 10104832 | `#ff946a` | 16749674 |
 | `graph-node` | `#473e34` | 4668980 | `#dcd6d0` | 14472912 |
-| `graph-tag` | `#733331` | 7549745 | `#c9635c` | 13198172 |
+| `graph-tag` | `#277461` | 2585697 | `#69b6c6` | 6928070 |
 | `graph-unresolved` | `#968d85` | 9866629 | `#7d7464` | 8221796 |
 | `graph-attachment` | `#aa5539` | 11162937 | `#cda47a` | 13476986 |
