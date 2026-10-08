@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.1.2] (2026-10-08)
+
 Fixed:
 
 * The print rules use `page-break-after` and `page-break-inside`, and they have no `!important`. A lint of the community list reported the `break-*` properties and the `!important` flags.
@@ -85,7 +87,8 @@ Removed:
 
 * The first version. It has the theme, the `lexmechanic-extras` snippet, and the `lexmechanic-fun` snippet.
 
-[Unreleased]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.1...HEAD
+[Unreleased]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.2...HEAD
+[1.1.2]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/Orpheus-21/lexmechanic-theme/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/Orpheus-21/lexmechanic-theme/compare/394b876...1.1.0
 [1.0.0]: https://github.com/Orpheus-21/lexmechanic-theme/commit/394b876
