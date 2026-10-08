@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Fixed:
+
+* The print rules use `page-break-after` and `page-break-inside`, and they have no `!important`. A lint of the community list reported the `break-*` properties and the `!important` flags.
+
 ## [1.1.1] (2026-10-07)
 
 Added:
@@ -34,7 +38,6 @@ Changed:
 
 Fixed:
 
-* The print rules use `page-break-after` and `page-break-inside`, and they have no `!important`. A lint of the community list reported the `break-*` properties and the `!important` flags.
 * Found in the real app: the code block border, the internal links, the active line, the horizontal rule, and the callout quote color in Live Preview. The graph now has its own colors for tag, attachment, unresolved, and highlighted nodes.
 * The dark mode attachment node of the graph used the old faint color. It now uses the faint color of the palette. Each graph color has a name in the palette.
 
