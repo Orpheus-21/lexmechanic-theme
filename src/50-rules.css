@@ -79,20 +79,22 @@ select.dropdown,
   }
 }
 
-/* print: a heading stays with its text, a block does not break, and no background or shadow is printed */
+/* print: a heading stays with its text, a block does not break, and no background or shadow is printed.
+   The old page-break properties work in every Obsidian version, and the selectors begin with body, so that
+   they win over the rules of Obsidian without a priority flag. */
 @media print {
   .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
-    break-after: avoid;
+    page-break-after: avoid;
   }
   .markdown-rendered :is(pre, blockquote, .callout, table, img, figure) {
-    break-inside: avoid;
+    page-break-inside: avoid;
   }
-  .markdown-rendered * {
-    box-shadow: none !important;
-    text-shadow: none !important;
+  body .markdown-rendered * {
+    box-shadow: none;
+    text-shadow: none;
   }
-  .markdown-rendered :is(pre, .callout, thead tr, code) {
-    background: none !important;
+  body .markdown-rendered :is(pre, .callout, thead tr, code) {
+    background: none;
   }
   .markdown-rendered a.external-link::after {
     content: ' (' attr(href) ')';
