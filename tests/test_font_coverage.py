@@ -24,9 +24,16 @@ class FontsTest(unittest.TestCase):
         for _, _, woff in self.fonts:
             self.assertEqual(f.features(f.tables(woff)), ["GPOS: kern"])
 
-    def test_the_em_dash_is_missing(self):
+    def test_the_drawn_characters_are_in_every_font(self):
+        for _, _, woff in self.fonts:
+            cps = f.codepoints(f.tables(woff)["cmap"])
+            for ch in f.DRAWN:
+                self.assertIn(ord(ch), cps, ch)
+
+    def test_the_section_sign_and_the_check_marks_are_still_missing(self):
         cps = f.codepoints(f.tables(self.fonts[0][2])["cmap"])
-        self.assertNotIn(0x2014, cps)
+        for ch in "§✓✔":
+            self.assertNotIn(ord(ch), cps, ch)
 
     def test_the_document_is_current(self):
         self.assertEqual(f.DOC.read_text(), f.document())

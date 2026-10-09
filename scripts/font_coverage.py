@@ -26,6 +26,7 @@ BLOCKS = [
     ("Arrows", 0x2190, 0x21FF), ("Mathematical Operators", 0x2200, 0x22FF), ("Dingbats", 0x2700, 0x27BF),
     ("CJK ideographs", 0x4E00, 0x9FFF),
 ]
+DRAWN = "–—…•×÷°±²³½åÅ→←"
 COMMON = "—–…•×÷°±²³½§åÅ→←✓✔‘’“”€™"
 NAMES = {"—": "em dash", "–": "en dash", "…": "ellipsis", "•": "bullet", "×": "multiplication sign",
          "÷": "division sign", "°": "degree sign", "±": "plus or minus sign", "²": "superscript two",
@@ -90,6 +91,7 @@ def features(tabs):
 def document(root=ROOT):
     out = ["# Characters of the embedded fonts", "",
            "This file lists which characters the fonts Volume Tc and Volume Tc Sans have. A character that a font lacks is drawn with the next font of the font stack. The text stack ends with Georgia, Times New Roman, Noto Serif, and a serif font. The interface stack ends with Verdana, Noto Sans, and a sans-serif font. The two Noto fonts cover Greek, Cyrillic, and more Latin letters, if they are installed. A line of text can then have glyphs of two styles.",
+           "", "These 15 characters were not in the fonts that came with the theme: " + " ".join(DRAWN) + ". `scripts/extend_fonts.py` draws them from outlines that the fonts have, such as the hyphen, the period, and the digits. The dashes, the dots, and the signs are plain shapes of the weight of the font. They are not the work of the type designer.",
            "", "The tables come from `scripts/font_coverage.py`. Run `python3 scripts/font_coverage.py --write` to make them again.", ""]
     for family, style, woff in read_fonts((root / "src" / "10-fonts.css").read_text()):
         tabs = tables(woff)

@@ -163,7 +163,7 @@ scripts/install.sh /path/to/vault --presets</pre>
 <dl>
 <dt>Obsidian</dt><dd>Installer 1.4.13 or newer. The theme uses <code>color-mix()</code>, which needs Chromium 111.</dd>
 <dt>Tested</dt><dd>Obsidian 1.14.4 on Linux. Windows, macOS, Android, and iOS are not tested.</dd>
-<dt>Fonts</dt><dd>Volume Tc has about 175 characters. Other characters use a fallback font.</dd>
+<dt>Fonts</dt><dd>Volume Tc has about 190 characters. Other characters use a fallback font.</dd>
 <dt>Graph labels</dt><dd>Obsidian fixes the font of the labels. The preset <code>lexmechanic-graph-labels</code> replaces it.</dd>
 <dt>Options</dt><dd>The plugin Style Settings shows the accent, the column width, the fonts, the heading sizes, and the graph colors.</dd>
 </dl>

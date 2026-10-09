@@ -26,7 +26,7 @@ Text must reach 4.5 to 1. Interface colors, such as the focus ring, must reach 3
 * The body text is a serif font, Volume Tc. The interface, block quotes, callout titles, tags, and table headers use the sans font Volume Tc Sans.
 * The fonts are inside `theme.css` as base64 data. Obsidian does not reliably load a font from a relative path in a theme.
 * Each font has one weight. The browser draws bold text by smearing the glyphs.
-* The fonts have only about 175 characters. The rest use the fallback fonts. `docs/characters.md` lists what is missing.
+* The fonts have only about 190 characters. The rest use the fallback fonts. `docs/characters.md` lists what is missing.
 * A font setting of Obsidian can replace the fonts, because the theme sets the `-theme` variables and not the final ones.
 
 ## Rules and variables
